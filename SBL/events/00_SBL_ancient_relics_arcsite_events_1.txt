@@ -1,0 +1,73 @@
+#
+
+################################
+#
+# Ancient Relics Events
+#
+# Written by David Ballantyne, Dee Majek,
+# Miranda van den Brink and Daniel Moregard
+#
+################################
+
+namespace = ancrel
+
+	
+
+##############
+# Relic events
+##############
+
+# Zro Crystal activate
+country_event = {
+	id = ancrel.7006
+	title = "ancrel.7006.name"
+	diplomatic_title = BLANK_STRING
+	picture = GFX_evt_psionics
+	show_sound = event_psionic
+	trackable = yes
+
+	desc = {
+		text = ancrel.7006.1.desc
+	}
+	desc = {
+		text = ancrel.7006.2.desc
+	}
+
+	is_triggered_only = yes
+	diplomatic = yes
+	force_open = yes
+
+	picture_event_data = {
+		portrait = shroud1
+		room = shroud_room
+	}
+
+	option = {
+		trigger = {
+			ruler = {
+				NOT = { has_skill = 15 }
+			}
+		}
+		name = "ancrel.7006.a"
+		custom_tooltip = relic_zro_crystal_knowledge
+		hidden_effect = {
+			ruler = { add_skill_without_trait_selection = 1 }
+		}
+	}
+
+	option = {
+		name = "ancrel.7006.b"
+		add_modifier = {
+			modifier = "relic_zro_crystal_martial"
+			days = 1800
+		}
+	}
+
+	option = {
+		name = "ancrel.7006.c"
+		add_modifier = {
+			modifier = "relic_zro_crystal_state"
+			days = 1800
+		}
+	}
+}

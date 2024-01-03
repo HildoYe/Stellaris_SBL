@@ -1,0 +1,255 @@
+councilor_ruler_democratic = {
+	leader_class = { official commander scientist }
+	possible = { always = no }
+	modifier = {
+		pop_factions_unity_produces_mult = 0.02
+		country_edict_fund_add = 9
+		country_edict_fund_mult = 0.01
+		empire_size_systems_mult = -0.02
+	}
+	icon = "GFX_icon_councilor_ruler"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_ruler_oligarchic = {
+	leader_class = { official commander scientist }
+	possible = { always = no }
+	modifier = {
+		councilor_exp_gain = 0.05
+		country_edict_fund_add = 6
+		country_edict_fund_mult = 0.01
+		empire_size_systems_mult = -0.02
+	}
+	icon = "GFX_icon_councilor_ruler"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_ruler_dictatorial = {
+	leader_class = { official commander scientist }
+	possible = { always = no }
+	modifier = {
+		pop_amenities_usage_mult = -0.02
+		country_edict_fund_add = 12
+		country_edict_fund_mult = 0.01
+		empire_size_systems_mult = -0.02
+	}
+	icon = "GFX_icon_councilor_ruler"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_ruler_imperial = {
+	leader_class = { official commander scientist }
+	possible = { always = no }
+	modifier = {
+		country_power_projection_influence_produces_add = 0.25
+		country_edict_fund_add = 9
+		country_edict_fund_mult = 0.01
+		empire_size_systems_mult = -0.02
+	}
+	icon = "GFX_icon_councilor_ruler"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_ruler_hive_mind = {
+	leader_class = { official commander scientist }
+	possible = { always = no }
+	modifier = {
+		country_unity_produces_mult = 0.02
+		country_edict_fund_add = 6
+		country_edict_fund_mult = 0.01
+		empire_size_systems_mult = -0.03
+	}
+	icon = "GFX_icon_councilor_ruler"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_ruler_machine_intelligence = {
+	leader_class = { official commander scientist }
+	possible = { always = no }
+	modifier = {
+		empire_size_pops_mult = -0.03
+		country_edict_fund_add = 6
+		country_edict_fund_mult = 0.01
+		empire_size_systems_mult = -0.04
+	}
+	icon = "GFX_icon_councilor_ruler"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_ruler_corporate = {
+	leader_class = { official commander scientist }
+	possible = { always = no }
+	modifier = {
+		branch_office_value_mult = 0.02
+		country_edict_fund_add = 9
+		country_edict_fund_mult = 0.01
+		empire_size_systems_mult = -0.02
+	}
+	icon = "GFX_icon_councilor_ruler"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_research = {
+	leader_class = { scientist }
+
+	possible = {
+		is_gestalt = no
+	}
+
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	modifier = {
+		all_technology_research_speed = 0.025
+	}
+	icon = "GFX_icon_councilor_research"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+	ai_priority = 1
+	optional = {
+		has_paragon_dlc = yes
+	}
+}
+
+councilor_defense = {
+	leader_class = { commander }
+
+	possible = {
+		is_gestalt = no
+	}
+
+	is_leader_possible = {
+		leader_class = commander
+	}
+	modifier = {
+		ships_upkeep_mult = -0.025
+		armies_upkeep_mult = -0.025
+		starbases_upkeep_mult = -0.025
+	}
+	icon = "GFX_icon_councilor_defense"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+	ai_priority = 1
+	optional = {
+		has_paragon_dlc = yes
+	}
+}
+
+councilor_state = {
+	leader_class = { official }
+
+	possible = {
+		blocks_minister_of_state = no
+	}
+
+	is_leader_possible = {
+		leader_class = official
+	}
+	modifier = {
+		envoy_improve_relations_mult = 0.025
+		envoy_harm_relations_mult = 0.025
+		first_contact_speed_mult = 0.025
+		spy_network_daily_value_mult = 0.025
+	}
+	icon = "GFX_icon_councilor_state"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+	ai_priority = 1
+	optional = {
+		has_paragon_dlc = yes
+	}
+}
+
+################################
+## GESTALT
+################################
+
+councilor_gestalt_growth = {
+	leader_class = { official }
+	possible = {
+		is_gestalt = yes
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	modifier = {
+		planet_pop_assembly_organic_mult = 0.04
+		planet_pop_assembly_mult = 0.04
+	}
+	icon = "GFX_icon_councilor_ruler"
+	optional = { always = no }
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_gestalt_cognitive = {
+	leader_class = { scientist }
+	possible = {
+		is_gestalt = yes
+	}
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	modifier = {
+		all_technology_research_speed = 0.025
+	}
+	icon = "GFX_icon_councilor_research"
+	optional = { always = no }
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_gestalt_legion = {
+	possible = {
+		is_gestalt = yes
+	}
+	leader_class = { commander }
+	is_leader_possible = {
+		leader_class = commander
+	}
+	modifier = {
+		country_base_influence_produces_add = 0.14
+	}
+	icon = "GFX_icon_councilor_defense"
+	optional = { always = no }
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_gestalt_regulatory = {
+	 leader_class = { official }
+	possible = {
+		is_gestalt = yes
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	modifier = {
+		planet_crime_no_happiness_add = -4
+	}
+	icon = "GFX_icon_councilor_ruler"
+	optional = { always = no }
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}

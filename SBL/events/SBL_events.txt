@@ -1,0 +1,170 @@
+namespace = sbl
+
+# update levels of fallen empire ruler from 10 -> 15
+country_event = {
+	id = sbl.2
+	hide_window = yes
+	is_triggered_only = yes
+
+    trigger = {
+		is_country_type = fallen_empire
+	}
+
+    immediate = {
+        ruler = {
+            add_skill = 5
+        }
+
+        # wait one day to set up gestalt nodes to avoid event order issues
+        country_event = {
+			id = sbl.3
+			days = 1
+		}
+    }
+}
+
+# update levels of fallen machine empire nodes from 10 -> 15
+country_event = {
+	id = sbl.3
+	hide_window = yes
+	is_triggered_only = yes
+
+    trigger = {
+        is_gestalt = yes
+	}
+
+    immediate = {
+        every_owned_leader = {
+            limit = {
+                is_councilor = yes
+                is_ruler = no
+            }
+            add_skill = 5
+        }
+    }
+}
+
+# update levels of fallen empire commander from 10 -> 15
+country_event = {
+	id = sbl.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+        OR = {
+            is_country_type = fallen_empire
+            is_country_type = awakened_fallen_empire
+        }
+        from = {
+            leader_class = commander
+            is_heir = no
+            is_pool_leader = no
+        }
+	}
+
+	immediate = {
+        from = {
+            leader_event = {
+                id = sbl.5
+                days = 1
+                scopes = {
+                    from = root
+                }
+            }
+        }
+	}
+}
+
+leader_event = {
+	id = sbl.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+        is_councilor = no
+        is_ruler = no
+	}
+
+	immediate = {
+        add_skill = 5
+	}
+}
+
+# update levels of Great Khan from 10 -> 15
+country_event = {
+	id = sbl.6
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+        is_country_type = awakened_marauders
+	}
+
+	immediate = {
+        from = {
+            leader_event = {
+                id = sbl.7
+                days = 1
+                scopes = {
+                    from = root
+                }
+            }
+        }		
+	}
+}
+
+leader_event = {
+	id = sbl.7
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+        has_leader_flag = great_khan
+	}
+
+	immediate = {
+        add_skill = 5
+	}
+}
+
+# update levels of awakened fallen empire scientist from 10 -> 15
+country_event = {
+	id = sbl.8
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+        is_country_type = awakened_fallen_empire
+        from = {
+            leader_class = scientist
+            is_heir = no
+            is_pool_leader = no
+        }
+	}
+
+	immediate = {
+        from = {
+            add_skill = 5
+        }
+	}
+}
+
+# update levels of event leaders from 10 -> 15
+country_event = {
+	id = sbl.9
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+        from = {
+            is_event_leader = yes
+            has_skill = 10
+        }
+	}
+
+	immediate = {
+        from = {
+            add_skill = 5
+        }
+	}
+}

@@ -1,0 +1,31 @@
+﻿l_russian:
+
+ ANOMALY_LEVEL_DIFF_18:0 "$ANOMALY_LEVEL_DIFF_19$"
+ ANOMALY_LEVEL_DIFF_17:0 "§GНизкая§!"
+ ANOMALY_LEVEL_DIFF_16:0 "$ANOMALY_LEVEL_DIFF_17$"
+ ANOMALY_LEVEL_DIFF_15:0 "§GОчень низкая§!"
+ ANOMALY_LEVEL_DIFF_14:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_13:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_12:0 "§GНесущественная§!"
+ ANOMALY_LEVEL_DIFF_11:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_10:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_9:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_8:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_7:0 "§GМинимальная§!"
+ ANOMALY_LEVEL_DIFF_6:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_5:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_4:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_3:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_2:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_1:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_0:0 "$ANOMALY_LEVEL_DIFF_7$"
+
+ council_agenda_agenda_leadership_conditioning_effect: "§Y$@agenda_leadership_conditioning_exp_reward|0$§! Опыт будет распределяться между всеми §Yлидерами§!, чей §Yуровень навыков ниже 15§!"
+
+ EXPEDITION_LOG_ROLL_TOOLTIP: "§HРезультаты этапа§!\nПолучено подсказок: $GAINED|Y$\n\nРезультат: $RESULT|Y$\n  Бросок: $ROLL|Y$\n  Подсказки: $CLUES|Y$\n  Бонус к навыку: $BONUS|Y$\n  Сложность: $DIFFICULTY|R$\n\n§EРезультат броска:§!\n§RНеудача§!: результат от §Y7§! и меньше добавляет §Y0§! подсказок.\n§YПрогресс§!: результат от §Y8 до 14§! добавляет §Y1§! подсказку.\n§GПрогресс§!: результат от §Y15 до 20§! добавляет §Y2§! подсказки."
+
+ EXPLORATION_LOG_ROLL_TOOLTIP: "§HРезультаты этапа§!\nПолучено подсказок: $GAINED|Y$\n\nРезультат: $RESULT|Y$\n  Бросок: $ROLL|Y$\n  Подсказки: $CLUES|Y$\n  Бонус от навыка: $BONUS|Y$\n  Сложность: $DIFFICULTY|R$\n\n§EРезультат броска:§!\n§RНеудача§!: результат от §Y7§! и меньше добавляет §Y0§! подсказок.\n§YПрогресс§!: результат от §Y8 до 14§! добавляет §Y1§! подсказку.\n§GПрогресс§!: результат от §Y15 до 20§! добавляет §Y2§! подсказки."
+
+ archaeology_roll_header: "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\nОтображает шанс вашего ученого совершить прорыв во время раскопок на текущем месте.\n\nКаждый раз при завершении этапа выполняется бросок кубика (от §Y1§! до §Y15§!). Результат броска складывается с §Yбонусом от навыка§! и §Yподсказками§!, а затем вычитается §Yсложность§!.\n\nСостояние перед броском: $SCORE|0Y$.\n\n§EРезультат броска:§!"
+
+ astral_rift_roll_header: "§H$ASTRAL_RIFT_BREAKTHROUGH$§!\nОтображает шанс вашего ученого совершить прорыв во время исследования текущего разлома.\n\nКаждый раз при завершении этапа выполняется бросок кубика (от §Y1§! до §Y15§!). Результат броска складывается с §Yбонусом от навыка§! и §Yподсказками§!, а затем вычитается §Yсложность§!.\n\nСостояние перед броском: $SCORE|0Y$.\n\n§EРезультат броска:§!"

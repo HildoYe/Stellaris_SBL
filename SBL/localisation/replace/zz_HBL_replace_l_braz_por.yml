@@ -1,0 +1,31 @@
+﻿l_braz_por:
+
+ ANOMALY_LEVEL_DIFF_18:0 "$ANOMALY_LEVEL_DIFF_19$"
+ ANOMALY_LEVEL_DIFF_17:0 "§GFácil§!"
+ ANOMALY_LEVEL_DIFF_16:0 "$ANOMALY_LEVEL_DIFF_17$"
+ ANOMALY_LEVEL_DIFF_15:0 "§GMuito Fácil§!"
+ ANOMALY_LEVEL_DIFF_14:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_13:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_12:0 "§GTrivial§!"
+ ANOMALY_LEVEL_DIFF_11:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_10:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_9:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_8:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_7:0 "§GInsignificante§!"
+ ANOMALY_LEVEL_DIFF_6:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_5:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_4:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_3:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_2:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_1:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_0:0 "$ANOMALY_LEVEL_DIFF_7$"
+
+ council_agenda_agenda_leadership_conditioning_effect: "§Y$@agenda_leadership_conditioning_exp_reward|0$§! de Experiência será compartilhado entre todos os §YLíderes§! com §YNível de Habilidade menor que 15§!"
+ 
+ EXPEDITION_LOG_ROLL_TOOLTIP: "§HResultados da Fase§!\nPistas obtidas: $GAINED|Y$\n\nResultado: $RESULT|Y$\n  Jogada: $ROLL|Y$\n  Pistas: $CLUES|Y$\n  Bônus de Habilidade: $BONUS|Y$\n  Dificuldade: $DIFFICULTY|R$"
+
+ EXPLORATION_LOG_ROLL_TOOLTIP: "§HResultados da Fase§!\nPistas obtidas: $GAINED|Y$\n\nResultado: $RESULT|Y$\n  Jogada: $ROLL|Y$\n  Pistas: $CLUES|Y$\n  Bônus de Habilidade: $BONUS|Y$\n  Dificuldade: $DIFFICULTY|R$\n\n§EResultados da Jogada:§!\n§RFracasso§!: Resultados até §Y7§! adicionam §Y0§! pistas.\n§YProgresso§!: Resultados entre §Y8-14§! adicionam §Y1§! pista.\n§GProgresso§!: Resultados entre §Y15-20§! adicionam §Y2§! pistas."
+
+ archaeology_roll_header: "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\nIsso reflete a chance do seu Cientista fazer um avanço durante a escavação do sítio atual.\n\nToda vez que uma fase termina, um dado (§Y1§! a §Y15§!) é jogado. O resultado da jogada é adicionado ao §YBônus de Habilidade§! e às §YPistas§!, depois subtraído pela §YDificuldade§!.\n\nA pontuação atual antes dos dados rolarem é de $SCORE|0Y$.\n\n§EResultados da Jogada:§!"
+
+ astral_rift_roll_header: "§H$ASTRAL_RIFT_BREAKTHROUGH$§!\nIsso reflete a chance do seu Cientista fazer uma descoberta durante a exploração da fenda atual.\n\nToda vez que uma fase termina, um dado (§Y1§! a §Y15§!) é jogado. O resultado da jogada é somado ao §YBônus de Habilidade§! e às §YPistas§!, e depois é subtraída a §YDificuldade§!.\n\nA pontuação atual antes dos dados rolarem é de $SCORE|0Y$.\n\n§EResultados da Jogada:§!"

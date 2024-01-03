@@ -1,0 +1,31 @@
+﻿l_spanish:
+
+ ANOMALY_LEVEL_DIFF_18:0 "$ANOMALY_LEVEL_DIFF_19$"
+ ANOMALY_LEVEL_DIFF_17:0 "§GFácil§!"
+ ANOMALY_LEVEL_DIFF_16:0 "$ANOMALY_LEVEL_DIFF_17$"
+ ANOMALY_LEVEL_DIFF_15:0 "§GMuy fácil§!"
+ ANOMALY_LEVEL_DIFF_14:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_13:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_12:0 "§GTrivial§!"
+ ANOMALY_LEVEL_DIFF_11:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_10:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_9:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_8:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_7:0 "§GInconsecuente§!"
+ ANOMALY_LEVEL_DIFF_6:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_5:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_4:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_3:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_2:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_1:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_0:0 "$ANOMALY_LEVEL_DIFF_7$"
+
+ council_agenda_agenda_leadership_conditioning_effect: "§Y$@agenda_leadership_conditioning_exp_reward|0$§! La experiencia se compartirá entre todos los §Ylíderes§! por debajo del §Ynivel 15 de habilidad§!"
+
+ EXPEDITION_LOG_ROLL_TOOLTIP: "§HResultados de fase§!\nPistas ganadas: $GAINED|Y$\n\nResultado: $RESULT|Y$\n Tirada: $ROLL|Y$\n Pistas: $CLUES|Y$\n Bonificación de habilidad: $BONUS|Y$\n Dificultad: $DIFFICULTY|R$"
+
+ EXPLORATION_LOG_ROLL_TOOLTIP: "§HResultados de fase§!\nPistas ganadas: $GAINED|Y$\n\nResultado: $RESULT|Y$\n Tirada: $ROLL|Y$\n Pistas: $CLUES|Y$\n Bonificación de habilidad: $BONUS|Y$\n Dificultad: $DIFFICULTY|R$\n\n§EResultados de la tirada:§!\n§RFracaso§!: los resultados de §Y7§! o menos añaden §Y0§! pistas.\n§YProgreso§!: los resultados entre §Y8-14§! añaden §Y1§! pista.\n§GProgreso§!: los resultados entre §Y15-20§! añaden §Y2§! pistas."
+
+ archaeology_roll_header: "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\nRefleja la oportunidad de que tu científico haga un avance durante la excavación del yacimiento actual.\n\nCuando acaba una fase, se tira un dado (de §Y1§! a §Y15§!). Al resultado se le suma la §Ybonificación de habilidad§! y las §Ypistas§!. Después, se resta la §Ydificultad§!.\n\nLa puntuación actual antes de la tirada es de $SCORE|0Y$.\n\n§EResultados de la tirada:§!"
+
+ astral_rift_roll_header: "§H$ASTRAL_RIFT_BREAKTHROUGH$§!\nRefleja la oportunidad de que tu científico haga un avance durante la exploración de la grieta actual.\n\nCuando acaba una fase, se tira un dado (de §Y1§! a §Y15§!). Al resultado se le suma la §Ybonificación de habilidad§! y las §Ypistas§!. Después, se resta la §Ydificultad§!.\n\nLa puntuación actual antes de la tirada es de $SCORE|0Y$.\n\n§EResultados de la tirada:§!"

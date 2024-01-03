@@ -1,0 +1,4 @@
+@subclass_weight_mult = 2.5
+@subclass_weight_opp_mult = 0.5
+@job_weight_mult = 2.5
+@job_weight_opp_mult = 0.5

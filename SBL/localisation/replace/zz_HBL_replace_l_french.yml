@@ -1,0 +1,31 @@
+﻿l_french:
+
+ ANOMALY_LEVEL_DIFF_18:0 "$ANOMALY_LEVEL_DIFF_19$"
+ ANOMALY_LEVEL_DIFF_17:0 "§Gassez facile§!"
+ ANOMALY_LEVEL_DIFF_16:0 "$ANOMALY_LEVEL_DIFF_17$"
+ ANOMALY_LEVEL_DIFF_15:0 "§Gfacile§!"
+ ANOMALY_LEVEL_DIFF_14:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_13:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_12:0 "§Gtrès facile§!"
+ ANOMALY_LEVEL_DIFF_11:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_10:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_9:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_8:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_7:0 "§Gfranchement facile§!"
+ ANOMALY_LEVEL_DIFF_6:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_5:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_4:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_3:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_2:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_1:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_0:0 "$ANOMALY_LEVEL_DIFF_7$"
+
+ council_agenda_agenda_leadership_conditioning_effect: "§Y$@agenda_leadership_conditioning_exp_reward|0$§! points d'expérience vont être partagés entre toutes les §Ypersonnalités§! ayant un niveau de compétence inférieur à §Y15§!."
+
+ EXPEDITION_LOG_ROLL_TOOLTIP: "§HRésultats de cette phase§!\nIndices réunis : $GAINED|Y$\n\nRésultat total : $RESULT|Y$\n  Lancer : $ROLL|Y$\n  Indices : $CLUES|Y$\n  Avantage de compétence : $BONUS|Y$\n  Difficulté : $DIFFICULTY|R$\n\n§ERésultat du lancer :§!\nTotal inférieur à §Y7§! : §Y0§! indice recueilli (§Réchec§!).\nTotal de §Y8§! à §Y14§! : §Y1§! indice recueilli (§Yavancée§!).\nTotal de §Y15§! à §Y20§! : §Y2§! indices recueillis (§Gavancée§!)."
+
+ EXPLORATION_LOG_ROLL_TOOLTIP: "§HRésultats de la phase§!\nIndices réunis : $GAINED|Y$\n\nRésultat total : $RESULT|Y$\n  Lancer : $ROLL|Y$\n  Indices : $CLUES|Y$\n  Avantage de compétence : $BONUS|Y$\n  Difficulté : $DIFFICULTY|R$\n\n§ERésultat du lancer :§!\nTotal inférieur à 7! : §Y0§! indice recueilli (§Réchec§!).\nTotal de §Y8§! à §Y14§! : §Y1§! indice recueilli (§Yavancée§!).\nTotal de §Y15§! à §Y20§! : §Y2§! indices recueillis (§Gavancée§!)."
+
+ archaeology_roll_header: "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\nChances de déboucher sur un succès au cours des fouilles du site.\n\nÀ la fin de chaque phase, un dé est lancé (§Y1§! à §Y15§!). Le résultat de ce lancer est ajouté à l'§Yavantage de compétence§! et aux §Yindices§!, et la §Ydifficulté§! est retranchée.\n\nLe résultat avant le lancer du dé est de $SCORE|0Y$.\n\n§ESelon le total :§!"
+
+ astral_rift_roll_header: "§H$ASTRAL_RIFT_BREAKTHROUGH$§!\nChances que notre scientifique parvienne à un succès au cours de la phase actuelle de l'exploration.\n\nÀ la fin de chaque phase, un dé est lancé (§Y1§! à §Y15§!). Le résultat de ce lancer est ajouté à l'§Yavantage de compétence§! et aux §Yindices§!, et la §Ydifficulté§! est retranchée.\n\nLe résultat avant le lancer du dé est de $SCORE|0Y$.\n\n§ESelon le total :§!"

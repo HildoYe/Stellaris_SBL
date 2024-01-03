@@ -1,0 +1,29 @@
+leader_remove_trait_with_message = {
+    create_message = {
+        type = MESSAGE_LOSED_NEGATIVE_TRAIT
+        localization =  MESSAGE_LOSED_NEGATIVE_TRAIT_DESC
+        days = @toast_message_days
+        target = from
+        variable = {
+			type = Key
+			localization = LEADER_TRAIT
+			value = $TRAIT$
+		}
+    }
+    from = { remove_trait = $TRAIT$ }
+}
+
+leader_remove_trait_with_message_tier_2 = {
+    create_message = {
+        type = MESSAGE_LOSED_NEGATIVE_TRAIT
+        localization =  MESSAGE_LOSED_NEGATIVE_TRAIT_2_DESC
+        days = @toast_message_days
+        target = from
+        variable = {
+			type = Key
+			localization = LEADER_TRAIT
+			value = $TRAIT$
+		}
+    }
+    from = { remove_trait = $TRAIT$_2 }
+}

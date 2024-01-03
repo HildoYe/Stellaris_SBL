@@ -1,0 +1,31 @@
+﻿l_japanese:
+
+ ANOMALY_LEVEL_DIFF_18:0 "$ANOMALY_LEVEL_DIFF_19$"
+ ANOMALY_LEVEL_DIFF_17:0 "§G簡単§!"
+ ANOMALY_LEVEL_DIFF_16:0 "$ANOMALY_LEVEL_DIFF_17$"
+ ANOMALY_LEVEL_DIFF_15:0 "§G極めて簡単§!"
+ ANOMALY_LEVEL_DIFF_14:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_13:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_12:0 "§G退屈§!"
+ ANOMALY_LEVEL_DIFF_11:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_10:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_9:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_8:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_7:0 "§G朝飯前§!"
+ ANOMALY_LEVEL_DIFF_6:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_5:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_4:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_3:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_2:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_1:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_0:0 "$ANOMALY_LEVEL_DIFF_7$"
+
+ council_agenda_agenda_leadership_conditioning_effect: "§Y$@agenda_leadership_conditioning_exp_reward|0$§!経験値は§Yスキルレベルが15§!未満のすべての§Yリーダー§!の間で共有される"
+
+ EXPEDITION_LOG_ROLL_TOOLTIP: "§Hフェーズ結果§!\n獲得した手掛かり：$GAINED|Y$\n\n結果：$RESULT|Y$\n  ダイスロール：$ROLL|Y$\n  手掛かり：$CLUES|Y$\n  スキルボーナス：$BONUS|Y$\n  難易度：$DIFFICULTY|R$\n\n§Eダイスロールの結果：§!\n§R失敗§!：結果 §Y7§!以下なら手掛かりは§Y0§!となる。\n§Y進歩§!：結果が§Y8-14§!なら手掛かりを§Y1§!得る。\n§G進歩§!：結果が§Y15-20§!なら手掛かりを§Y2§!得る。"
+
+ EXPLORATION_LOG_ROLL_TOOLTIP: "§Hフェーズ結果§!\n獲得した手掛かり：$GAINED|Y$\n\n結果：$RESULT|Y$\nダイスロール：$ROLL|Y$\n 手掛かり：$CLUES|Y$\nスキルボーナス：$BONUS|Y$\n 難易度：$DIFFICULTY|R$\n\n§Eダイスロールの結果：§!\n§R失敗§!：結果 §Y7§!以下なら手掛かりは§Y0§!となる。\n§Y進歩§!：結果が§Y8-14§!なら手掛かりを§Y1§!得る。\n§G進歩§!：結果が§Y15-20§!なら手掛かりを§Y2§!得る。"
+
+ archaeology_roll_header: "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\nこれは現在の調査地点の発掘中に、 科学者がブレイクスルーを起こす可能性を表している。\n\n発掘フェイズが終了するたびに、 ダイスロール (§Y1§!-§Y15§!) が行われる。 ロールの結果に§Yスキルボーナス§!と§Y手掛かり§!が加えられ、 §Y難易度§!が差し引かれる。\n\nダイスロール前の現在のスコアは$SCORE|0Y$。\n\n§Eロールの結果：§!"
+
+ astral_rift_roll_header: "§H$ASTRAL_RIFT_BREAKTHROUGH$§!\nこれは現在の裂け目の探索中に、 科学者がブレイクスルーを起こす可能性を表している。\n\nフェイズが終了するたびに、 ダイスロール (§Y1§!-§Y15§!) が行われる。 ロールの結果に§Yスキルボーナス§!と§Y手掛かり§!が加えられ、 §Y難易度§!が差し引かれる。\n\nダイスロール前の現在のスコアは$SCORE|0Y$。\n\n§Eロールの結果：§!"

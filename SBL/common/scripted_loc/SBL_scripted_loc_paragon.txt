@@ -1,0 +1,14 @@
+defined_text = {
+	name = scriptval__leader_eligible_for_negative_trait_immortal_raw
+	value = value:leader_eligible_for_negative_trait_immortal_raw
+}
+
+defined_text = {
+	name = scriptval__leader_eligible_for_negative_trait_raw
+	value = value:leader_eligible_for_negative_trait_raw
+}
+
+defined_text = {
+	name = scriptval__leader_eligibility_age_step
+	value = value:leader_eligibility_age_step
+}

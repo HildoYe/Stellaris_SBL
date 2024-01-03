@@ -1,0 +1,721 @@
+namespace = sbl
+
+# on_leader_level_up
+# Scope = Country, From = Leader
+country_event = {
+	id = sbl.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        if = {
+            limit = {
+                from = {
+                    is_pool_leader = no
+                    NOT = { leader_class = envoy }
+                    Or = { 
+                        has_skill = 12
+                        has_skill = 15
+                    }
+                }
+            }
+
+            random_list = {
+
+                ###################################
+                # admiral traits
+                ###################################
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_nervous }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_nervous } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_nervous }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_nervous_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_lethargic }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_lethargic } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_lethargic }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_lethargic_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_micromanager }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_micromanager } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_micromanager }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_micromanager_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_reckless }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_reckless } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_reckless }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_reckless_2 } }
+                    }
+                    modifier = {
+                        factor = 0
+                        from = { has_leader_flag = great_khan }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_slipshod }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_slipshod } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_slipshod }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_slipshod_2 } }
+                    }
+                }
+
+                ###################################
+                # general traits
+                ###################################
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_armchair_commander }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_armchair_commander } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_armchair_commander }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_armchair_commander_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_uninspiring }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_uninspiring } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_uninspiring }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_uninspiring_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_slothful }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_slothful } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_slothful }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_slothful_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_victory_or_death }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_victory_or_death } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_victory_or_death }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_victory_or_death_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_disorganized }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_disorganized } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_disorganized }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_disorganized_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_lawless }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_lawless } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_lawless }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_lawless_2 } }
+                    }
+                }
+
+                ###################################
+                # generic leader traits
+                ###################################
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_fallible }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_fallible } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_fallible }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_fallible_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_substance_abuser }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_substance_abuser } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_substance_abuser }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_substance_abuser_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_stubborn }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_stubborn } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_stubborn }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_stubborn_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_melancholic }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_melancholic } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_melancholic }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_melancholic_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_lavish_lifestyle }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_lavish_lifestyle } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_lavish_lifestyle }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_lavish_lifestyle_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_excessive }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_excessive } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_excessive }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_excessive_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_arrested_development }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_arrested_development } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_arrested_development }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_arrested_development_2 } }
+                    }
+                }
+
+                ###################################
+                # council traits
+                ###################################
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_reclusive }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_reclusive } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_reclusive }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_reclusive_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_embezzler }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_embezzler } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_embezzler }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_embezzler_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_intolerant }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_intolerant } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_intolerant }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_intolerant_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_gullible }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_gullible } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_gullible }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_gullible_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_volatile }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_volatile } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_volatile }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_volatile_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_passive }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_passive } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_passive }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_passive_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_tyrannical }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_tyrannical } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_tyrannical }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_tyrannical_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_bureaucratic }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_bureaucratic } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_bureaucratic }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_bureaucratic_2 } }
+                    }
+                }
+
+                ###################################
+                # governer traits
+                ###################################
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_corrupt }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_corrupt } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_corrupt }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_corrupt_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_polluter }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_polluter } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_polluter }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_polluter_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_sadistic }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_sadistic } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_sadistic }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_sadistic_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_profligate }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_profligate } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_profligate }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_profligate_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_procrastinator }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_procrastinator } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_procrastinator }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_procrastinator_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_insider_trading }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_insider_trading } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_insider_trading }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_insider_trading_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_irenic }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_irenic } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_irenic }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_irenic_2 } }
+                    }
+                }
+
+                ###################################
+                # scientist traits
+                ###################################
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_paranoid }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_paranoid } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_paranoid }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_paranoid_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_narrow_minded }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_narrow_minded } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_narrow_minded }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_narrow_minded_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_neurotic }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_neurotic } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_neurotic }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_neurotic_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_opinionated }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_opinionated } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_opinionated }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_opinionated_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_destructive }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_destructive } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_destructive }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_destructive_2 } }
+                    }
+                }
+
+                ###################################
+                # ancrel traits
+                ###################################
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_traumatized }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_traumatized } }
+                    }
+                }
+
+                1 = {
+                    leader_remove_trait_with_message_tier_2 = { TRAIT = leader_trait_traumatized }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_traumatized_2 } }
+                    }
+                }
+
+                2 = {
+                    leader_remove_trait_with_message = { TRAIT = leader_trait_maimed }
+                    modifier = {
+                        factor = 0
+                        NOT = { from = { has_trait = leader_trait_maimed } }
+                    }
+                }
+
+                ###################################
+                # astral planes traits
+                ###################################
+
+#               2 = {
+#                   leader_remove_trait_with_message = { TRAIT = leader_trait_partially_digested }
+#                   modifier = {
+#                       factor = 0
+#                       NOT = { from = { has_trait = leader_trait_partially_digested } }
+#                   }
+#               }
+
+#               2 = {
+#                   leader_remove_trait_with_message = { TRAIT = leader_trait_obelisk_curse }
+#                   modifier = {
+#                       factor = 0
+#                       NOT = { from = { has_trait = leader_trait_obelisk_curse } }
+#                   }
+#               }
+
+#               2 = {
+#                   leader_remove_trait_with_message = { TRAIT = leader_trait_black_light_blinded }
+#                   modifier = {
+#                       factor = 0
+#                       NOT = { from = { has_trait = leader_trait_black_light_blinded } }
+#                   }
+#               }
+
+            }
+
+        }
+	}
+}

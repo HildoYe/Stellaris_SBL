@@ -1,0 +1,25 @@
+on_leader_level_up = {
+	events = {
+		sbl.1	# remove one random negative trait
+	}
+}
+
+# A country is created via create_country or create_rebels
+# This = created country
+# From = root of context where create_country/create_rebels happens
+on_country_created = {
+	events = {
+		sbl.2	# fallen empires ruler and nodes level 10 -> 15
+	}
+}
+
+# a new leader is created
+# scope: country, from: leader
+on_leader_spawned = {
+	events = {
+		sbl.4	# fallen empires commander level 10 -> 15
+		sbl.6	# Great Khan level 10 -> 15
+		sbl.8	# awakened fallen empires scientist level 10 -> 15
+		sbl.9	# event leader level 10 -> 15
+	}
+}

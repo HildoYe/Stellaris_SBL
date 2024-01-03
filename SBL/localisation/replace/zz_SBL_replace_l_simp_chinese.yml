@@ -1,0 +1,31 @@
+﻿l_simp_chinese:
+
+ ANOMALY_LEVEL_DIFF_18:0 "$ANOMALY_LEVEL_DIFF_19$"
+ ANOMALY_LEVEL_DIFF_17:0 "§G小试牛刀§!"
+ ANOMALY_LEVEL_DIFF_16:0 "$ANOMALY_LEVEL_DIFF_17$"
+ ANOMALY_LEVEL_DIFF_15:0 "§G非常简单§!"
+ ANOMALY_LEVEL_DIFF_14:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_13:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_12:0 "§G轻而易举§!"
+ ANOMALY_LEVEL_DIFF_11:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_10:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_9:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_8:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_7:0 "§G吹灰之力§!"
+ ANOMALY_LEVEL_DIFF_6:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_5:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_4:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_3:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_2:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_1:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_0:0 "$ANOMALY_LEVEL_DIFF_7$"
+
+ council_agenda_agenda_leadership_conditioning_effect: "§Y在所有低于§Y技能等级15§!的§Y领袖§!间共享$@agenda_leadership_conditioning_exp_reward|0$§!经验"
+
+ EXPEDITION_LOG_ROLL_TOOLTIP: "§H发掘时段结果§!\n已收集线索：$GAINED|Y$\n\n结果：$RESULT|Y$\n   掷骰点数：$ROLL|Y$\n   线索数：$CLUES|Y$\n   技能加成：$BONUS|Y$\n   难度值：$DIFFICULTY|R$\n\n§E最终结果：§!\n§R失败§!：结果值小于或等于§Y7§!，添加§Y0§!点线索。\n§Y取得进展§!：结果值介于§Y8-14§!之间，添加§Y1§!点线索。\n§G取得进展§!：结果值介于§Y15-20§!之间，添加§Y2§!点线索。"
+
+ EXPLORATION_LOG_ROLL_TOOLTIP: "§H探索时段结果§!\n已收集线索：$GAINED|Y$\n\n结果：$RESULT|Y$\n  投掷点数：$ROLL|Y$\n  线索数：$CLUES|Y$\n  技能加成：$BONUS|Y$\n  难度值：$DIFFICULTY|R$\n\n§E最终结果：§!\n§R失败§!：结果值小于或等于§Y7§!，添加§Y0§!点线索。\n§Y取得进展§!：结果值介于§Y8-14§!之间，添加§Y1§!点线索。\n§G取得进展§!：结果值介于§Y15-20§!之间，添加§Y2§!点线索。"
+
+ archaeology_roll_header: "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\n此数值反映你的科学官在发掘当前遗址时取得突破的几率。\n\n每当一个发掘时段结束，游戏将自动掷出一枚骰子（结果范围为§Y1§!到§Y15§!）。掷骰结果会与§Y技能加成§!和§Y线索§!数相加，随后减去§Y难度§!值。\n\n掷骰前的结果是$SCORE|0Y$。\n\n§E最终结果：§!"
+
+ astral_rift_roll_header: "§H$ASTRAL_RIFT_BREAKTHROUGH$§!\n此数值反映你的科学官在探索当前裂隙时取得突破的几率。\n\n每当一个探索时段结束，游戏将自动掷出一枚骰子（结果范围为§Y1§!到§Y15§!）。掷骰结果会与§Y技能加成§!和§Y线索§!数相加，随后减去§Y难度§!值。\n\n掷骰前的结果是$SCORE|0Y$。\n\n§E最终结果：§!"

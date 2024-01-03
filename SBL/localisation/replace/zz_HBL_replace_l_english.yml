@@ -1,0 +1,31 @@
+﻿l_english:
+
+ ANOMALY_LEVEL_DIFF_18:0 "$ANOMALY_LEVEL_DIFF_19$"
+ ANOMALY_LEVEL_DIFF_17:0 "§GEasy§!"
+ ANOMALY_LEVEL_DIFF_16:0 "$ANOMALY_LEVEL_DIFF_17$"
+ ANOMALY_LEVEL_DIFF_15:0 "§GVery Easy§!"
+ ANOMALY_LEVEL_DIFF_14:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_13:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_12:0 "§GTrivial§!"
+ ANOMALY_LEVEL_DIFF_11:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_10:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_9:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_8:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_7:0 "§GInconsequential§!"
+ ANOMALY_LEVEL_DIFF_6:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_5:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_4:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_3:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_2:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_1:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_0:0 "$ANOMALY_LEVEL_DIFF_7$"
+
+ council_agenda_agenda_leadership_conditioning_effect: "§Y$@agenda_leadership_conditioning_exp_reward|0$§! Experience will be shared between all §YLeaders§! below §YSkill Level 15§!"
+
+ EXPEDITION_LOG_ROLL_TOOLTIP:0 "§HPhase Results§!\nClues Gained: $GAINED|Y$\n\nResult: $RESULT|Y$\n  Roll: $ROLL|Y$\n  Clues: $CLUES|Y$\n  Skill Bonus: $BONUS|Y$\n  Difficulty: $DIFFICULTY|R$\n\n§ERoll Outcomes:§!\n§RFailure§!: Results §Y7§! or less add §Y0§! clues.\n§YProgress§!: Results between §Y8-14§! add §Y1§! clues.\n§GProgress§!: Results between §Y15-20§! add §Y2§! clues."
+
+ EXPLORATION_LOG_ROLL_TOOLTIP: "§HPhase Results§!\nClues Gained: $GAINED|Y$\n\nResult: $RESULT|Y$\n  Roll: $ROLL|Y$\n  Clues: $CLUES|Y$\n  Skill Bonus: $BONUS|Y$\n  Difficulty: $DIFFICULTY|R$\n\n§ERoll Outcomes:§!\n§RFailure§!: Results §Y7§! or less add §Y0§! clues.\n§YProgress§!: Results between §Y8-14§! add §Y1§! clues.\n§GProgress§!: Results between §Y15-20§! add §Y2§! clues."
+
+ archaeology_roll_header:2 "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\nThis reflects the chance of your Scientist making a breakthrough during the excavation of the current site.\n\nEvery time a phase ends, a die (§Y1§! to §Y15§!) is rolled. The result of the roll is added to §YSkill Bonus§! and §YClues§!, then subtracted by §YDifficulty§!.\n\nThe current score before dice roll is $SCORE|0Y$.\n\n§ERoll Outcomes:§!"
+
+ astral_rift_roll_header: "§H$ASTRAL_RIFT_BREAKTHROUGH$§!\nThis reflects the chance of your Scientist making a breakthrough during exploration of the current rift.\n\nEvery time a phase ends, a die (§Y1§! to §Y15§!) is rolled. The result of the roll is added to §YSkill Bonus§! and §YClues§!, then subtracted by §YDifficulty§!.\n\nThe current score before dice roll is $SCORE|0Y$.\n\n§ERoll Outcomes:§!"

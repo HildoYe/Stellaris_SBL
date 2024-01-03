@@ -1,0 +1,12 @@
+message_type = {
+	key = "MESSAGE_LOSED_NEGATIVE_TRAIT"
+	icon = "GFX_toast_negative_trait_losed"
+
+	name = "MESSAGE_LOSED_NEGATIVE_TRAIT_TITLE"
+	sound = "notification"
+	ping = "ping_notification_green"
+
+	default_toast = yes
+
+	category = leaders
+}

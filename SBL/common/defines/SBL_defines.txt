@@ -1,0 +1,66 @@
+	NGameplay = {
+		SCIENCE_SHIP_ANOMALY_RESEARCH_DAYS = { # equal level is middle (count of items / 2)
+			16		#19
+			17		#18
+			18		#17
+			19		#16
+			20		#15
+			21		#14
+			22		#13
+			24		#12
+			26		#11
+			29		#10
+			32		#9 levels above anomaly
+			36		#8 levels above anomaly
+			41		#7 levels above anomaly
+			47		#6 levels above anomaly
+			54		#5 levels above anomaly
+			62		#4 levels above anomaly
+			72		#3 levels above anomaly
+			84		#2 levels above anomaly
+			100		#1 level above anomaly
+			120		#0 level equal to anomaly
+			180		#1 level below anomaly
+			300		#2 levels below anomaly
+			480		#3 levels below anomaly
+			720		#4 levels below anomaly
+			1080	#5 levels below anomaly
+			1560	#6 levels below anomaly
+			2160	#7 levels below anomaly
+			2880	#8 levels below anomaly
+			5760	#9 levels below anomaly
+			5760	#10
+			5760	#11
+			5760	#12
+			5760	#13
+			5760	#14
+			5760	#15
+			5760	#16
+			5760	#17
+			5760	#18
+			5760	#19
+		}
+
+		ARCHAEOLOGICAL_SITE_DICE_ROLL_MAX = 15
+		ARCHAEOLOGICAL_SITE_DISCOVERY_SCORE = 21
+		ARCHAEOLOGICAL_SITE_DISCOVERY_DAYS = 60
+
+		ASTRAL_RIFT_DICE_ROLL_MAX	= 15
+		ASTRAL_RIFT_DISCOVERY_SCORE	= 21
+		ASTRAL_RIFT_DISCOVERY_DAYS	= 60
+
+		NON_PARAGON_LEADER_TRAIT_SELECTION_LEVELS = { 1 3 5 7 9 11 13 15 }
+
+		DEFAULT_TRAIT_OPTIONS_ON_LEVEL_UP	= 3		# Default number of selectable trait options before modifiers available on level up
+		NUM_DESTINY_TRAIT_OPTIONS			= 5		# Default number of destiny traits to select from
+
+		MAX_VETERAN_TRAITS = 4 		# How many veteran traits you can have before you only get the option to level them up
+
+		LEADER_POOL_REFRESH_TIME = 1440 		# Number of days between leader pool refresh
+		LEADER_BASE_SKILL_CAP	= 15
+		LEADER_MAX_SKILL_CAP	= 15
+
+		LEADER_SCIENTIST_ASSIST_CLOAKING_DETECTION_MULT				= 0.3		# Assist Cloaking Detection modifier-mult per skill level (this value times skill level equals modifier)
+	}
+
+

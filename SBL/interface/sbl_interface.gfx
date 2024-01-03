@@ -1,0 +1,20 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_leader_skill"
+		texturefile = "gfx/interface/icons/leaders/SBL_leader_skill.dds"
+		noOfFrames = 16
+	}
+
+	spriteType = {
+		name = "GFX_outliner_leader_level"
+		texturefile = "gfx/interface/outliner/SBL_outliner_leader_level.dds"
+		noOfFrames = 15
+	}
+
+	spriteType = {
+		name = "GFX_toast_negative_trait_losed"
+		texturefile = "gfx/interface/icons/toasts/toast_negative_trait_losed.dds"
+	}
+	
+}

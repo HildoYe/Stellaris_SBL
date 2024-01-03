@@ -1,0 +1,31 @@
+﻿l_german:
+
+ ANOMALY_LEVEL_DIFF_18:0 "$ANOMALY_LEVEL_DIFF_19$"
+ ANOMALY_LEVEL_DIFF_17:0 "§GEinfach§!"
+ ANOMALY_LEVEL_DIFF_16:0 "$ANOMALY_LEVEL_DIFF_17$"
+ ANOMALY_LEVEL_DIFF_15:0 "§GSehr Einfach§!"
+ ANOMALY_LEVEL_DIFF_14:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_13:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_12:0 "§GTrivial§!"
+ ANOMALY_LEVEL_DIFF_11:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_10:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_9:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_8:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_7:0 "§GUnbedeutend§!"
+ ANOMALY_LEVEL_DIFF_6:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_5:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_4:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_3:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_2:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_1:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_0:0 "$ANOMALY_LEVEL_DIFF_7$"
+
+ council_agenda_agenda_leadership_conditioning_effect: "§Y$@agenda_leadership_conditioning_exp_reward|0$§! Erfahrung wird zwischen allen §YAnführern§! unter §YFähigkeitsstufe 15§! aufgeteilt"
+
+ EXPEDITION_LOG_ROLL_TOOLTIP: "§HPhasenergebnis§!\nErhaltene Hinweise: $GAINED|Y$\n\nErgebnis: $RESULT|Y$\n  Würfelwurf: $ROLL|Y$\n  Hinweise: $CLUES|Y$\n  Fähigkeitsbonus: $BONUS|Y$\n  Schwierigkeit: $DIFFICULTY|R$\n\n§EWürfelergebnisse:§!\n§RFehlschlag§!: Ergebnis von §Y7§! oder weniger gibt §Y0§! Hinweise.\n§YFortschritt§!: Ergebnis zwischen §Y8-14§! gibt §Y1§! Hinweis.\n§GFortschritt§!: Ergebnis zwischen §Y15-20§! gibt §Y2§! Hinweise."
+
+ EXPLORATION_LOG_ROLL_TOOLTIP: "§HPhasenergebnis§!\nErhaltene Hinweise: $GAINED|Y$\n\nErgebnis: $RESULT|Y$\n  Würfelwurf: $ROLL|Y$\n  Hinweise: $CLUES|Y$\n  Fähigkeitsbonus: $BONUS|Y$\n  Schwierigkeit: $DIFFICULTY|R$\n\n§EWürfelergebnisse:§!\n§RFehlschlag§!: Ergebnis von §Y7§! oder weniger gibt §Y0§! Hinweise.\n§YFortschritt§!: Ergebnis zwischen §Y8-14§! gibt §Y1§! Hinweis.\n§GFortschritt§!: Ergebnis zwischen §Y15-20§! gibt §Y2§! Hinweise."
+
+ archaeology_roll_header: "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\nDies spiegelt die Chance wider, mit der Euer Wissenschaftler während der Ausgrabung am derzeitigen Ort einen Durchbruch erzielt.\n\nJedes Mal, wenn eine Phase endet, wird ein Würfel (§Y1§! bis §Y15§!) geworfen. Zum Ergebnis des Würfels werden der §YFähigkeitsbonus§! und die §YHinweise§! addiert und die §YSchwierigkeit§! subtrahiert.\n\nDerzeit beträgt der Wert vor dem Würfelwurf $SCORE|0Y$.\n\n§EWürfelergebnisse:§!"
+
+ astral_rift_roll_header: "§H$ASTRAL_RIFT_BREAKTHROUGH$§!\nDies spiegelt die Chance wider, mit der Euer Wissenschaftler während der Erforschung des derzeitigen Astralrisses einen Durchbruch erzielt.\n\nJedes Mal, wenn eine Phase endet, wird ein Würfel (§Y1§! bis §Y15§!) geworfen. Zum Ergebnis des Würfels werden der §YFähigkeitsbonus§! und die §YHinweise§! addiert und die §YSchwierigkeit§! subtrahiert.\n\nDerzeit beträgt der Wert vor dem Würfelwurf $SCORE|0Y$.\n\n§EWürfelergebnisse:§!"

@@ -1,0 +1,311 @@
+tech_node_reformatting_4 = {
+	cost = @repeatableTechBaseCost
+	area = society
+	tier = @repeatableTechTier
+	category = { statecraft }
+	prerequisites = { "tech_node_reformatting_3" }
+	weight = @repeatableTechWeight
+	is_rare = yes
+
+	potential = {
+		is_machine_empire = yes
+	}
+
+	modifier = {
+		restored_node_bonus_skill = 1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			any_owned_leader = {
+				is_councilor = yes
+				is_ruler = no
+				has_skill < 9
+			}
+		}
+		modifier = {
+			factor = 1.5
+			any_owned_leader = {
+				is_councilor = yes
+				is_ruler = no
+				has_skill  >= 11
+			}
+		}
+		modifier = {
+			factor = 0.25
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_node_reformatting_4
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+tech_node_reformatting_5 = {
+	cost = @repeatableTechBaseCost
+	area = society
+	tier = @repeatableTechTier
+	category = { statecraft }
+	prerequisites = { "tech_node_reformatting_4" }
+	weight = @repeatableTechWeight
+	is_rare = yes
+
+	potential = {
+		is_machine_empire = yes
+	}
+
+	modifier = {
+		restored_node_bonus_skill = 1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			any_owned_leader = {
+				is_councilor = yes
+				is_ruler = no
+				has_skill < 11
+			}
+		}
+		modifier = {
+			factor = 1.5
+			any_owned_leader = {
+				is_councilor = yes
+				is_ruler = no
+				has_skill  >= 13
+			}
+		}
+		modifier = {
+			factor = 0.25
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_node_reformatting_5
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+tech_node_reformatting_6 = {
+	cost = @repeatableTechBaseCost
+	area = society
+	tier = @repeatableTechTier
+	category = { statecraft }
+	prerequisites = { "tech_node_reformatting_5" }
+	weight = @repeatableTechWeight
+	is_rare = yes
+
+	potential = {
+		is_machine_empire = yes
+	}
+
+	modifier = {
+		restored_node_bonus_skill = 1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			any_owned_leader = {
+				is_councilor = yes
+				is_ruler = no
+				has_skill < 13
+			}
+		}
+		modifier = {
+			factor = 1.5
+			any_owned_leader = {
+				is_councilor = yes
+				is_ruler = no
+				has_skill  >= 14
+			}
+		}
+		modifier = {
+			factor = 0.25
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_node_reformatting_6
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+tech_node_culling_4 = {
+	cost = @repeatableTechBaseCost
+	area = society
+	tier = @repeatableTechTier
+	category = { statecraft }
+	prerequisites = { "tech_node_culling_3" }
+	weight = @repeatableTechWeight
+	is_rare = yes
+
+	potential = {
+		is_hive_empire = yes
+	}
+
+	modifier = {
+		restored_node_bonus_skill = 1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			any_owned_leader = {
+				is_councilor = yes
+				is_ruler = no
+				has_skill < 9
+			}
+		}
+		modifier = {
+			factor = 1.5
+			any_owned_leader = {
+				is_councilor = yes
+				is_ruler = no
+				has_skill  >= 11
+			}
+		}
+		modifier = {
+			factor = 0.25
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_node_culling_4
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+tech_node_culling_5 = {
+	cost = @repeatableTechBaseCost
+	area = society
+	tier = @repeatableTechTier
+	category = { statecraft }
+	prerequisites = { "tech_node_culling_4" }
+	weight = @repeatableTechWeight
+	is_rare = yes
+
+	potential = {
+		is_hive_empire = yes
+	}
+
+	modifier = {
+		restored_node_bonus_skill = 1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			any_owned_leader = {
+				is_councilor = yes
+				is_ruler = no
+				has_skill < 11
+			}
+		}
+		modifier = {
+			factor = 1.5
+			any_owned_leader = {
+				is_councilor = yes
+				is_ruler = no
+				has_skill  >= 13
+			}
+		}
+		modifier = {
+			factor = 0.25
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_node_culling_5
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+tech_node_culling_6 = {
+	cost = @repeatableTechBaseCost
+	area = society
+	tier = @repeatableTechTier
+	category = { statecraft }
+	prerequisites = { "tech_node_culling_5" }
+	weight = @repeatableTechWeight
+	is_rare = yes
+
+	potential = {
+		is_hive_empire = yes
+	}
+
+	modifier = {
+		restored_node_bonus_skill = 1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			any_owned_leader = {
+				is_councilor = yes
+				is_ruler = no
+				has_skill < 13
+			}
+		}
+		modifier = {
+			factor = 1.5
+			any_owned_leader = {
+				is_councilor = yes
+				is_ruler = no
+				has_skill  >= 14
+			}
+		}
+		modifier = {
+			factor = 0.25
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_node_culling_6
+		}
+	}
+
+	ai_weight = {
+
+	}
+}

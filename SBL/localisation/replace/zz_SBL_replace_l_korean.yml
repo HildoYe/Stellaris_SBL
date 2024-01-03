@@ -1,0 +1,31 @@
+﻿l_korean:
+
+ ANOMALY_LEVEL_DIFF_18:0 "$ANOMALY_LEVEL_DIFF_19$"
+ ANOMALY_LEVEL_DIFF_17:0 "§G쉬움§!"
+ ANOMALY_LEVEL_DIFF_16:0 "$ANOMALY_LEVEL_DIFF_17$"
+ ANOMALY_LEVEL_DIFF_15:0 "§G매우 쉬움§!"
+ ANOMALY_LEVEL_DIFF_14:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_13:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_12:0 "§G사소함§!"
+ ANOMALY_LEVEL_DIFF_11:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_10:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_9:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_8:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_7:0 "§G하찮음§!"
+ ANOMALY_LEVEL_DIFF_6:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_5:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_4:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_3:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_2:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_1:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_0:0 "$ANOMALY_LEVEL_DIFF_7$"
+
+ council_agenda_agenda_leadership_conditioning_effect: "§Y스킬 레벨이 15§! 미만인 모든 §Y지도자§!가 §Y$@agenda_leadership_conditioning_exp_reward|0$§! 경험치를 나눠 갖습니다."
+
+ EXPEDITION_LOG_ROLL_TOOLTIP: "§H페이즈 결과§!\n얻은 단서: $GAINED|Y$\n\n결과: $RESULT|Y$\n  굴림: $ROLL|Y$\n  단서: $CLUES|Y$\n  스킬 보너스: $BONUS|Y$\n  난이도: $DIFFICULTY|R$\n\n§E굴림 결과:§!\n§R실패§!: 결과가 §Y7§! 이하이면 §Y0§!개의 단서를 추가합니다.\n§Y진행§!: 결과가 §Y8-14§! 사이면 §Y1§!개의 단서를 추가합니다.\n§G진행§!: 결과가 §Y15-20§! 사이면 §Y2§!개의 단서를 추가합니다."
+
+ EXPLORATION_LOG_ROLL_TOOLTIP: "§H페이즈 결과§!\n얻은 단서: $GAINED|Y$\n\n결과: $RESULT|Y$\n  굴림: $ROLL|Y$\n  단서: $CLUES|Y$\n  스킬 보너스: $BONUS|Y$\n  난이도: $DIFFICULTY|R$\n\n§E굴림 결과:§!\n§R실패§!: 결과가 §Y7§! 이하이면 §Y0§!개의 단서를 추가합니다.\n§Y진행§!: 결과가 §Y8-14§! 사이면 §Y1§!개의 단서를 추가합니다.\n§G진행§!: 결과가 §Y15-20§! 사이면 §Y2§!개의 단서를 추가합니다."
+
+ archaeology_roll_header: "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\n이곳에서는 플레이어의 과학자가 현재 현장 발굴 중 돌파구를 만들어낼 확률을 보여줍니다.\n\n페이즈가 종료될 때마다 주사위(§Y1§!~§Y15§!)를 굴립니다. 주사위 결과에 §Y스킬 보너스§!와 §Y단서§!를 더하고 §Y난이도§!를 뺍니다.\n\n주사위를 굴리기 전 현재 점수는 $SCORE|0Y$입니다.\n\n§E굴림 결과:§!"
+
+ astral_rift_roll_header: "§H$ASTRAL_RIFT_BREAKTHROUGH$§!\n이곳에서는 플레이어의 과학자가 현재 균열 탐사 중 돌파구를 만들어낼 확률을 보여줍니다.\n\n페이즈가 종료될 때마다 주사위(§Y1§!~§Y15§!)를 굴립니다. 주사위 결과에 §Y스킬 보너스§!와 §Y단서§!를 더하고 §Y난이도§!를 뺍니다.\n\n주사위를 굴리기 전 현재 점수는 $SCORE|0Y$입니다.\n\n§E굴림 결과:§!"

@@ -1,0 +1,31 @@
+﻿l_polish:
+
+ ANOMALY_LEVEL_DIFF_18:0 "$ANOMALY_LEVEL_DIFF_19$"
+ ANOMALY_LEVEL_DIFF_17:0 "§GŁatwy§!"
+ ANOMALY_LEVEL_DIFF_16:0 "$ANOMALY_LEVEL_DIFF_17$"
+ ANOMALY_LEVEL_DIFF_15:0 "§GBardzo łatwy§!"
+ ANOMALY_LEVEL_DIFF_14:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_13:0 "$ANOMALY_LEVEL_DIFF_15$"
+ ANOMALY_LEVEL_DIFF_12:0 "§GBanalny§!"
+ ANOMALY_LEVEL_DIFF_11:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_10:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_9:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_8:0 "$ANOMALY_LEVEL_DIFF_12$"
+ ANOMALY_LEVEL_DIFF_7:0 "§GBłahy§!"
+ ANOMALY_LEVEL_DIFF_6:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_5:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_4:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_3:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_2:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_1:0 "$ANOMALY_LEVEL_DIFF_7$"
+ ANOMALY_LEVEL_DIFF_0:0 "$ANOMALY_LEVEL_DIFF_7$"
+
+ council_agenda_agenda_leadership_conditioning_effect: "§Y$@agenda_leadership_conditioning_exp_reward|0$§! Doświadczenie będzie rozdzielane między wszystkich §Yprzywódców§! o §Ypoziomie umiejętności mniejszym niż 15§!"
+
+ EXPEDITION_LOG_ROLL_TOOLTIP: "§HWyniki fazy§!\nIndeksy zebrane: $GAINED|Y$\n\nWynik: $RESULT|Y$\n  Rzut: $ROLL|Y$\n  Wskazówki: $CLUES|Y$\n  Premia umiejętności: $BONUS|Y$\n  Poziom trudności: $DIFFICULTY|R$"
+
+ EXPLORATION_LOG_ROLL_TOOLTIP: "§HWyniki fazy§!\nZgromadzone wskazówki: $GAINED|Y$\n\nWynik: $RESULT|Y$\n  Rzut: $ROLL|Y$\n  Wskazówki: $CLUES|Y$\n  Premia umiejętności: $BONUS|Y$\n  Poziom trudności: $DIFFICULTY|R$\n\n§EWyniki rzutów:§!\n§RPorażka§!: Wyniki §Y7§! lub mniej dodaje §Y0§! wskazówek.\n§YPostęp§!: Wyniki międy §Y8-14§! dodają §Y1§! wskazówkę.\n§GPostęp§!: Wyniki między §Y15-20§! dodają §Y2§! wskazówki."
+
+ archaeology_roll_header: "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\nTo szansa na dokonanie przez naukowca przełomu w czasie wykopalisk prowadzonych w bieżącej lokalizacji.\n\nPo zakończeniu każdej fazy wykonuje się rzut kością (§Y1§! do §Y15§!). Wynik rzutu jest dodawany do §Ypremii umiejętności§! i §Ywskazówek§!, po czym odejmuje się §Ypoziom trudności§!.\n\nAktualny wynik przed rzutem wynosi $SCORE|0Y$.\n\n§EWyniki rzutów:§!"
+
+ astral_rift_roll_header: "§H$ASTRAL_RIFT_BREAKTHROUGH$§!\nTo szansa na dokonanie przez naukowca przełomu w czasie badania bieżącej szeliny.\n\nPo zakończeniu każdej fazy wykonuje się rzut kością (§Y1§! do §Y15§!). Wynik rzutu jest dodawany do §Ypremii umiejętności§! i §Ywskazówek§!, po czym odejmuje się §Ypoziom trudności§!.\n\nAktualny wynik przed rzutem wynosi $SCORE|0Y$.\n\n§EWyniki rzutów:§!"

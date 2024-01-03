@@ -1,0 +1,88 @@
+leader_eligibility_age_step = {
+	base = 0
+	add = trigger:leader_lifespan
+    divide = 4 		# Base max age is 80, intended divisor for negative traits is 20. 80/20 = 4.
+}
+
+leader_eligible_for_negative_trait_raw = {
+	base = 0
+	add = trigger:leader_age
+	divide = value:leader_eligibility_age_step
+	floor = yes
+	add = trigger:has_skill
+	add = value:leader_pending_negative_traits_modified
+	subtract = 8
+
+	# Subtract 2 for every Current Negative Trait tier.
+	divide = 2	# Temporary. Multiplied by 2 further down.
+	complex_trigger_modifier = {
+		trigger = num_leader_traits
+		parameters = {
+			negative = yes
+			count_tiers = yes
+		}
+		mode = subtract
+	}
+	mult = 2
+}
+
+leader_eligible_for_negative_trait_immortal_raw = {
+	base = 0
+	add = trigger:has_skill
+	add = value:leader_pending_negative_traits_modified
+	subtract = 7
+	complex_trigger_modifier = {
+		trigger = num_leader_traits
+		parameters = {
+			negative = yes
+			count_tiers = yes
+		}
+		mode = subtract
+	}
+}
+
+# Once Eligible, starts at 5% and caps at 25% yearly chance.
+leader_yearly_chance_for_negative_trait = {
+	base = @negative_trait_yearly_chance_when_eligible
+    mult = value:leader_eligible_for_negative_trait
+	min = 0
+	max = @negative_trait_yearly_chance_when_eligible_max
+}
+
+# Eligibility increases for every full 20 years of AGE, every LEVEL, and every PENDING Negative trait.
+# Eligibility decreases for every CURRENT negative trait.
+leader_eligible_for_negative_trait = {
+	# Eligibility = floor(AGE / 20) + LEVEL + PENDINGNegativeTraits - 8 - CURRENTNegativeTraitTiers * 2
+	# If level > 10, Eligibility = 0
+	base = 0
+	modifier = {
+		has_skill < 11
+		add = value:leader_eligible_for_negative_trait_raw
+	}
+	
+}
+
+# Eligibility increases for every LEVEL, and every PENDING Negative trait.
+# Eligibility decreases for every CURRENT negative trait.
+leader_eligible_for_negative_trait_immortal = {
+	# Eligibility = LEVEL + PENDINGNegativeTraits - 7 - CURRENTNegativeTraitTiers
+	# If level > 10, Eligibility = 0
+	base = 0
+	modifier = {
+		has_skill < 11
+		add = value:leader_eligible_for_negative_trait_immortal_raw
+	}
+}
+
+agenda_leadership_conditioning_num_leaders = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = count_owned_leader
+		parameters = {
+			limit = {
+				has_skill < 15
+			}
+		}
+		mode = add
+	}
+}
