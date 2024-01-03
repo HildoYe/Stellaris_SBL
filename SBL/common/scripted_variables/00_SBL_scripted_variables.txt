@@ -1,4 +1,6 @@
 @planet_job_mult = 0.025
 @sector_job_mult = 0.012
-@negative_planet_job_mult = -0.015
-@negative_sector_job_mult = -0.008
+@negative_planet_job_mult = -0.02
+@negative_sector_job_mult = -0.01
+@commander_background_specialist_job_mult = 0.02
+@commander_background_worker_job_mult = 0.005
