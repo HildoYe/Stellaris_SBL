@@ -38,3 +38,7 @@
  MESSAGE_LOSED_NEGATIVE_TRAIT_TITLE: "领袖消除负面特质"
  MESSAGE_LOSED_NEGATIVE_TRAIT_DESC: "§H[From.GetTitle][From.GetName]§!通过努力的工作和总结经验清除了$LEADER_TRAIT|R$特质。"
  MESSAGE_LOSED_NEGATIVE_TRAIT_2_DESC: "§H[From.GetTitle][From.GetName]§!通过努力的工作和总结经验清除了§R$LEADER_TRAIT$II§!特质。"
+
+ mod_job_soldier_or_warrior_per_pop: "[GetSoldierJobsPerPop]"
+
+ ai_leader_exp_bonus: "AI领袖经验加成"

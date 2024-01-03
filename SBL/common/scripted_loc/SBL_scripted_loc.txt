@@ -1,0 +1,19 @@
+# Soldier Jobs Add / Warrior Drone Jobs Per Pop
+defined_text = {
+	name = GetSoldierJobsPerPop
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_regular_empire = yes
+		}
+		localization_key = mod_job_soldier_per_pop
+	}
+	text = {
+		trigger = {
+			is_scope_valid = yes
+			is_gestalt = yes
+		}
+		localization_key = mod_job_warrior_drone_per_pop
+	}
+	default = mod_job_soldier_per_pop
+}

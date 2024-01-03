@@ -168,3 +168,187 @@ country_event = {
         }
 	}
 }
+
+# initialize tech_breakthrough_stage variable during ai country creation
+
+country_event = {
+    id = sbl.10
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = yes
+    }
+
+    immediate = {
+        set_variable = {
+            which = tech_breakthrough_stage
+            value = 0
+        }
+
+        if = {
+            limit = { has_technology = tech_physics_1 }
+			change_variable = { which = tech_breakthrough_stage value = 1 }
+        }
+        if = {
+            limit = { has_technology = tech_engineering_1 }
+			change_variable = { which = tech_breakthrough_stage value = 1 }
+        }
+        if = {
+            limit = { has_technology = tech_society_1 }
+			change_variable = { which = tech_breakthrough_stage value = 1 }
+        }
+        if = {
+            limit = { has_technology = tech_physics_2 }
+			change_variable = { which = tech_breakthrough_stage value = 2 }
+        }
+        if = {
+            limit = { has_technology = tech_engineering_2 }
+			change_variable = { which = tech_breakthrough_stage value = 2 }
+        }
+        if = {
+            limit = { has_technology = tech_society_2 }
+			change_variable = { which = tech_breakthrough_stage value = 2 }
+        }
+        if = {
+            limit = { has_technology = tech_physics_3 }
+			change_variable = { which = tech_breakthrough_stage value = 3 }
+        }
+        if = {
+            limit = { has_technology = tech_engineering_3 }
+			change_variable = { which = tech_breakthrough_stage value = 3 }
+        }
+        if = {
+            limit = { has_technology = tech_society_3 }
+			change_variable = { which = tech_breakthrough_stage value = 3 }
+        }
+        if = {
+            limit = { has_technology = tech_physics_4 }
+			change_variable = { which = tech_breakthrough_stage value = 4 }
+        }
+        if = {
+            limit = { has_technology = tech_engineering_4 }
+			change_variable = { which = tech_breakthrough_stage value = 4 }
+        }
+        if = {
+            limit = { has_technology = tech_society_4 }
+			change_variable = { which = tech_breakthrough_stage value = 4 }
+        }
+        
+        if = {
+            limit = { has_modifier = ai_leader_exp_bonus }
+            remove_modifier = ai_leader_exp_bonus
+        }
+        add_modifier = {
+            modifier = ai_leader_exp_bonus
+            mult = tech_breakthrough_stage
+        }
+    }
+}
+
+country_event = {
+    id = sbl.11
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = yes
+        OR = {
+            last_increased_tech = tech_physics_1
+            last_increased_tech = tech_engineering_1
+            last_increased_tech = tech_society_1
+            last_increased_tech = tech_physics_2
+            last_increased_tech = tech_engineering_2
+            last_increased_tech = tech_society_2
+            last_increased_tech = tech_physics_3
+            last_increased_tech = tech_engineering_3
+            last_increased_tech = tech_society_3
+            last_increased_tech = tech_physics_4
+            last_increased_tech = tech_engineering_4
+            last_increased_tech = tech_society_4
+        }
+    }
+
+    immediate = {
+        if = {
+			limit = { last_increased_tech = tech_physics_1 }
+			change_variable = { which = tech_breakthrough_stage value = 1 }
+		}
+        if = {
+			limit = { last_increased_tech = tech_engineering_1 }
+			change_variable = { which = tech_breakthrough_stage value = 1 }
+		}
+        if = {
+			limit = { last_increased_tech = tech_society_1 }
+			change_variable = { which = tech_breakthrough_stage value = 1 }
+		}
+        if = {
+			limit = { last_increased_tech = tech_physics_2 }
+			change_variable = { which = tech_breakthrough_stage value = 2 }
+		}
+        if = {
+			limit = { last_increased_tech = tech_engineering_2 }
+			change_variable = { which = tech_breakthrough_stage value = 2 }
+		}
+        if = {
+			limit = { last_increased_tech = tech_society_2 }
+			change_variable = { which = tech_breakthrough_stage value = 2 }
+		}
+        if = {
+			limit = { last_increased_tech = tech_physics_3 }
+			change_variable = { which = tech_breakthrough_stage value = 3 }
+		}
+        if = {
+			limit = { last_increased_tech = tech_engineering_3 }
+			change_variable = { which = tech_breakthrough_stage value = 3 }
+		}
+        if = {
+			limit = { last_increased_tech = tech_society_3 }
+			change_variable = { which = tech_breakthrough_stage value = 3 }
+		}
+        if = {
+			limit = { last_increased_tech = tech_physics_4 }
+			change_variable = { which = tech_breakthrough_stage value = 4 }
+		}
+        if = {
+			limit = { last_increased_tech = tech_engineering_4 }
+			change_variable = { which = tech_breakthrough_stage value = 4 }
+		}
+        if = {
+			limit = { last_increased_tech = tech_society_4 }
+			change_variable = { which = tech_breakthrough_stage value = 4 }
+		}
+        remove_modifier = ai_leader_exp_bonus
+        add_modifier = {
+            modifier = ai_leader_exp_bonus
+            mult = tech_breakthrough_stage
+        }
+        
+    }
+}
+
+# on_decade_pulse to verify ai_leader_exp_bonus
+event = {
+	id = sbl.12
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {        
+		every_playable_country = {
+            if = {
+                limit = { is_ai = yes }
+                country_event = {
+                    id = sbl.10
+                    days = 1
+                }
+            }
+            else = {
+                if = {
+                    limit = { has_modifier = ai_leader_exp_bonus }
+                    remove_modifier = ai_leader_exp_bonus
+                }
+            }
+		}
+		
+	}
+}

@@ -1,6 +1,4 @@
-@planet_empire_size = -0.03
-@sector_empire_size = -0.015
 @planet_job_mult = 0.025
-@sector_job_mult = 0.01
-@negative_planet_job_mult = -0.025
-@negative_sector_job_mult = -0.01
+@sector_job_mult = 0.012
+@negative_planet_job_mult = -0.015
+@negative_sector_job_mult = -0.008

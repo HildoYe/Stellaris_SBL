@@ -37,3 +37,7 @@
 
  MESSAGE_LOSED_NEGATIVE_TRAIT_TITLE: "Lost Negative Trait"
  MESSAGE_LOSED_NEGATIVE_TRAIT_DESC: "Through hard work and experience, §H[From.From.GetTitle] [From.From.GetName]§! has gotten rid of $LEADER_TRAIT|R$."
+
+ mod_job_soldier_or_warrior_per_pop: "[GetSoldierJobsPerPop]"
+
+ ai_leader_exp_bonus: "AI Leader Experience Bonus"
