@@ -1,0 +1,5 @@
+job_soldier_or_warrior_per_pop = {
+	icon = mod_job_soldier_add
+	good = yes
+	category = planet
+}

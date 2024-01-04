@@ -10,6 +10,13 @@ on_leader_level_up = {
 on_country_created = {
 	events = {
 		sbl.2	# fallen empires ruler and nodes level 10 -> 15
+		sbl.13	# initialize gestalt tech_node_restore
+	}
+}
+
+on_game_start_country = {
+	events = {
+		sbl.13	# initialize gestalt tech_node_restore
 	}
 }
 
@@ -21,5 +28,13 @@ on_leader_spawned = {
 		sbl.6	# Great Khan level 10 -> 15
 		sbl.8	# awakened fallen empires scientist level 10 -> 15
 		sbl.9	# event leader level 10 -> 15
+	}
+}
+
+# A country has increased the level of a tech, use last_increased_tech trigger to check tech and level.
+# This = Country
+on_tech_increased = {
+	events = {
+		sbl.14	# Update tech_node_restore to determine the next tech weight
 	}
 }
