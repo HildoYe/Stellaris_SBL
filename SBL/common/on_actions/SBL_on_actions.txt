@@ -11,12 +11,14 @@ on_country_created = {
 	events = {
 		sbl.2	# fallen empires ruler and nodes level 10 -> 15
 		sbl.10	# initialize ai_leader_exp_bonus
+		sbl.13	# initialize gestalt tech_node_restore
 	}
 }
 
 on_game_start_country = {
 	events = {
 		sbl.10	# initialize ai_leader_exp_bonus
+		sbl.13	# initialize gestalt tech_node_restore
 	}
 }
 
@@ -36,6 +38,7 @@ on_leader_spawned = {
 on_tech_increased = {
 	events = {
 		sbl.11	# Update ai_leader_exp_bonus when ai finished a breakthrough
+		sbl.14	# Update tech_node_restore to determine the next tech weight
 	}
 }
 
