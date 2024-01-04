@@ -21,19 +21,13 @@
  ANOMALY_LEVEL_DIFF_20:0 "$ANOMALY_LEVEL_DIFF_19$"
  ANOMALY_LEVEL_DIFF_19:0 "§Yhabituelle§!"
 
- tech_node_culling_4: "Node Culling Patterns"
- tech_node_culling_4_desc: "With the deeper knowledge of the hivemind, we can reorganize the nodes more efficiently."
- tech_node_culling_5: "Node Culling Patterns"
- tech_node_culling_5_desc: "With the deeper knowledge of the hivemind, we can reorganize the nodes more efficiently."
- tech_node_culling_6: "Node Culling Patterns"
- tech_node_culling_6_desc: "With the deeper knowledge of the hivemind, we can reorganize the nodes more efficiently."
+ tech_repeatable_node_culling: "Node Culling Patterns"
+ tech_repeatable_node_culling_desc: "With the deeper knowledge of the hivemind, we can reorganize the nodes more efficiently."
 
- tech_node_reformatting_4: "Node Reformatting Patterns"
- tech_node_reformatting_4_desc: "Streamlining the algorithm of processing units will accelerate the evolving progress to next generation."
- tech_node_reformatting_5: "Node Reformatting Patterns"
- tech_node_reformatting_5_desc: "Streamlining the algorithm of processing units will accelerate the evolving progress to next generation."
- tech_node_reformatting_6: "Node Reformatting Patterns"
- tech_node_reformatting_6_desc: "Streamlining the algorithm of processing units will accelerate the evolving progress to next generation."
+ tech_repeatable_node_reformatting: "Node Reformatting Patterns"
+ tech_repeatable_node_reformatting_desc: "Streamlining the algorithm of processing units will accelerate the evolving progress to next generation."
 
  MESSAGE_LOSED_NEGATIVE_TRAIT_TITLE: "Lost Negative Trait"
  MESSAGE_LOSED_NEGATIVE_TRAIT_DESC: "Through hard work and experience, §H[From.From.GetTitle] [From.From.GetName]§! has gotten rid of $LEADER_TRAIT|R$."
+
+ mod_job_soldier_or_warrior_per_pop: "[GetSoldierJobsPerPop]"

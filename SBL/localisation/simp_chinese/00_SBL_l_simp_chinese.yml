@@ -21,20 +21,14 @@
  ANOMALY_LEVEL_DIFF_20:0 "$ANOMALY_LEVEL_DIFF_19$"
  ANOMALY_LEVEL_DIFF_19:0 "§Y中规中矩§!"
 
- tech_node_culling_4: "节点剔除模式"
- tech_node_culling_4_desc: "对主巢结构的深入了解使我们能重构更高效的节点。"
- tech_node_culling_5: "节点剔除模式"
- tech_node_culling_5_desc: "对主巢结构的深入了解使我们能重构更高效的节点。"
- tech_node_culling_6: "节点剔除模式"
- tech_node_culling_6_desc: "对主巢结构的深入了解使我们能重构更高效的节点。"
+ tech_repeatable_node_culling: "节点剔除模式"
+ tech_repeatable_node_culling_desc: "对主巢结构的深入了解使我们能重构更高效的节点。"
 
- tech_node_reformatting_4: "节点格式化模式"
- tech_node_reformatting_4_desc: "对中央处理器的逻辑优化使我们能用更精简的方式开发下一代协议。"
- tech_node_reformatting_5: "节点格式化模式"
- tech_node_reformatting_5_desc: "对中央处理器的逻辑优化使我们能用更精简的方式开发下一代协议。"
- tech_node_reformatting_6: "节点格式化模式"
- tech_node_reformatting_6_desc: "对中央处理器的逻辑优化使我们能用更精简的方式开发下一代协议。"
+ tech_repeatable_node_reformatting: "节点格式化模式"
+ tech_repeatable_node_reformatting_desc: "对中央处理器的逻辑优化使我们能用更精简的方式开发下一代协议。"
 
  MESSAGE_LOSED_NEGATIVE_TRAIT_TITLE: "领袖消除负面特质"
  MESSAGE_LOSED_NEGATIVE_TRAIT_DESC: "§H[From.GetTitle][From.GetName]§!通过努力的工作和总结经验清除了$LEADER_TRAIT|R$特质。"
  MESSAGE_LOSED_NEGATIVE_TRAIT_2_DESC: "§H[From.GetTitle][From.GetName]§!通过努力的工作和总结经验清除了§R$LEADER_TRAIT$II§!特质。"
+
+ mod_job_soldier_or_warrior_per_pop: "[GetSoldierJobsPerPop]"

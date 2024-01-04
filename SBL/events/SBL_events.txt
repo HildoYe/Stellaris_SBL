@@ -168,3 +168,43 @@ country_event = {
         }
 	}
 }
+
+# initialize tech_node_restore variable during country creation
+country_event = {
+	id = sbl.13
+	hide_window = yes
+	is_triggered_only = yes
+
+    trigger = {
+        is_gestalt = yes
+    }
+
+	immediate = {        
+		set_variable = {
+            which = tech_node_restore
+            value = 0
+        }		
+	}    
+}
+
+# increament tech_node_restore each time when researched
+country_event = {
+    id = sbl.14
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_gestalt = yes
+        OR = {
+            last_increased_tech = tech_repeatable_node_reformatting
+            last_increased_tech = tech_repeatable_node_culling
+        }
+    }
+
+    immediate = {
+        change_variable = {
+            which = tech_node_restore
+            value = 1
+        }        
+    }
+}
