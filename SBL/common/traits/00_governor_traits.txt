@@ -2714,6 +2714,7 @@ leader_trait_corrupt = {
 		leader_trait_martinet
 		leader_trait_martinet_2
 		leader_trait_martinet_3
+		leader_trait_martinet_4
 	}
 	selectable_weight = {
 		weight = @class_negative_trait_weight
@@ -2759,6 +2760,7 @@ leader_trait_corrupt_2 = {
 		leader_trait_martinet
 		leader_trait_martinet_2
 		leader_trait_martinet_3
+		leader_trait_martinet_4
 	}
 	selectable_weight = @tier2_negative_trait_weight
 }

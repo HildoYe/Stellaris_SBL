@@ -1,5 +1,9 @@
 ﻿l_german:
 
+###########
+# ADMIRAL #
+###########
+
  leader_trait_wrecker_4: "$leader_trait_wrecker$ IV"
  leader_trait_wrecker_4_desc: "$leader_trait_wrecker_desc$"
  leader_trait_wrecker_4_hive: "$leader_trait_wrecker_hive$ IV"
@@ -144,3 +148,128 @@
  leader_trait_crew_trainer_4_hive_desc: "$leader_trait_crew_trainer_hive_desc$"
  leader_trait_crew_trainer_4_machine: "$leader_trait_crew_trainer_machine$ IV"
  leader_trait_crew_trainer_4_machine_desc: "$leader_trait_crew_trainer_machine_desc$"
+
+###########
+# GENERAL #
+###########
+
+ leader_trait_dreaded_4: "$leader_trait_dreaded$ IV"
+ leader_trait_dreaded_4_desc: "$leader_trait_dreaded_desc$"
+ leader_trait_dreaded_4_hive: "$leader_trait_dreaded_hive$ IV"
+ leader_trait_dreaded_4_hive_desc: "$leader_trait_dreaded_hive_desc$"
+ leader_trait_dreaded_4_machine: "$leader_trait_dreaded_machine$ IV"
+ leader_trait_dreaded_4_machine_desc: "$leader_trait_dreaded_machine_desc$"
+
+ leader_trait_heavy_hitter_4: "$leader_trait_heavy_hitter$ IV"
+ leader_trait_heavy_hitter_4_desc: "$leader_trait_heavy_hitter_desc$"
+ leader_trait_heavy_hitter_4_hive: "$leader_trait_heavy_hitter_hive$ IV"
+ leader_trait_heavy_hitter_4_hive_desc: "$leader_trait_heavy_hitter_hive_desc$"
+ leader_trait_heavy_hitter_4_machine: "$leader_trait_heavy_hitter_machine$ IV"
+ leader_trait_heavy_hitter_4_machine_desc: "$leader_trait_heavy_hitter_machine_desc$"
+
+ leader_trait_interrogator_4: "$leader_trait_interrogator$ IV"
+ leader_trait_interrogator_4_desc: "$leader_trait_interrogator_desc$"
+ leader_trait_interrogator_4_hive: "$leader_trait_interrogator_hive$ IV"
+ leader_trait_interrogator_4_hive_desc: "$leader_trait_interrogator_hive_desc$"
+ leader_trait_interrogator_4_machine: "$leader_trait_interrogator_machine$ IV"
+ leader_trait_interrogator_4_machine_desc: "$leader_trait_interrogator_machine_desc$"
+
+ leader_trait_interrogator_4: "$leader_trait_interrogator$ IV"
+ leader_trait_interrogator_4_effect: "$ARMY_EFFECTS_TXT$:\n$t$Nach dem Gewinnen eines Bodengefechts als Angreifer:\n$tt$ $INTEL$ über das feindliche Reich: §G+40§!"
+ leader_trait_interrogator_4_desc: "$leader_trait_interrogator_desc$"
+ leader_trait_interrogator_4_hive: "$leader_trait_interrogator_hive$ IV"
+ leader_trait_interrogator_4_hive_desc: "$leader_trait_interrogator_hive_desc$"
+ leader_trait_interrogator_4_machine: "$leader_trait_interrogator_machine$ IV"
+ leader_trait_interrogator_4_machine_desc: "$leader_trait_interrogator_machine_desc$"
+
+ leader_trait_crusader_4: "$leader_trait_crusader$ IV"
+ leader_trait_crusader_4_effect: "$FLEET_EFFECTS_TXT$:\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_unity$: §G+$@trait_crusader_4_fleet_amt|0$§!\n\n$ARMY_EFFECTS_TXT$:\n$t$$EVERY_ARMY_KILLED_TXT$:\n$tt$$r_unity$: §G+60§!"
+ leader_trait_crusader_4_desc: "$leader_trait_crusader_desc$"
+ leader_trait_crusader_4_hive: "$leader_trait_crusader_hive$ IV"
+ leader_trait_crusader_4_hive_desc: "$leader_trait_crusader_hive_desc$"
+ leader_trait_crusader_4_machine: "$leader_trait_crusader_machine$ IV"
+ leader_trait_crusader_4_machine_desc: "$leader_trait_crusader_machine_desc$"
+
+ leader_trait_overseer_4: "$leader_trait_overseer$ IV"
+ leader_trait_overseer_4_desc: "$leader_trait_overseer_desc$"
+ leader_trait_overseer_4_hive: "$leader_trait_overseer_hive$ IV"
+ leader_trait_overseer_4_hive_desc: "$leader_trait_overseer_hive_desc$"
+ leader_trait_overseer_4_machine: "$leader_trait_overseer_machine$ IV"
+ leader_trait_overseer_4_machine_desc: "$leader_trait_overseer_machine_desc$"
+
+ trait_ruler_from_the_ranks_4: "$trait_ruler_from_the_ranks$ IV"
+ trait_ruler_from_the_ranks_4_desc: "$trait_ruler_from_the_ranks_desc$"
+ trait_ruler_from_the_ranks_4_hive: "$trait_ruler_from_the_ranks_hive$ IV"
+ trait_ruler_from_the_ranks_4_hive_desc: "$trait_ruler_from_the_ranks_hive_desc$"
+ trait_ruler_from_the_ranks_4_machine: "$trait_ruler_from_the_ranks_machine$ IV"
+ trait_ruler_from_the_ranks_4_machine_desc: "$trait_ruler_from_the_ranks_machine_desc$"
+
+ trait_ruler_recruiter_4: "$trait_ruler_recruiter$ IV"
+ trait_ruler_recruiter_4_desc: "$trait_ruler_recruiter_desc$"
+ trait_ruler_recruiter_4_hive: "$trait_ruler_recruiter_hive$ IV"
+ trait_ruler_recruiter_4_hive_desc: "$trait_ruler_recruiter_hive_desc$"
+ trait_ruler_recruiter_4_machine: "$trait_ruler_recruiter_machine$ IV"
+ trait_ruler_recruiter_4_machine_desc: "$trait_ruler_recruiter_machine_desc$"
+
+ leader_trait_consul_general_4: "$leader_trait_consul_general$ IV"
+ leader_trait_consul_general_4_desc: "$leader_trait_consul_general_desc$"
+ leader_trait_consul_general_4_hive: "$leader_trait_consul_general_hive$ IV"
+ leader_trait_consul_general_4_hive_desc: "$leader_trait_consul_general_hive_desc$"
+ leader_trait_consul_general_4_machine: "$leader_trait_consul_general_machine$ IV"
+ leader_trait_consul_general_4_machine_desc: "$leader_trait_consul_general_machine_desc$"
+
+ leader_trait_shadow_broker_4: "$leader_trait_shadow_broker$ IV"
+ leader_trait_shadow_broker_4_desc: "$leader_trait_shadow_broker_desc$"
+ leader_trait_shadow_broker_4_hive: "$leader_trait_shadow_broker_hive$ IV"
+ leader_trait_shadow_broker_4_hive_desc: "$leader_trait_shadow_broker_hive_desc$"
+ leader_trait_shadow_broker_4_machine: "$leader_trait_shadow_broker_machine$ IV"
+ leader_trait_shadow_broker_4_machine_desc: "$leader_trait_shadow_broker_machine_desc$"
+
+ leader_trait_home_guard_4: "$leader_trait_home_guard$ IV"
+ leader_trait_home_guard_4_desc: "$leader_trait_home_guard_desc$"
+ leader_trait_home_guard_4_hive: "$leader_trait_home_guard_hive$ IV"
+ leader_trait_home_guard_4_hive_desc: "$leader_trait_home_guard_hive_desc$"
+ leader_trait_home_guard_4_machine: "$leader_trait_home_guard_machine$ IV"
+ leader_trait_home_guard_4_machine_desc: "$leader_trait_home_guard_machine_desc$"
+
+ leader_trait_hardy_4: "$leader_trait_hardy$ IV"
+ leader_trait_hardy_4_desc: "$leader_trait_hardy_desc$"
+ leader_trait_hardy_4_hive: "$leader_trait_hardy_hive$ IV"
+ leader_trait_hardy_4_hive_desc: "$leader_trait_hardy_hive_desc$"
+ leader_trait_hardy_4_machine: "$leader_trait_hardy_machine$ IV"
+ leader_trait_hardy_4_machine_desc: "$leader_trait_hardy_machine_desc$"
+
+ leader_trait_martinet_4: "$leader_trait_martinet$ IV"
+ leader_trait_martinet_4_desc: "$leader_trait_martinet_desc$"
+ leader_trait_martinet_4_hive: "$leader_trait_martinet_hive$ IV"
+ leader_trait_martinet_4_hive_desc: "$leader_trait_martinet_hive_desc$"
+ leader_trait_martinet_4_machine: "$leader_trait_martinet_machine$ IV"
+ leader_trait_martinet_4_machine_desc: "$leader_trait_martinet_machine_desc$"
+
+ leader_trait_warden_4: "$leader_trait_warden$ IV"
+ leader_trait_warden_4_desc: "$leader_trait_warden_desc$"
+ leader_trait_warden_4_hive: "$leader_trait_warden_hive$ IV"
+ leader_trait_warden_4_hive_desc: "$leader_trait_warden_hive_desc$"
+ leader_trait_warden_4_machine: "$leader_trait_warden_machine$ IV"
+ leader_trait_warden_4_machine_desc: "$leader_trait_warden_machine_desc$"
+
+ leader_trait_reinforcer_4: "$leader_trait_reinforcer$ IV"
+ leader_trait_reinforcer_4_desc: "$leader_trait_reinforcer_desc$"
+ leader_trait_reinforcer_4_hive: "$leader_trait_reinforcer_hive$ IV"
+ leader_trait_reinforcer_4_hive_desc: "$leader_trait_reinforcer_hive_desc$"
+ leader_trait_reinforcer_4_machine: "$leader_trait_reinforcer_machine$ IV"
+ leader_trait_reinforcer_4_machine_desc: "$leader_trait_reinforcer_machine_desc$"
+
+ leader_trait_guardian_4: "$leader_trait_guardian$ IV"
+ leader_trait_guardian_4_desc: "$leader_trait_guardian_desc$"
+ leader_trait_guardian_4_hive: "$leader_trait_guardian_hive$ IV"
+ leader_trait_guardian_4_hive_desc: "$leader_trait_guardian_hive_desc$"
+ leader_trait_guardian_4_machine: "$leader_trait_guardian_machine$ IV"
+ leader_trait_guardian_4_machine_desc: "$leader_trait_guardian_machine_desc$"
+
+ leader_trait_conscripter_4: "$leader_trait_conscripter$ IV"
+ leader_trait_conscripter_4_desc: "$leader_trait_conscripter_desc$"
+ leader_trait_conscripter_4_hive: "$leader_trait_conscripter_hive$ IV"
+ leader_trait_conscripter_4_hive_desc: "$leader_trait_conscripter_hive_desc$"
+ leader_trait_conscripter_4_machine: "$leader_trait_conscripter_machine$ IV"
+ leader_trait_conscripter_4_machine_desc: "$leader_trait_conscripter_machine_desc$"

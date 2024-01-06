@@ -23,4 +23,5 @@
 
 @trait_corsair_4_amt = 20
 @trait_shipbreaker_4_amt = 12
-@trait_juryrigger_4_amt = 0.35
+@trait_juryrigger_4_amt = 0.35				# Localisation is hardcoded
+@trait_crusader_4_fleet_amt = 15

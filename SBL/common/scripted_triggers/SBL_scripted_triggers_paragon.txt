@@ -52,9 +52,9 @@ has_narratively_great_councilor_trait = {
 		has_trait = leader_trait_military_overseer
 
 		# General
-		has_trait_tier1or2or3 = { TRAIT = leader_trait_overseer }
-		has_trait_tier1or2or3 = { TRAIT = leader_trait_consul_general }
-		has_trait = leader_trait_shadow_broker
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_overseer }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_consul_general }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_shadow_broker }
 		has_trait_tier1or2 = { TRAIT = leader_trait_spycraft }
 		has_trait = leader_trait_honored_warmaster
 		has_trait = leader_trait_spymaster
@@ -94,8 +94,8 @@ has_narratively_great_speaker_trait = {
 		has_trait = leader_trait_military_overseer
 
 		# General
-		has_trait_tier1or2or3 = { TRAIT = leader_trait_overseer }
-		has_trait_tier1or2or3 = { TRAIT = leader_trait_consul_general }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_overseer }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_consul_general }
 		has_trait = leader_trait_honored_warmaster
 	}
 }
