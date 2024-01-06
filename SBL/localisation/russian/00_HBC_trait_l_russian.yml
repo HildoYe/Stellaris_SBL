@@ -273,3 +273,15 @@
  leader_trait_conscripter_4_hive_desc: "$leader_trait_conscripter_hive_desc$"
  leader_trait_conscripter_4_machine: "$leader_trait_conscripter_machine$ IV"
  leader_trait_conscripter_4_machine_desc: "$leader_trait_conscripter_machine_desc$"
+
+###########
+# GENERIC #
+###########
+ 
+ leader_trait_adventurous_spirit_4: "$leader_trait_adventurous_spirit$ IV"
+ leader_trait_adventurous_spirit_4_desc: "$leader_trait_adventurous_spirit_desc$"
+ leader_trait_adventurous_spirit_4_tt: "$THIS_LEADER_TXT$:§L\n$t$$mod_leaders_upkeep_mult$: §V-30%§!\n$t$$MOD_LEADER_SPECIES_EXP_GAIN$:§V+20%§!§!\n$adventurous_spirit_on_council$"
+ leader_trait_adventurous_spirit_4_hive: "$leader_trait_adventurous_spirit_hive$ IV"
+ leader_trait_adventurous_spirit_4_hive_desc: "$leader_trait_adventurous_spirit_hive_desc$"
+ leader_trait_adventurous_spirit_4_machine: "$leader_trait_adventurous_spirit_machine$ IV"
+ leader_trait_adventurous_spirit_4_machine_desc: "$leader_trait_adventurous_spirit_desc$"

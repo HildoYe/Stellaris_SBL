@@ -1,0 +1,72 @@
+namespace = paragon
+
+# Kai-Sha / authoritarian1
+# Expanded Contact Network
+leader_event = {
+	id = paragon.41320
+	title = paragon.41320.name
+	desc = paragon.41320.desc
+	picture = GFX_evt_ship_travel
+	show_sound = event_default
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	event_window_type = leader_story
+	event_picture_background = "GFX_leader_recruitment_bg_renowned"
+
+	picture_event_data = {
+		portrait = root
+	}
+
+	trigger = {
+		exists = owner
+		any_playable_country = {
+			NOT = { is_same_value = prev }
+			has_communications = root.owner
+		}
+	}
+
+	option = {
+		name = paragon.41320.a
+		if = {
+			limit = {
+				has_trait = leader_trait_shadow_broker
+			}
+			add_trait = leader_trait_shadow_broker_2
+		}
+		else_if = {
+			limit = {
+				has_trait = leader_trait_shadow_broker_2
+			}
+			add_trait = leader_trait_shadow_broker_3
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_trait = leader_trait_shadow_broker_3
+					has_trait = leader_trait_shadow_broker_4
+				}
+			}
+			custom_tooltip = paragon.41320.a.intel.custom_tooltip
+			hidden_effect = {
+				owner = {
+					every_playable_country = {
+						limit = {
+							NOT = { is_same_value = root.owner }
+							has_communications = root.owner
+						}
+						root.owner = {
+							add_intel = {
+								who = prev
+								amount = @paragon_41320_a_intel_amt
+							}
+						}
+					}
+				}
+			}
+		}
+		else = {
+			add_trait = leader_trait_shadow_broker
+		}
+	}
+}

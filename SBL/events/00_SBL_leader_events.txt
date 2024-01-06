@@ -211,9 +211,7 @@ country_event = {
 				num_traits < 4
 				NOR = {
 					has_trait = leader_trait_lethargic
-					has_trait = leader_trait_gale_speed
-					has_trait = leader_trait_gale_speed_2
-					has_trait = leader_trait_gale_speed_3
+					has_trait_tier1or2or3or4 = { TRAIT = leader_trait_gale_speed }
 				}
 			}
 		}
@@ -431,9 +429,7 @@ fleet_event = {
 			num_traits < 4
 			NOR = {
 				has_trait = leader_trait_lethargic
-				has_trait = leader_trait_gale_speed
-				has_trait = leader_trait_gale_speed_2
-				has_trait = leader_trait_gale_speed_3
+				has_trait_tier1or2or3or4 = { TRAIT = leader_trait_gale_speed }
 			}
 		}
 	}
@@ -484,10 +480,8 @@ fleet_event = {
 			leader_class = commander
 			num_traits < 4
 			NOR = {
-				has_trait = leader_trait_gale_speed
-				has_trait = leader_trait_gale_speed_2
-				has_trait = leader_trait_gale_speed_3
 				has_trait = leader_trait_lethargic
+				has_trait_tier1or2or3or4 = { TRAIT = leader_trait_gale_speed }
 			}
 		}
 	}
