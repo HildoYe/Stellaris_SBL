@@ -16,5 +16,16 @@ spriteTypes = {
 		name = "GFX_toast_negative_trait_losed"
 		texturefile = "gfx/interface/icons/toasts/toast_negative_trait_losed.dds"
 	}
-	
+
+	# Tier
+	spriteType = {
+		name = "GFX_trait_tier"
+		texturefile = "gfx/interface/icons/traits/leader_traits/SBL_trait_tier.dds"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_trait_tier_4"
+		sprite_sheet_sprite_type = "GFX_trait_tier"
+		default_frame = 4
+	}
 }
