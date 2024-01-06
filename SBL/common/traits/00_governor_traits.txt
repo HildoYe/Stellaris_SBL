@@ -3032,6 +3032,7 @@ leader_trait_insider_trading = {
 		trait_ruler_investor
 		trait_ruler_investor_2
 		trait_ruler_investor_3
+		trait_ruler_investor_4
 	}
 	selectable_weight = {
 		weight = @class_negative_trait_weight
@@ -3069,6 +3070,7 @@ leader_trait_insider_trading_2 = {
 		trait_ruler_investor
 		trait_ruler_investor_2
 		trait_ruler_investor_3
+		trait_ruler_investor_4
 	}
 	selectable_weight = @tier2_negative_trait_weight
 }

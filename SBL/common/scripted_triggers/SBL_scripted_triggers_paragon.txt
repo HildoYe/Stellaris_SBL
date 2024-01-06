@@ -17,6 +17,17 @@ has_any_admiral_speciality = {
 	}
 }
 
+has_any_governor_focus = {
+	OR = {
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_mining_focus }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_generator_focus }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_farming_focus }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_industrial_focus }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_forge_focus }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_refinement_focus }
+	}
+}
+
 has_narratively_great_councilor_trait = {
 	OR = {
 		# Any class
@@ -37,8 +48,8 @@ has_narratively_great_councilor_trait = {
 		has_trait_tier1or2 = { TRAIT = leader_trait_bureaucrat }
 		has_trait_tier1or2 = { TRAIT = leader_trait_principled }
 		has_trait_tier1or2 = { TRAIT = leader_trait_righteous }
-		has_trait_tier1or2or3 = { TRAIT = trait_ruler_deep_connections }
-		has_trait_tier1or2or3 = { TRAIT = leader_trait_reformer }
+		has_trait_tier1or2or3or4 = { TRAIT = trait_ruler_deep_connections }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_reformer }
 		has_trait = leader_trait_utopian_idealist
 		has_trait = leader_trait_mediator
 		has_trait = leader_trait_master_diplomat
@@ -80,9 +91,9 @@ has_narratively_great_speaker_trait = {
 		has_trait_tier1or2 = { TRAIT = leader_trait_bureaucrat }
 		has_trait_tier1or2 = { TRAIT = leader_trait_righteous }
 		has_trait_tier1or2 = { TRAIT = leader_trait_enlister }
-		has_trait_tier1or2or3 = { TRAIT = trait_ruler_deep_connections }
-		has_trait_tier1or2or3 = { TRAIT = leader_trait_reformer }
-		has_trait = leader_trait_courtroom_training
+		has_trait_tier1or2or3or4 = { TRAIT = trait_ruler_deep_connections }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_reformer }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_courtroom_training }
 		has_trait = leader_trait_mediator
 		has_trait = leader_trait_master_diplomat
 		has_trait = leader_trait_galvanizer
