@@ -1,0 +1,293 @@
+namespace = paragon_2
+
+# On destroying enemy ship.
+country_event = {
+	id = paragon_2.1005
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		FROMFROM = { # Winning ship.
+			if = {
+				limit = { exists = fleet.leader }
+				fleet.leader = {
+
+					# Corsair / Corsair II / Corsair IV
+					if = {
+						limit = {
+							has_trait_tier1or2or3or4 = {
+								TRAIT = leader_trait_corsair
+							}
+							ROOT.FROM = { # Owner of losing ship.
+								is_default_or_fallen = yes
+							}
+						}
+						if = {
+							limit = { has_trait = leader_trait_corsair }
+							ROOT = { # Owner of winning ship.
+								add_resource = {
+									energy = @trait_corsair_amt
+									mult = value:hells_heart_effect
+								}
+							}
+						}
+						else_if = {
+							limit = { has_trait = leader_trait_corsair_4 }
+							ROOT = { # Owner of winning ship.
+								add_resource = {
+									energy = @trait_corsair_4_amt
+									mult = value:hells_heart_effect
+								}
+							}
+						}
+						else = {
+							ROOT = { # Owner of winning ship.
+								add_resource = {
+									energy = @trait_corsair_2_amt
+									mult = value:hells_heart_effect
+								}
+							}
+						}
+					}
+
+					# Crusader / Crusader II
+					if = {
+						limit = {
+							has_trait_tier1or2or3or4 = {
+								TRAIT = leader_trait_crusader
+							}
+							ROOT.FROM = { # Owner of losing ship.
+								is_default_or_fallen = yes
+							}
+						}
+
+						ROOT = {
+							if = {
+								limit = { PREV = { has_trait = leader_trait_crusader } }
+								add_resource = {
+									unity = @trait_crusader_fleet_amt
+								}
+							}
+							else_if = {
+								limit = { PREV = { has_trait = leader_trait_crusader_4 } }
+								add_resource = {
+									unity = @trait_crusader_4_fleet_amt
+								}
+							}
+							else = {
+								add_resource = {
+									unity = @trait_crusader_2_fleet_amt
+								}
+							}
+						}
+					}
+
+					# Shipbreaker / Shipbreaker II / Shipbreaker IV
+					if = {
+						limit = {
+							has_trait_tier1or2or3or4 = {
+								TRAIT = leader_trait_shipbreaker
+							}
+							ROOT.FROM = { # Owner of losing fleet.
+								is_default_or_fallen = yes
+							}
+						}
+						if = {
+							limit = { has_trait = leader_trait_shipbreaker }
+							ROOT = {
+								add_resource = {
+									alloys = @trait_shipbreaker_amt
+									mult = value:hells_heart_effect
+								}
+							}
+						}
+						else_if = {
+							limit = { has_trait = leader_trait_shipbreaker_4 }
+							ROOT = {
+								add_resource = {
+									alloys = @trait_shipbreaker_4_amt
+									mult = value:hells_heart_effect
+								}
+							}
+						}
+						else = {
+							ROOT = {
+								add_resource = {
+									alloys = @trait_shipbreaker_2_amt
+									mult = value:hells_heart_effect
+								}
+							}
+						}
+					}
+
+					# Juryrigger / Juryrigger II / Juryrigger IV
+					if = {
+						limit = {
+							has_trait_tier1or2or3or4 = {
+								TRAIT = leader_trait_juryrigger
+							}
+						}
+						ROOT.FROMFROM = {
+							if = {
+								limit = { PREV = { has_trait = leader_trait_juryrigger } }
+								repair_percentage = @trait_juryrigger_amt
+							}
+							else_if = {
+								limit = { PREV = { has_trait = leader_trait_juryrigger_4 } }
+								repair_percentage = @trait_juryrigger_4_amt
+							}
+							else = {
+								repair_percentage = @trait_juryrigger_2_amt
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# On winning a ground battle (before controller is switched)
+# This = country, leader attacker
+# From = country, planet owner
+# FromFrom = planet
+country_event = {
+	id = paragon_2.1015
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		FROMFROM = {
+			every_ground_combat_attacker = {
+				if = {
+					limit = { exists = leader }
+					leader = {
+						save_event_target_as = attacking_general
+
+						# Interrogator.
+						if = {
+							limit = {
+								exists = from
+								has_trait = leader_trait_interrogator
+							}
+							ROOT = {
+								add_intel = {
+									who = root.from
+									amount = 10
+								}
+							}
+						}
+						if = {
+							limit = {
+								exists = from
+								has_trait = leader_trait_interrogator_2
+							}
+							ROOT = {
+								add_intel = {
+									who = root.from
+									amount = 20
+								}
+							}
+						}
+						if = {
+							limit = {
+								exists = from
+								has_trait = leader_trait_interrogator_3
+							}
+							ROOT = {
+								add_intel = {
+									who = root.from
+									amount = 30
+								}
+							}
+						}
+						if = {
+							limit = {
+								exists = from
+								has_trait = leader_trait_interrogator_4
+							}
+							ROOT = {
+								add_intel = {
+									who = root.from
+									amount = 40
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# On army killed in combat.
+# This = owner
+# From = army
+# FromFrom = opponent
+# FromFromFrom = planet
+country_event = {
+	id = paragon_2.1040
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		FROMFROMFROM = { # Planet where ground combat is taking place.
+
+			# Check if dead army is a defensive army.
+			if = {
+				limit = {
+					any_ground_combat_defender = {
+						is_same_value = ROOT.FROM
+					}
+				}
+
+				# Check if attacking army has general with Crusader trait.
+				random_ground_combat_attacker = {
+					limit = {
+						exists = leader
+						leader = {
+							has_trait_tier1or2or3or4 = {
+								TRAIT = leader_trait_crusader
+							}
+						}
+					}
+					leader = {
+						save_event_target_as = attacking_general
+					}
+				}
+			}
+		}
+
+		# If attacking army has a leader with Crusader trait, award Unity.
+		if = {
+			limit = { exists = event_target:attacking_general }
+			FROMFROM = {
+				if = {
+					limit = {
+						event_target:attacking_general = {
+							has_trait = leader_trait_crusader
+						}
+					}
+					add_resource = {
+						unity = 25 # Tier 1
+					}
+				}
+				else_if = {
+					limit = {
+						event_target:attacking_general = {
+							has_trait = leader_trait_crusader_4
+						}
+					}
+					add_resource = {
+						unity = 60 # Tier 4
+					}
+				}
+				else = {
+					add_resource = {
+						unity = 40 # Tier 2
+					}
+				}
+			}
+		}
+	}
+}

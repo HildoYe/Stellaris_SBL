@@ -1,0 +1,101 @@
+has_trait_tier1or2or3or4 = {
+	OR = {
+		has_trait = $TRAIT$
+		has_trait = $TRAIT$_2
+		has_trait = $TRAIT$_3
+		has_trait = $TRAIT$_4
+	}
+}
+
+has_any_admiral_speciality = {
+	OR = {
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_artillery_specialization }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_carrier_specialization }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_rocketry_specialization }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_gunship_specialization }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_archaeo_specialization }
+	}
+}
+
+has_narratively_great_councilor_trait = {
+	OR = {
+		# Any class
+		has_trait = leader_trait_master_bureaucrat
+		has_trait = leader_trait_educator
+		has_trait_tier1or2 = { TRAIT = leader_trait_politician }
+		has_trait_tier1or2 = { TRAIT = trait_ruler_charismatic }
+		has_trait_tier1or2 = { TRAIT = leader_trait_gifted }
+
+		# Scientist
+		has_trait_tier1or2or3 = { TRAIT = leader_trait_collaborator }
+		has_trait_tier1or2 = { TRAIT = leader_trait_spark_of_genius }
+		has_trait_tier1or2or3 = { TRAIT = leader_trait_society_focus }
+		has_trait_tier1or2or3 = { TRAIT = leader_trait_expertise_statecraft }
+		has_trait = leader_trait_knowledge_for_the_masses
+
+		# Official
+		has_trait_tier1or2 = { TRAIT = leader_trait_bureaucrat }
+		has_trait_tier1or2 = { TRAIT = leader_trait_principled }
+		has_trait_tier1or2 = { TRAIT = leader_trait_righteous }
+		has_trait_tier1or2or3 = { TRAIT = trait_ruler_deep_connections }
+		has_trait_tier1or2or3 = { TRAIT = leader_trait_reformer }
+		has_trait = leader_trait_utopian_idealist
+		has_trait = leader_trait_mediator
+		has_trait = leader_trait_master_diplomat
+		has_trait = leader_trait_galvanizer
+		has_trait = leader_trait_zealot
+
+		# Admiral
+		has_trait = leader_trait_peacekeeper
+		has_trait_tier1or2 = { TRAIT = leader_trait_fleet_organizer }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_commanding_presence }
+		has_trait = leader_trait_military_overseer
+
+		# General
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_overseer }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_consul_general }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_shadow_broker }
+		has_trait_tier1or2 = { TRAIT = leader_trait_spycraft }
+		has_trait = leader_trait_honored_warmaster
+		has_trait = leader_trait_spymaster
+	}
+}
+
+has_narratively_great_speaker_trait = {
+	OR = {
+		# Any class
+		has_trait = leader_trait_educator
+		has_trait_tier1or2 = { TRAIT = leader_trait_politician }
+		has_trait_tier1or2 = { TRAIT = trait_ruler_charismatic }
+
+		# Scientist
+		has_trait = leader_trait_spark_of_genius
+		has_trait = leader_trait_collective_wisdom
+		has_trait_tier1or2or3 = { TRAIT = leader_trait_society_focus }
+		has_trait_tier1or2or3 = { TRAIT = leader_trait_expertise_statecraft }
+		has_trait = leader_trait_knowledge_for_the_masses
+		has_trait = leader_trait_frontier_adventurer
+
+		# Official
+		has_trait_tier1or2 = { TRAIT = leader_trait_bureaucrat }
+		has_trait_tier1or2 = { TRAIT = leader_trait_righteous }
+		has_trait_tier1or2 = { TRAIT = leader_trait_enlister }
+		has_trait_tier1or2or3 = { TRAIT = trait_ruler_deep_connections }
+		has_trait_tier1or2or3 = { TRAIT = leader_trait_reformer }
+		has_trait = leader_trait_courtroom_training
+		has_trait = leader_trait_mediator
+		has_trait = leader_trait_master_diplomat
+		has_trait = leader_trait_galvanizer
+		has_trait = leader_trait_zealot
+
+		# Admiral
+		has_trait = leader_trait_peacekeeper
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_commanding_presence }
+		has_trait = leader_trait_military_overseer
+
+		# General
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_overseer }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_consul_general }
+		has_trait = leader_trait_honored_warmaster
+	}
+}

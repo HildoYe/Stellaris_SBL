@@ -2,3 +2,26 @@
 @subclass_weight_opp_mult = 0.5
 @job_weight_mult = 2.5
 @job_weight_opp_mult = 0.5
+
+@trait_sorting_priority_veteran_no_none = 80
+@trait_sorting_priority_veteran_no_1 = 85
+@trait_sorting_priority_veteran_no_2 = 90
+@trait_sorting_priority_veteran_no_3 = 95
+@trait_sorting_priority_veteran_no_4 = 100
+
+@trait_sorting_priority_veteran_yes_none = 210
+@trait_sorting_priority_veteran_yes_1 = 215
+@trait_sorting_priority_veteran_yes_2 = 220
+@trait_sorting_priority_veteran_yes_3 = 225
+@trait_sorting_priority_veteran_yes_4 = 230
+
+@trait_sorting_priority_veteran_triggered_none = 210
+@trait_sorting_priority_veteran_triggered_1 = 215
+@trait_sorting_priority_veteran_triggered_2 = 220
+@trait_sorting_priority_veteran_triggered_3 = 225
+@trait_sorting_priority_veteran_triggered_4 = 230
+
+@trait_corsair_4_amt = 20
+@trait_shipbreaker_4_amt = 12
+@trait_juryrigger_4_amt = 0.35				# Localisation is hardcoded
+@trait_crusader_4_fleet_amt = 15
