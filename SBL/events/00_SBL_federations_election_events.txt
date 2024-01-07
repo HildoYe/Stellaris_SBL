@@ -1,0 +1,479 @@
+namespace = fedel
+
+#################################################
+#
+# Federation Succession Challenge: Thesis Defense
+# Written by Gemma Thomson
+#
+#################################################
+
+### Thesis Defense
+
+# Determine winner (leader, HIDDEN)
+country_event = {
+	id = fedel.1505
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		federation = {
+			every_member = {
+				limit = { #Automatic fail if there's no leader or you are a subject
+					exists = leader
+					is_subject = no
+				}
+				#Grab top researchers
+				random_owned_leader = {
+					limit = {
+						NOT = { has_leader_flag = thesis_team }
+						is_researching_area = engineering
+					}
+					set_leader_flag = thesis_team
+					prev = {
+						change_variable = { which = thesis_assemble value = 1 }
+					}
+				}
+				random_owned_leader = {
+					limit = {
+						NOT = { has_leader_flag = thesis_team }
+						is_researching_area = physics
+					}
+					set_leader_flag = thesis_team
+					prev = {
+						change_variable = { which = thesis_assemble value = 1 }
+					}
+				}
+				random_owned_leader = {
+					limit = {
+						NOT = { has_leader_flag = thesis_team }
+						is_researching_area = society
+					}
+					set_leader_flag = thesis_team
+					prev = {
+						change_variable = { which = thesis_assemble value = 1 }
+					}
+				}
+				#Bring the pool of thesis scientists up to 5
+				while = {
+					limit = {
+						check_variable = {
+							which = thesis_assemble
+							value < 6
+						}
+					}
+					count = 6
+					random_owned_leader = {
+						limit = {
+							NOT = { has_leader_flag = thesis_team }
+							leader_class = scientist
+						}
+						set_leader_flag = thesis_team
+						prev = {
+							change_variable = {
+								which = thesis_assemble
+								value = 1
+							}
+						}
+					}
+				}
+			}
+			#Calculate winner
+			random_member = {
+				limit = {
+					exists = leader
+					#Automatic fail if the member country hasn't enough scientists:
+					check_variable = {
+						which = thesis_assemble
+						value > 2
+					}
+				}
+				weights = {
+					base = 20
+					modifier = { #Too many Carefrees
+						add = -10
+						count_owned_leader = {
+							limit = {
+								has_leader_flag = thesis_team
+								has_trait_tier1or2 = { TRAIT = leader_trait_carefree }
+							}
+							count > 1
+						}
+					}
+					modifier = { #Curator
+						add = 10
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait = leader_trait_curator
+						}
+					}
+					modifier = { #Custom AI Assistant
+						add = 10
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait = leader_trait_custom_AI_assistant
+						}
+					}
+					modifier = { #Maniacal
+						add = 10
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait_tier1or2or3or4 = { TRAIT = leader_trait_maniacal }
+						}
+					}
+					modifier = { #Too many Maniacals
+						add = -20
+						count_owned_leader = {
+							limit = {
+								has_leader_flag = thesis_team
+								has_trait_tier1or2or3or4 = { TRAIT = leader_trait_maniacal }
+							}
+							count > 1
+						}
+					}
+					modifier = { #Meticulous
+						add = 10
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait_tier1or2 = { TRAIT = leader_trait_meticulous }
+						}
+					}
+					modifier = { #Paranoid
+						add = -5
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait_tier1or2 = { TRAIT = leader_trait_paranoid }
+						}
+					}
+					modifier = { #Sapient AI Assistant
+						add = 20
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait = leader_trait_sapient_AI_assistant
+						}
+					}
+					modifier = { #Spark of Genius
+						add = 20
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait_tier1or2 = { TRAIT = leader_trait_spark_of_genius }
+						}
+					}
+					modifier = { #Towel
+						add = 9 #Plural Z alpha
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait = leader_trait_towel
+						}
+					}
+					modifier = { #Statecraft expert
+						add = 10
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_statecraft }
+						}
+					}
+					modifier = { #Area experts
+						add = 5
+						count_owned_leader = {
+							limit = {
+								has_leader_flag = thesis_team
+								is_specialist_researcher = yes
+							}
+							count = 1
+						}
+					}
+					modifier = { #Too many area experts
+						add = -10
+						count_owned_leader = {
+							limit = {
+								has_leader_flag = thesis_team
+								is_specialist_researcher = yes
+							}
+							count > 1
+						}
+					}
+					modifier = { #Chosen
+						add = 15
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait = leader_trait_chosen
+						}
+					}
+					modifier = { #Cyborg
+						add = 10
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait = leader_trait_cyborg
+						}
+					}
+					modifier = { #Erudite
+						add = 15
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait = leader_trait_erudite
+						}
+					}
+					modifier = { #Psionic
+						add = 10
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait = leader_trait_psionic
+						}
+					}
+					modifier = { #Synthetic
+						add = 5
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait = leader_trait_synthetic
+						}
+					}
+
+					#Scientist traits
+					modifier = { #Adaptable
+						add = 10
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait_tier1or2 = { TRAIT = leader_trait_adaptable }
+						}
+					}
+					modifier = { #Eager
+						add = 5
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait_tier1or2 = { TRAIT = leader_trait_eager }
+						}
+					}
+					modifier = { #Stubborn
+						add = -5
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait_tier1or2 = { TRAIT = leader_trait_stubborn }
+						}
+					}
+					modifier = { #Substance abuser
+						add = 10
+						any_owned_leader = {
+							has_leader_flag = thesis_team
+							has_trait_tier1or2 = { TRAIT = leader_trait_substance_abuser }
+						}
+					}
+					modifier = { #Too many Substance Abusers
+						add = -20
+						count_owned_leader = {
+							limit = {
+								has_leader_flag = thesis_team
+								has_trait_tier1or2 = { TRAIT = leader_trait_substance_abuser }
+							}
+							count > 1
+						}
+					}
+
+					#Ruler traits
+					modifier = {
+						add = -20
+						count_owned_leader = {
+							limit = {
+								has_leader_flag = thesis_team
+								has_trait_tier1or2 = { TRAIT = leader_trait_substance_abuser }
+							}
+							count > 1
+						}
+					}
+
+					#Empire tech level
+					modifier = {
+						add = 40
+						federation = {
+							count_member = {
+								limit = {
+									NOT = { is_same_value = prevprev }
+									relative_power = {
+										who = prevprev
+										category = technology
+										value > equivalent
+									}
+								}
+								count = 0
+							}
+						}
+					}
+					modifier = {
+						add = 30
+						federation = {
+							count_member = {
+								limit = {
+									NOT = { is_same_value = prevprev }
+									relative_power = {
+										who = prevprev
+										category = technology
+										value > inferior
+									}
+								}
+								count = 0
+							}
+						}
+					}
+					modifier = {
+						add = trigger:num_repeatable_techs
+						always = yes
+					}
+					modifier = {
+						add = 20
+						federation = {
+							count_member = {
+								limit = {
+									relative_power = {
+										who = prevprev
+										category = technology
+										value > equivalent
+									}
+								}
+								count = 1
+							}
+							count_member = {
+								limit = {
+									relative_power = {
+										who = prevprev
+										category = technology
+										value < equivalent
+									}
+								}
+								count > 1
+							}
+						}
+					}
+					modifier = {
+						factor = 0.1
+						federation = {
+							any_member = {
+								NOT = { is_same_value = prevprev }
+								relative_power = {
+									who = prevprev
+									category = technology
+									value = overwhelming
+								}
+							}
+						}
+					}
+					modifier = {
+						factor = trigger:num_researched_techs
+						always = yes
+					}
+				}
+				save_event_target_as = winning_thesis
+			}
+			#Set thesis topic
+			event_target:winning_thesis = {
+				if = {
+					limit = {
+						OR = {
+							is_authoritarian = yes
+							is_egalitarian = yes
+						}
+					}
+					random_list = {
+						1 = { set_country_flag = thesis_xcratic1 }
+						1 = { set_country_flag = thesis_xcratic2 }
+						1 = { set_country_flag = thesis_xcratic3 }
+						1 = { set_country_flag = thesis_xcratic4 }
+						1 = { set_country_flag = thesis_xcratic5 }
+						1 = { set_country_flag = thesis_xcratic6 }
+						1 = { set_country_flag = thesis_xcratic7 }
+						1 = { set_country_flag = thesis_xcratic8 }
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							is_materialist = yes
+							is_spiritualist = yes
+						}
+					}
+					random_list = {
+						1 = { set_country_flag = thesis_souls1 }
+						1 = { set_country_flag = thesis_souls2 }
+						1 = { set_country_flag = thesis_souls3 }
+						1 = { set_country_flag = thesis_souls4 }
+						1 = { set_country_flag = thesis_souls5 }
+						1 = { set_country_flag = thesis_souls6 }
+						1 = { set_country_flag = thesis_souls7 }
+						1 = { set_country_flag = thesis_souls8 }
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							is_pacifist = yes
+							is_militarist = yes
+						}
+					}
+					random_list = {
+						1 = { set_country_flag = thesis_war1 }
+						1 = { set_country_flag = thesis_war2 }
+						1 = { set_country_flag = thesis_war3 }
+						1 = { set_country_flag = thesis_war4 }
+						1 = { set_country_flag = thesis_war5 }
+						1 = { set_country_flag = thesis_war6 }
+						1 = { set_country_flag = thesis_war7 }
+						1 = { set_country_flag = thesis_war8 }
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							is_xenophile = yes
+							is_xenophobe = yes
+						}
+					}
+					random_list = {
+						1 = { set_country_flag = thesis_xenos1 }
+						1 = { set_country_flag = thesis_xenos2 }
+						1 = { set_country_flag = thesis_xenos3 }
+						1 = { set_country_flag = thesis_xenos4 }
+						1 = { set_country_flag = thesis_xenos5 }
+						1 = { set_country_flag = thesis_xenos6 }
+						1 = { set_country_flag = thesis_xenos7 }
+						1 = { set_country_flag = thesis_xenos8 }
+					}
+				}
+				if = {
+					limit = { is_machine_empire = yes }
+					random_list = {
+						1 = { set_country_flag = thesis_machine1 }
+						1 = { set_country_flag = thesis_machine2 }
+						1 = { set_country_flag = thesis_machine3 }
+						1 = { set_country_flag = thesis_machine4 }
+						1 = { set_country_flag = thesis_machine5 }
+					}
+				}
+				if = {
+					limit = { is_hive_empire = yes }
+					random_list = {
+						1 = { set_country_flag = thesis_hive1 }
+						1 = { set_country_flag = thesis_hive2 }
+						1 = { set_country_flag = thesis_hive3 }
+						1 = { set_country_flag = thesis_hive4 }
+						1 = { set_country_flag = thesis_hive5 }
+					}
+				}
+				if = {
+					limit = { is_megacorp = yes }
+					random_list = {
+						1 = { set_country_flag = thesis_megacorp1 }
+						1 = { set_country_flag = thesis_megacorp2 }
+						1 = { set_country_flag = thesis_megacorp3 }
+						1 = { set_country_flag = thesis_megacorp4 }
+						1 = { set_country_flag = thesis_megacorp5 }
+					}
+				}
+			}
+			every_member = {
+				country_event = { id = fedel.1506 } #Announce winner
+			}
+		}
+	}
+
+	after = {
+		country_event = { id = fedel.1510 days = 1 } #Tidy up
+	}
+}

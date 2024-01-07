@@ -1,0 +1,311 @@
+############################
+#
+# Anomaly Events
+#
+# Written by Niclas Karlsson
+#
+############################
+
+namespace = anomaly
+
+### Ship Graveyard ######################################################################################
+#story5
+ship_event = {
+	id = anomaly.4020
+	title = "anomaly.4020.name"
+	picture = GFX_evt_big_landing_ship
+	show_sound = event_mystic_reveal
+	location = FROM
+	desc = {
+		text = "anomaly.4020.rocket.desc"
+		trigger = {
+			NOT = { owner = { has_ethic = ethic_gestalt_consciousness } }
+			leader = {
+				has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_propulsion }
+			}
+		}
+	}
+	desc = {
+		text = "anomaly.4020.rocket.desc.mach"
+		trigger = {
+			owner = { has_ethic = ethic_gestalt_consciousness }
+			leader = {
+				has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_propulsion }
+			}
+		}
+	}
+	desc = {
+		text = "anomaly.4020.desc"
+		trigger = {
+			leader = {
+				NOT = {
+					has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_propulsion }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	immediate = { owner = { country_event = { id = story.5 days = 30 } } }
+
+	option = {
+		trigger = {
+			leader = {
+				has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_propulsion }
+			}
+		}
+		name = anomaly.4020.b
+		if = {
+			limit = {
+				from = { is_colonizable = no }
+			}
+			custom_tooltip = "anomaly.4020.a.tooltip"
+			hidden_effect = {
+				FROM = { add_deposit = d_alloys_2 }
+			}
+		}
+		else = {
+			from = { add_deposit = d_metal_boneyard }
+		}
+		hidden_effect = {
+			from = {
+				add_modifier = {
+					modifier = "ship_graveyard"
+					days = -1
+				}
+			}
+		}
+		owner = {
+			pop_lcluster_event = yes
+		}
+	}
+	option = {
+		trigger = {
+			leader = {
+				NOT = {
+					has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_propulsion }
+				}
+			}
+		}
+		name = anomaly.4020.a
+		if = {
+			limit = {
+				from = { is_colonizable = no }
+			}
+			custom_tooltip = "anomaly.4020.a.tooltip"
+			hidden_effect = {
+				FROM = { add_deposit = d_alloys_2 }
+			}
+		}
+		else = {
+			from = { add_deposit = d_metal_boneyard }
+		}
+		hidden_effect = {
+			from = {
+				add_modifier = {
+					modifier = "ship_graveyard"
+					days = -1
+				}
+			}
+		}
+		owner = {
+			pop_lcluster_event = yes
+		}
+	}
+}
+
+### Psionic Horses #########################################################################################
+#story3
+ship_event = {
+	id = anomaly.4100
+	title = "anomaly.4100.name"
+		desc = {
+		text = "anomaly.4100.desc"
+		trigger = {
+			leader = {
+				NOR = {
+					has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_statecraft }
+					has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_biology }
+				}
+			}
+		}
+	}
+	desc = {
+		text = "anomaly.4100.expert.desc"
+		trigger = {
+			leader = {
+				OR = {
+					has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_statecraft }
+					has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_biology }
+				}
+			}
+		}
+	}
+	picture = GFX_evt_animal_wildlife
+	show_sound = event_alien_nature
+	location = from
+	trackable = yes
+
+	is_triggered_only = yes
+
+	immediate = { hidden_effect = { owner = { country_event = { id = story.3 days = 30 } } } }
+
+	#Study the animals
+	option = {
+		name = anomaly.4100.a
+		trigger = {
+			owner = {
+				NOT = {
+					has_policy_flag = interference_not_allowed
+				}
+			}
+		}
+		enable_special_project = {
+			name = "PSIONIC_HORSES_PROJECT"
+			owner = root
+			location = from
+		}
+	}
+	#Domesticate the animals
+	option = {
+		name = anomaly.4100.b
+		trigger = {
+			owner = {
+				NOT = {
+					has_policy_flag = interference_not_allowed
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					owner = {
+						OR = {
+							has_ethic = "ethic_fanatic_xenophobe"
+							has_ethic = "ethic_fanatic_militarist"
+							has_ethic = "ethic_fanatic_egalitarian"
+							has_ethic = "ethic_xenophobe"
+							has_ethic = "ethic_militarist"
+						}
+					}
+				}
+				owner = {
+					country_event = {id = anomaly.4103 days = 14}
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						NOR = {
+							has_ethic = "ethic_fanatic_xenophobe"
+							has_ethic = "ethic_fanatic_militarist"
+							has_ethic = "ethic_fanatic_egalitarian"
+							has_ethic = "ethic_xenophobe"
+							has_ethic = "ethic_militarist"
+						}
+					}
+				}
+				owner = {
+					country_event = {id = anomaly.4104 days = 14}
+				}
+			}
+		}
+	}
+	#Leave the animals alone
+	option = {
+		name = anomaly.4100.c
+		trigger = {
+			owner = {
+				has_policy_flag = interference_not_allowed
+			}
+		}
+		from = {
+			add_modifier = {
+				modifier = society_animal_life
+				days = 1000
+			}
+		}
+	}
+}
+
+### Shifting Sands ##########################################################################################
+ship_event = {
+	id = anomaly.4110
+	title = "anomaly.4110.name"
+	desc = {
+		trigger = {
+			leader = {
+				OR = {
+					has_trait = leader_trait_spark_of_genius
+					has_trait = leader_trait_spark_of_genius_2
+					has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_new_worlds }
+				}
+			}
+		}
+		text = "anomaly.4110.success.desc"
+	}
+	desc = {
+		trigger = {
+			leader = {
+				NOR = {
+					has_trait = leader_trait_spark_of_genius
+					has_trait = leader_trait_spark_of_genius_2
+					has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_new_worlds }
+				}
+			}
+		}
+		text = "anomaly.4110.fail.desc"
+	}
+	picture = GFX_evt_desert
+	show_sound = event_construction
+	location = from
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			leader = {
+				OR = {
+					has_trait = leader_trait_spark_of_genius
+					has_trait = leader_trait_spark_of_genius_2
+					has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_new_worlds }
+				}
+			}
+		}
+		name = SPLENDID
+		from = {
+			add_modifier = {
+				modifier = liquid_sands
+				days = -1
+			}
+			add_deposit = d_quicksand_basin
+			add_deposit = d_quicksand_basin
+		}
+	}
+	option = {
+		trigger = {
+			leader = {
+				NOR = {
+					has_trait = leader_trait_spark_of_genius
+					has_trait = leader_trait_spark_of_genius_2
+					has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_new_worlds }
+				}
+			}
+		}
+		name = UNFORTUNATE
+		from = {
+			add_modifier = {
+				modifier = shifting_sands
+				days = 1500
+			}
+			add_modifier = {
+				modifier = liquid_sands
+				days = -1
+			}
+			add_deposit = d_quicksand_basin
+			add_deposit = d_quicksand_basin
+			add_deposit = d_quicksand_basin
+		}
+	}
+}

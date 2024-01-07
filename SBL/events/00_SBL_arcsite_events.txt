@@ -1,0 +1,62 @@
+##########################
+#
+# ARCHAEOLOGY SITE EVENTS
+#
+##########################
+
+namespace = arcsite
+
+##########################################
+# "Debris Belt" by Pierre du Plessis
+##########################################
+
+fleet_event = { #3rd step
+	id = arcsite.2515
+	title = arcsite.2515.name
+	desc = arcsite.2515.desc
+	picture = GFX_evt_worrying_signal
+	location = from
+	show_sound = event_worrying_signal
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+		leader = {
+			save_event_target_as = event_leader
+		}
+	}
+
+	option = {
+		name = DISTURBING
+		if = {
+			limit = {
+				owner = { is_gestalt = no }
+			}
+			event_target:event_leader = {
+				locked_random_list = {
+					1 = {}
+					1 = {
+						modifier = {
+							factor = 0
+							has_trait_tier1or2 = { TRAIT = leader_trait_paranoid }
+						}
+						add_trait = leader_trait_paranoid
+					}
+					1 = {
+						modifier = {
+							factor = 0
+							has_trait_tier1or2or3or4 = { TRAIT = leader_trait_maniacal }
+						}
+						add_trait = leader_trait_maniacal
+					}
+				}
+			}
+		}
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+}

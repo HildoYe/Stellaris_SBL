@@ -1,0 +1,43 @@
+# Hack into the Technosphere
+special_project = {
+	key = "TECHNOSPHERE_HACKING"
+	cost = 0
+	days_to_research = 720
+	tech_department = engineering_technology
+	picture = GFX_evt_technosphere
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+#		skill = 5
+	}
+
+	on_success = {
+		owner = {
+			random_list = {
+				50 = {
+					modifier = {
+						factor = 10
+						OR ={
+							has_technology = tech_self_aware_logic
+							has_technology = tech_sapient_ai
+							has_technology = tech_synthetic_leaders
+							has_technology = tech_decryption_3
+							any_owned_leader = {
+								OR = {
+									has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_computing }
+									has_trait = leader_trait_spark_of_genius
+									has_trait = leader_trait_spark_of_genius_2
+									has_trait = leader_trait_sapient_AI_assistant
+								}
+							}
+						}
+					}
+					country_event = { id = leviathans.1052 } #succeeds
+				}
+				50 = { country_event = { id = leviathans.1053 } } #fails
+			}
+		}
+	}
+}

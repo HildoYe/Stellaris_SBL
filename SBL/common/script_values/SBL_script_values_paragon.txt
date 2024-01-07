@@ -74,6 +74,61 @@ leader_eligible_for_negative_trait_immortal = {
 	}
 }
 
+country_salvage_ships_from_debris_chance = {
+	add = modifier:salvage_chance_add
+	mult = 100	# Since "salvage_chance_add" is a Percentage 0-1, but we want 0-100.
+	add = 10	# This is the Base
+	add = $BONUS|0$
+	modifier = {
+		root = {
+			any_owned_leader = {
+				has_trait = leader_trait_salvager_2
+				exists = solar_system
+				solar_system = {
+					is_same_value = from.solar_system
+				}
+			}
+		}
+		mult = 2
+	}
+	modifier = {
+		root = {
+			any_owned_leader = {
+				has_trait = leader_trait_salvager_3
+				exists = solar_system
+				solar_system = {
+					is_same_value = from.solar_system
+				}
+			}
+		}
+		mult = 3
+	}
+	modifier = {
+		root = {
+			any_owned_leader = {
+				has_trait = leader_trait_salvager_4
+				exists = solar_system
+				solar_system = {
+					is_same_value = from.solar_system
+				}
+			}
+		}
+		mult = 4
+	}
+	modifier = {
+		root = {
+			any_owned_leader = {
+				has_trait = leader_trait_master_salvager
+				exists = solar_system
+				solar_system = {
+					is_same_value = from.solar_system
+				}
+			}
+		}
+		mult = 1.5
+	}
+}
+
 agenda_leadership_conditioning_num_leaders = {
 	base = 0
 	complex_trigger_modifier = {

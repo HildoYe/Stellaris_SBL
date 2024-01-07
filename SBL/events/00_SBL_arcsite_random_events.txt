@@ -1,0 +1,86 @@
+####################################################
+# RANDOM ARCHAEOLOGY SITE EVENTS
+# for Base Game and other non-"Ancient Relics" DLCs
+####################################################
+
+namespace = arcsite
+
+###########
+# DIG TEAM
+###########
+
+# Lonely Vigil (by Gemma Thomson) | fromfrom = digsite
+# Suitable for regular empires working in/on uninhabitable, icy regions and planets
+fleet_event = {
+	id = arcsite.9000
+	title = arcsite.9000.name
+	desc = arcsite.9000.desc
+	picture = GFX_evt_acquire_asset
+	show_sound = event_default
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	trigger = {
+		fromfrom = {
+			NOT = {
+				has_archaeology_flag = lonely_vigil
+			}
+		}
+	}
+
+	immediate = {
+		fromfrom = {
+			set_site_progress_locked = yes
+			set_archaeology_flag = lonely_vigil
+		}
+	}
+
+	# Arrange for counseling
+	option = {
+		name = arcsite.9000.a
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 200
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -200
+			}
+		}
+		fromfrom = {
+			add_stage_clues = -1
+		}
+		leader = {
+			add_trait = leader_trait_meticulous
+		}
+	}
+	# Leave them be
+	option = {
+		name = arcsite.9000.b
+		hidden_effect = {
+			random_list = {
+				1 = {
+					modifier = {
+						factor = 3
+						leader = {
+							has_trait_tier1or2or3or4 = { TRAIT = leader_trait_maniacal }
+						}
+					}
+					fleet_event = { id = arcsite.9001 days = 4 } # scientist absconds
+				}
+				1 = {
+					fleet_event = { id = arcsite.9002 days = 4 } # lull passes
+				}
+			}
+		}
+	}
+
+	after = {
+		fromfrom = { set_site_progress_locked = no }
+	}
+}

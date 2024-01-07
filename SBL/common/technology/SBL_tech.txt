@@ -99,7 +99,7 @@ tech_repeatable_node_reformatting = {
 		modifier = {
 			factor = 0.25
 			NOR = {
-				has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+				has_tier1or2or3or4_in_council = { TRAIT = leader_trait_expertise_statecraft }
 				has_trait_in_council = { TRAIT = leader_trait_curator }
 			}
 		}
@@ -219,7 +219,7 @@ tech_repeatable_node_culling = {
 		modifier = {
 			factor = 0.25
 			NOR = {
-				has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+				has_tier1or2or3or4_in_council = { TRAIT = leader_trait_expertise_statecraft }
 				has_trait_in_council = { TRAIT = leader_trait_curator }
 			}
 		}

@@ -1,0 +1,113 @@
+AST_WAVELENGTHS_1_CAT = {
+	desc = "AST_WAVELENGTHS_1_DESC"
+	picture = "GFX_evt_mining_station"
+	level = 1
+
+	spawn_chance = {
+		modifier = {
+			add = 3
+			is_asteroid = yes
+		}
+	}
+
+	on_success = {
+		1 = anomaly.75
+		1 = anomaly.115
+		1 = anomaly.130
+		0 = {
+			modifier = {
+				add = 1
+				leader = {
+					OR = {
+						NOR = {
+							has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_statecraft }
+							species = {
+								has_trait = trait_machine_unit
+							}
+						}
+						AND = {
+							NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_biology } }
+							species = {
+								has_trait = trait_machine_unit
+							}
+						}
+					}
+				}
+				owner = {
+					has_country_flag = birth_of_piracy
+				}
+			}
+			anomaly_event = anomaly.3065
+		}
+	}
+}
+
+AST_CLUSTER_CAT = {
+	desc = "AST_CLUSTER_DESC"
+	picture = "GFX_evt_asteroid_field"
+	level = 3
+
+	spawn_chance = {
+		modifier = {
+			add = 3
+			is_asteroid = yes
+		}
+	}
+
+	on_success = {
+		0 = {
+			modifier = {
+				add = 1
+				leader = {
+					NOR = {
+						has_trait = leader_trait_carefree
+						has_trait = leader_trait_carefree_2
+						has_trait = leader_trait_meticulous
+						has_trait = leader_trait_meticulous_2
+					}
+				}
+			}
+			anomaly_event = anomaly.3000
+		}
+		0 = {
+			modifier = {
+				add = 1
+				leader = {
+					NOR = {
+						has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_voidcraft }
+						has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_materials }
+						has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_propulsion }
+						has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_industry }
+						has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_field_manipulation }
+						has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_particles }
+						has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_psionics }
+						has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_computing }
+						has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_new_worlds }
+						has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_statecraft }
+						has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_biology }
+						has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_military_theory }
+					}
+				}
+			}
+			anomaly_event = anomaly.3005
+		}
+		1 = anomaly.3010
+		0 = {
+			modifier = {
+				add = 1
+				owner = {
+					any_relation = {
+						is_country_type = default
+						has_communications = prev
+						is_ai = yes
+						NOR = {
+							has_ethic = ethic_gestalt_consciousness
+							is_xenophobe = yes
+						}
+					}
+				}
+			}
+			anomaly_event = anomaly.3085
+		}
+	}
+}

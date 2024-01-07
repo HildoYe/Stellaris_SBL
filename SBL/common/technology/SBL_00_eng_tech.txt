@@ -1,0 +1,567 @@
+# ##################
+# Ship Sizes
+# ##################
+
+tech_juggernaut = {
+	cost = @tier5cost3
+	area = engineering
+	category = { voidcraft }
+	tier = 5
+	prerequisites = { "tech_starbase_5" "tech_battleships" "tech_engineering_4" }
+	weight = @tier5weight3
+	is_rare = yes
+
+	potential = {
+		host_has_dlc = "Federations"
+	}
+
+	# unlocks Juggernaut
+	weight_modifier = {
+		factor = 0.25
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_tier1or2or3or4_in_council = { TRAIT = leader_trait_maniacal }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_juggernaut
+		}
+		modifier = {
+			factor = 1.25
+			has_technology = "tech_titans"
+		}
+
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		ship = {
+			title = "TECH_UNLOCK_JUGGERNAUT_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_JUGGERNAUT_CONSTRUCTION_DESC"
+		}
+	}
+
+	ai_weight = {
+		factor = @ai_ship_types_factor
+
+	}
+}
+
+# ##################
+# Corvette upgrades
+# ##################
+
+tech_corvette_hull_2 = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = { "tech_corvette_hull_1" "tech_engineering_1" }
+	weight = @tier2weight3
+
+	modifier = {
+		custom_tooltip = tech_corvette_hull_effect
+		shipsize_corvette_hull_mult = 0.1
+		shipsize_offspring_corvette_hull_mult = 0.1
+		shipsize_frigate_hull_mult = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
+				has_tier1or2or3or4_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_corvette_hull_2
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+# ##################
+# Destroyer upgrades
+# ##################
+
+tech_destroyer_hull_2 = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = { "tech_destroyer_hull_1" "tech_engineering_2" }
+	weight = @tier3weight1
+
+	modifier = {
+		custom_tooltip = tech_destroyer_hull_effect
+		shipsize_destroyer_hull_mult = 0.1
+		shipsize_offspring_destroyer_hull_mult = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
+				has_tier1or2or3or4_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_destroyer_hull_2
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+# ##################
+# Cruiser upgrades
+# ##################
+
+tech_cruiser_hull_2 = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = { "tech_cruiser_hull_1" "tech_engineering_3" }
+	weight = @tier4weight1
+
+	modifier = {
+		custom_tooltip = tech_cruiser_hull_effect
+		shipsize_cruiser_hull_mult = 0.1
+		shipsize_offspring_cruiser_hull_mult = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
+				has_tier1or2or3or4_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_cruiser_hull_2
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+# ##################
+# Battleship upgrades
+# ##################
+
+tech_battleship_hull_2 = {
+	cost = @tier5cost1
+	area = engineering
+	tier = 5
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = { "tech_battleship_hull_1" "tech_engineering_4" }
+	weight = @tier5weight1
+
+	modifier = {
+		custom_tooltip = tech_battleship_hull_effect
+		shipsize_battleship_hull_mult = 0.1
+		shipsize_offspring_battleship_hull_mult = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
+				has_tier1or2or3or4_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_battleship_hull_2
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+# ##################
+# Titan upgrades
+# ##################
+
+tech_titan_hull_1 = {
+	cost = @tier5cost2
+	area = engineering
+	tier = 5
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = { "tech_titans" "tech_engineering_4" }
+	weight = @tier5weight2
+
+	modifier = {
+		shipsize_titan_hull_mult = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
+				has_tier1or2or3or4_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_titan_hull_1
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+tech_titan_hull_2 = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = { "tech_titan_hull_1" }
+	weight = @tier5weight3
+
+	modifier = {
+		shipsize_titan_hull_mult = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
+				has_tier1or2or3or4_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_titan_hull_2
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+# ##################
+# Starbases upgrades
+# ##################
+
+# Modular Engineering
+tech_modular_engineering = {
+	cost = @tier2cost3
+	area = engineering
+	category = { voidcraft }
+	tier = 2
+	prerequisites = { "tech_starbase_3" "tech_engineering_1" }
+	is_rare = yes
+	weight = @tier2weight3
+
+	modifier = {
+		starbase_buildings_cost_mult = -0.25
+		starbase_modules_cost_mult = -0.25
+	}
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0.5
+			NOR = {
+				has_tier1or2or3or4_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_modular_engineering
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+#Corps of Engineers
+tech_space_defense_station_improvement = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = { "tech_starbase_4" "tech_modular_engineering" "tech_engineering_2" }
+	is_rare = yes
+	weight = @tier3weight3
+
+	modifier = {
+		starbase_upgrade_cost_mult = -0.15
+		starbase_upgrade_speed_mult = 0.25
+	}
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0.25
+			NOR = {
+				has_tier1or2or3or4_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_specialist_subject_type = { TYPE = bulwark }
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_space_defense_station_improvement
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+# ##################
+# Industry and Robotics
+# ##################
+
+#Synthetics
+tech_synthetic_workers = {
+	cost = @tier4cost2
+	area = engineering
+	tier = 4
+	category = { industry }
+	prerequisites = { "tech_droid_workers" "tech_galactic_administration" "tech_sapient_ai" "tech_engineering_3" }
+	is_rare = yes
+	is_dangerous = yes
+	weight = @tier4weight2
+
+	feature_flags = { synths }
+
+	gateway = robotics
+
+	modifier = {
+		planet_jobs_robotic_produces_mult = 0.10
+	}
+
+	potential = {
+		NOT = { has_ethic = "ethic_gestalt_consciousness" }
+	}
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0
+			has_policy_flag = robots_outlawed
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_ethic = "ethic_spiritualist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_synthetic_workers
+		}
+		modifier = {
+			factor = 2
+			has_origin = origin_mechanists
+		}
+		modifier = {
+			factor = 0.20
+			NOR = {
+				has_tier1or2or3or4_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_tier1or2or3or4_in_council = { TRAIT = leader_trait_expertise_industry }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @robots_ai_tech_factor
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_ai_personality_behaviour = robot_exploiter
+				has_ai_personality_behaviour = robot_liberator
+			}
+		}
+		modifier = {
+			factor = 2
+			has_origin = origin_mechanists
+		}
+
+	}
+}
+
+# Advanced Robotic Assembly
+tech_robot_assembly_complex = {
+	icon = "tech_mega_assembly"
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { industry }
+	prerequisites = { "tech_robomodding" "tech_galactic_administration" "tech_engineering_3" }
+	is_rare = yes
+	weight = @tier4weight1
+
+	potential = {
+		NOT = { has_ethic = "ethic_gestalt_consciousness" }
+	}
+
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0.20
+			NOR = {
+				has_tier1or2or3or4_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_tier1or2or3or4_in_council = { TRAIT = leader_trait_expertise_industry }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_robot_assembly_complex
+		}
+	}
+
+	ai_weight = {
+		factor = @pop_growth_tech_ai_factor
+
+	}
+}
+
+# ##################
+# Building Speed
+# ##################
+
+tech_construction_templates = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	is_rare = yes
+	category = { industry }
+	prerequisites = { "tech_assembly_pattern" "tech_engineering_2" }
+	weight = @tier3weight2
+
+	modifier = {
+		planet_building_build_speed_mult = 0.50
+		empire_size_districts_mult = -0.10
+		show_only_custom_tooltip = no
+		custom_tooltip = tech_construction_templates_effect
+	}
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0.5
+			NOR = {
+				has_tier1or2or3or4_in_council = { TRAIT = leader_trait_expertise_industry }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_construction_templates
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+	}
+
+	ai_weight = {
+
+	}
+}

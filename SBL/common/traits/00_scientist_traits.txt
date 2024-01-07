@@ -1586,7 +1586,7 @@ leader_trait_society_focus_2 = {
 		CLASS = scientist
 		ICON = "GFX_leader_trait_society_focus"
 		RARITY = veteran
-		COUNCIL = yes
+		COUNCIL = no
 		TIER = 2
 	}
 	planet_modifier = {
@@ -1608,7 +1608,7 @@ leader_trait_society_focus_3 = {
 		CLASS = scientist
 		ICON = "GFX_leader_trait_society_focus"
 		RARITY = veteran
-		COUNCIL = yes
+		COUNCIL = no
 		TIER = 3
 	}
 	planet_modifier = {
@@ -2567,7 +2567,7 @@ leader_trait_expertise_biology_3 = {
 		script = trait/icon_society
 		CLASS = scientist
 		ICON = "GFX_leader_trait_expertise_biology"
-		RARITY = free_or_veteran
+		RARITY = veteran
 		COUNCIL = triggered
 		TIER = 3
 	}
@@ -3219,6 +3219,7 @@ leader_trait_paranoid = {
 		leader_trait_maniacal
 		leader_trait_maniacal_2
 		leader_trait_maniacal_3
+		leader_trait_maniacal_4
 	}
 	selectable_weight = {
 		weight = @class_negative_trait_weight
@@ -3246,6 +3247,7 @@ leader_trait_paranoid_2 = {
 		leader_trait_maniacal
 		leader_trait_maniacal_2
 		leader_trait_maniacal_3
+		leader_trait_maniacal_4
 	}
 	selectable_weight = @tier2_negative_trait_weight
 }
@@ -3269,6 +3271,7 @@ leader_trait_narrow_minded = {
 		leader_trait_inquisitive
 		leader_trait_inquisitive_2
 		leader_trait_inquisitive_3
+		leader_trait_inquisitive_4
 	}
 	selectable_weight = {
 		weight = @class_negative_trait_weight
@@ -3301,6 +3304,7 @@ leader_trait_narrow_minded_2 = {
 		leader_trait_inquisitive
 		leader_trait_inquisitive_2
 		leader_trait_inquisitive_3
+		leader_trait_inquisitive_4
 	}
 	selectable_weight = @tier2_negative_trait_weight
 }
@@ -3378,6 +3382,7 @@ leader_trait_opinionated = {
 		leader_trait_collaborator
 		leader_trait_collaborator_2
 		leader_trait_collaborator_3
+		leader_trait_collaborator_4
 	}
 	selectable_weight = {
 		weight = @class_negative_trait_weight
@@ -3415,6 +3420,7 @@ leader_trait_opinionated_2 = {
 		leader_trait_collaborator
 		leader_trait_collaborator_2
 		leader_trait_collaborator_3
+		leader_trait_collaborator_4
 	}
 	selectable_weight = @tier2_negative_trait_weight
 }

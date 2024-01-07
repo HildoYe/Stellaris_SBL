@@ -1,0 +1,798 @@
+############
+# EXPLORER #
+############
+
+leader_trait_slippery_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_slippery_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_slippery"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	modifier = {
+		ship_disengage_chance_mult = 2
+		ship_disengage_opportunities_add = 3
+		ship_hull_mult = 2
+	}
+	leader_class = { scientist }
+}
+
+###################
+leader_trait_prospector_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_prospector_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_prospector"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	# Trait effects in paragon_events_2.txt
+	custom_tooltip_with_modifiers = leader_trait_prospector_4_effect
+	leader_class = { scientist }
+}
+
+###################
+leader_trait_observant_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_observant_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_observant"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	modifier = {
+		ship_sensor_range_add = 4
+		ship_hyperlane_range_add = 5
+		ship_windup_mult = -0.35
+	}
+	leader_class = { commander scientist }
+}
+
+###################
+leader_trait_academic_dig_site_expert_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_academic_dig_site_expert_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_academic_dig_site_expert"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	modifier = {
+		ship_archaeological_site_clues_add = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+}
+
+###################
+leader_trait_academic_minor_artifacts_expert_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_academic_minor_artifacts_expert_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_academic_minor_artifacts_expert"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	custom_tooltip = leader_trait_academic_minor_artifacts_expert_4_tt
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+}
+
+###################
+leader_trait_tuner_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_tuner_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_tuner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	modifier = {
+		ship_speed_mult = 0.8
+	}
+	leader_class = { scientist }
+}
+
+###################
+leader_trait_explorer_cloaking_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_explorer_cloaking_focus_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_explorer_cloaking_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	modifier = {
+		ship_cloaking_strength_add = 3
+	}
+	custom_tooltip_with_modifiers = leader_trait_explorer_cloaking_focus_4_tt
+	prerequisites = { tech_cloaking_1 }
+	leader_class = { scientist }
+}
+
+###########
+# ANALYST #
+###########
+
+leader_trait_collaborator_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_collaborator_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_collaborator"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	planet_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.125
+		planet_jobs_society_research_produces_mult = 0.125
+		planet_jobs_engineering_research_produces_mult = 0.125
+	}
+	sector_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.0625
+		planet_jobs_society_research_produces_mult = 0.0625
+		planet_jobs_engineering_research_produces_mult = 0.0625
+	}
+	leader_class = { scientist }
+	opposites = {
+		leader_trait_opinionated
+		leader_trait_opinionated_2
+	}
+}
+
+###################
+leader_trait_manufacturer_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_manufacturer_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_manufacturer"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	planet_modifier = {
+		planet_amenities_add = 80
+	}
+	sector_modifier = {
+		planet_amenities_add = 40
+	}
+	leader_class = { scientist official }
+}
+
+###################
+leader_trait_salvager_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_salvager_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_salvager"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	modifier = {
+		ship_speed_mult = 0.35
+	}
+	leader_class = { scientist }
+	custom_tooltip_with_modifiers = leader_trait_salvager_effect_4
+}
+
+###################
+leader_trait_space_miner_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_space_miner_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_space_miner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	planet_modifier = {
+		planet_miners_minerals_produces_add = 1.5
+	}
+	sector_modifier = {
+		planet_miners_minerals_produces_add = 0.75
+	}
+	leader_class = { scientist official commander }
+}
+
+##############
+# RESEARCHER #
+##############
+
+leader_trait_inquisitive_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_inquisitive_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_inquisitive"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 4
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.08
+		planet_researchers_upkeep_mult = 0.08
+		num_tech_alternatives_add = 1
+	}
+	leader_class = { scientist }
+	ai_weight = 100
+	opposites = {
+		leader_trait_narrow_minded
+		leader_trait_narrow_minded_2
+	}
+}
+
+###################
+leader_trait_maniacal_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { leader_trait_maniacal_3 }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_maniacal"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 4
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.12
+		planet_researchers_upkeep_mult = 0.12
+		# increased chance to discover risky techs (weighted in tech-script)
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		OR = {
+			leader_class = scientist
+			has_leader_flag = renowned_materialist1
+		}
+	}
+	leader_class = { commander scientist }
+	opposites = {
+		leader_trait_paranoid
+		leader_trait_paranoid_2
+	}
+	ai_weight = 110
+}
+
+###################
+trait_ruler_expansionist_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "trait_ruler_expansionist_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expansionist"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 4
+	}
+	councilor_modifier = {
+		starbase_outpost_cost_mult = -0.125
+		country_starbase_influence_cost_mult = -0.125
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+}
+
+###################
+leader_trait_science_communicator_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_science_communicator_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_science_communicator"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 4
+	}
+	councilor_modifier = {
+		scientist_exp_gain = 0.35
+		ship_archaeological_site_clues_add = 2
+		ship_astral_rift_clues_add = 1
+	}
+	leader_class = { scientist }
+}
+
+####################
+# RESEARCHER FOCUS #
+####################
+
+leader_trait_engineering_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_engineering_focus_3" }
+	inline_script = {
+		script = trait/icon_engineering
+		CLASS = scientist
+		ICON = "GFX_leader_trait_engineering_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	planet_modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.4
+	}
+	sector_modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.2
+	}
+	leader_class = { scientist }
+	triggered_desc = { text = only_one_scientist_focus }
+	ai_weight = 100
+}
+
+###################
+leader_trait_physics_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_physics_focus_3" }
+	inline_script = {
+		script = trait/icon_physics
+		CLASS = scientist
+		ICON = "GFX_leader_trait_physics_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	planet_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.4
+	}
+	sector_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.2
+	}
+	leader_class = { scientist }
+	triggered_desc = { text = only_one_scientist_focus }
+	ai_weight = 100
+}
+
+###################
+leader_trait_society_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_society_focus_3" }
+	inline_script = {
+		script = trait/icon_society
+		CLASS = scientist
+		ICON = "GFX_leader_trait_society_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	planet_modifier = {
+		planet_jobs_society_research_produces_mult = 0.4
+	}
+	sector_modifier = {
+		planet_jobs_society_research_produces_mult = 0.2
+	}
+	leader_class = { scientist }
+	triggered_desc = { text = only_one_scientist_focus }
+	ai_weight = 100
+}
+
+#######################
+# RESEARCHER EXPERISE #
+#######################
+
+leader_trait_expertise_materials_4 = {
+	replace_traits = { "leader_trait_expertise_materials_3" }
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_engineering
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_materials"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = 4
+	}
+	councilor_modifier = {
+		category_materials_research_speed_mult = 0.2
+		category_materials_draw_chance_mult = 1.25
+	}
+	inline_script = {
+		script =  traits/technocracy_expertise_effects
+		FIELD = engineering
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+	ai_weight = 100
+}
+
+###################
+leader_trait_expertise_propulsion_4 = {
+	replace_traits = { "leader_trait_expertise_propulsion_3" }
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_engineering
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_propulsion"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = 4
+	}
+	councilor_modifier = {
+		category_propulsion_research_speed_mult = 0.2
+		category_propulsion_draw_chance_mult = 1.25
+	}
+	inline_script = {
+		script =  traits/technocracy_expertise_effects
+		FIELD = engineering
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+	ai_weight = 100
+}
+
+###################
+leader_trait_expertise_voidcraft_4 = {
+	replace_traits = { "leader_trait_expertise_voidcraft_3" }
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_engineering
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_voidcraft"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = 4
+	}
+	councilor_modifier = {
+		category_voidcraft_research_speed_mult = 0.2
+		category_voidcraft_draw_chance_mult = 1.25
+	}
+	inline_script = {
+		script =  traits/technocracy_expertise_effects
+		FIELD = engineering
+		TIER = 5
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+	ai_weight = 70
+}
+
+###################
+leader_trait_expertise_industry_4 = {
+	replace_traits = { "leader_trait_expertise_industry_3" }
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_engineering
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_industry"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = 4
+	}
+	councilor_modifier = {
+		category_industry_research_speed_mult = 0.2
+		category_industry_draw_chance_mult = 1.25
+	}
+	inline_script = {
+		script =  traits/technocracy_expertise_effects
+		FIELD = engineering
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+	ai_weight = 70
+}
+
+###################
+leader_trait_expertise_field_manipulation_4 = {
+	replace_traits = { "leader_trait_expertise_field_manipulation_3" }
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_physics
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_field_manipulation"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = 4
+	}
+	councilor_modifier = {
+		category_field_manipulation_research_speed_mult = 0.2
+		category_field_manipulation_draw_chance_mult = 1.25
+	}
+	inline_script = {
+		script =  traits/technocracy_expertise_effects
+		FIELD = physics
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+	ai_weight = 100
+}
+
+###################
+leader_trait_expertise_particles_4 = {
+	replace_traits = { "leader_trait_expertise_particles_3" }
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_physics
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_particles"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = 4
+	}
+	councilor_modifier = {
+		category_particles_research_speed_mult = 0.2
+		category_particles_draw_chance_mult = 1.25
+	}
+	inline_script = {
+		script =  traits/technocracy_expertise_effects
+		FIELD = physics
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+	ai_weight = 100
+}
+
+###################
+leader_trait_expertise_computing_4 = {
+	replace_traits = { "leader_trait_expertise_computing_3" }
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_physics
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_computing"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = 4
+	}
+	councilor_modifier = {
+		category_computing_research_speed_mult = 0.2
+		category_computing_draw_chance_mult = 1.25
+	}
+	inline_script = {
+		script =  traits/technocracy_expertise_effects
+		FIELD = physics
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+	ai_weight = 100
+}
+
+###################
+leader_trait_expertise_psionics_4 = {
+	replace_traits = { "leader_trait_expertise_psionics_3" }
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_psionics"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = 4
+	}
+	councilor_modifier = {
+		category_psionics_research_speed_mult = 0.6
+		category_psionics_draw_chance_mult = 4.00
+	}
+	inline_script = {
+		script =  traits/technocracy_expertise_effects
+		FIELD = society
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+	ai_weight = 100
+}
+
+###################
+leader_trait_expertise_new_worlds_4 = {
+	replace_traits = { "leader_trait_expertise_new_worlds_3" }
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_society
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_new_worlds"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = 4
+	}
+	councilor_modifier = {
+		category_new_worlds_research_speed_mult = 0.2
+		category_new_worlds_draw_chance_mult = 1.25
+	}
+		inline_script = {
+		script =  traits/technocracy_expertise_effects
+		FIELD = society
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+	ai_weight = 100
+}
+
+###################
+leader_trait_expertise_statecraft_4 = {
+	replace_traits = { "leader_trait_expertise_statecraft_3" }
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_society
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_statecraft"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = 4
+	}
+	councilor_modifier = {
+		category_statecraft_research_speed_mult = 0.2
+		category_statecraft_draw_chance_mult = 1.25
+	}
+	inline_script = {
+		script =  traits/technocracy_expertise_effects
+		FIELD = society
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+	ai_weight = 100
+}
+
+###################
+leader_trait_expertise_biology_4 = {
+	replace_traits = { "leader_trait_expertise_biology_3" }
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_society
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_biology"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = 4
+	}
+	councilor_modifier = {
+		category_biology_research_speed_mult = 0.2
+		category_biology_draw_chance_mult = 1.25
+	}
+	inline_script = {
+		script =  traits/technocracy_expertise_effects
+		FIELD = society
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+	ai_weight = 100
+}
+
+###################
+leader_trait_expertise_military_theory_4 = {
+	replace_traits = { "leader_trait_expertise_military_theory_3" }
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_society
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_military_theory"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = 4
+	}
+	councilor_modifier = {
+		category_military_theory_research_speed_mult = 0.2
+		category_military_theory_draw_chance_mult = 1.25
+	}
+	inline_script = {
+		script =  traits/technocracy_expertise_effects
+		FIELD = society
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+	ai_weight = 100
+}
+
+###################
+leader_trait_expertise_archaeostudies_4 = {
+	replace_traits = { "leader_trait_expertise_archaeostudies_3" }
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_society
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_archaeostudies"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = 4
+	}
+	councilor_modifier = {
+		category_archaeostudies_research_speed_mult = 0.2
+		category_archaeostudies_draw_chance_mult = 0.50
+		starbase_shipyard_build_minor_artifacts_cost_mult = -0.125
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_technocracy
+			}
+		}
+		planet_jobs_minor_artifacts_produces_mult = 0.40
+	}
+	triggered_sector_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_technocracy
+			}
+		}
+		planet_jobs_minor_artifacts_produces_mult = 0.20
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+	ai_weight = {
+		weight = 100
+		modifier = {
+			factor = 0.3
+			owner = {
+				num_buildings = {
+					type = building_archaeostudies_faculty
+					value < 1
+					disabled = no
+					in_construction = no
+				}
+			}
+		}
+	}
+}

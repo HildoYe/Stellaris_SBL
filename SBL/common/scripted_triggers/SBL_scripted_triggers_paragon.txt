@@ -1,3 +1,12 @@
+has_tier1or2or3or4_in_council = {
+	any_owned_leader = {
+		is_councilor = yes
+		has_trait_tier1or2or3or4 = {
+			TRAIT = $TRAIT$
+		}
+	}
+}
+
 has_trait_tier1or2or3or4 = {
 	OR = {
 		has_trait = $TRAIT$
@@ -28,6 +37,42 @@ has_any_governor_focus = {
 	}
 }
 
+has_scientist_focus = {
+	OR = {
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_engineering_focus }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_physics_focus }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_society_focus }
+	}
+}
+
+is_specialist_researcher_physics = {
+	OR = {
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_computing }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_field_manipulation }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_particles }
+	}
+}
+
+is_specialist_researcher_society = {
+	OR = {
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_biology }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_military_theory }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_new_worlds }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_statecraft }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_archaeostudies }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_psionics }
+	}
+}
+
+is_specialist_researcher_engineering = {
+	OR = {
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_industry }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_materials }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_propulsion }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_voidcraft }
+	}
+}
+
 has_narratively_great_councilor_trait = {
 	OR = {
 		# Any class
@@ -38,10 +83,10 @@ has_narratively_great_councilor_trait = {
 		has_trait_tier1or2 = { TRAIT = leader_trait_gifted }
 
 		# Scientist
-		has_trait_tier1or2or3 = { TRAIT = leader_trait_collaborator }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_collaborator }
 		has_trait_tier1or2 = { TRAIT = leader_trait_spark_of_genius }
-		has_trait_tier1or2or3 = { TRAIT = leader_trait_society_focus }
-		has_trait_tier1or2or3 = { TRAIT = leader_trait_expertise_statecraft }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_society_focus }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_statecraft }
 		has_trait = leader_trait_knowledge_for_the_masses
 
 		# Official
@@ -82,8 +127,8 @@ has_narratively_great_speaker_trait = {
 		# Scientist
 		has_trait = leader_trait_spark_of_genius
 		has_trait = leader_trait_collective_wisdom
-		has_trait_tier1or2or3 = { TRAIT = leader_trait_society_focus }
-		has_trait_tier1or2or3 = { TRAIT = leader_trait_expertise_statecraft }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_society_focus }
+		has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_statecraft }
 		has_trait = leader_trait_knowledge_for_the_masses
 		has_trait = leader_trait_frontier_adventurer
 

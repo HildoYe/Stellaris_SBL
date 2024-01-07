@@ -1,0 +1,77 @@
+defined_text = {
+	name = GetSpecialization
+	random = no
+	text = {
+		trigger = {
+			has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_voidcraft }
+		}
+		localization_key = a_voidcraft
+	}
+	text = {
+		trigger = {
+			has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_computing }
+		}
+		localization_key = a_computing
+	}
+	text = {
+		trigger = {
+			has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_field_manipulation }
+		}
+		localization_key = a_field_manipulation
+	}
+	text = {
+		trigger = {
+			has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_particles }
+		}
+		localization_key = a_particle_physics
+	}
+	text = {
+		trigger = {
+			has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_biology }
+		}
+		localization_key = a_biology
+	}
+	text = {
+		trigger = {
+			has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		localization_key = a_military_theory
+	}
+	text = {
+		trigger = {
+			has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_new_worlds }
+		}
+		localization_key = a_new_worlds
+	}
+	text = {
+		trigger = {
+			has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_psionics }
+		}
+		localization_key = a_psionics
+	}
+	text = {
+		trigger = {
+			has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_statecraft }
+		}
+		localization_key = a_statecraft
+	}
+	text = {
+		trigger = {
+			has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_industry }
+		}
+		localization_key = a_industry
+	}
+	text = {
+		trigger = {
+			has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_materials }
+		}
+		localization_key = a_materials
+	}
+	text = {
+		trigger = {
+			has_trait_tier1or2or3or4 = { TRAIT = leader_trait_expertise_propulsion }
+		}
+		localization_key = a_propulsion
+	}
+	default = a_cloaking
+}

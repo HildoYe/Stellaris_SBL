@@ -291,3 +291,93 @@ country_event = {
 		}
 	}
 }
+
+# Salvager trait
+# Fired when a science ship succesfully analyzed or scavenged debris (bot not both)
+# this = country
+# from = debris
+# fromfrom = controller of destroyed ship
+country_event = {
+	id = paragon_2.1110
+	is_triggered_only = yes
+	hide_window = yes
+
+	# Check if the country has a leader with the salvager trait in the same system
+	trigger = {
+		any_owned_leader = {
+			OR = {
+				has_trait_tier1or2or3or4 = { TRAIT = leader_trait_salvager }
+				has_trait = leader_trait_master_salvager
+			}
+			exists = solar_system
+			solar_system = {
+				is_same_value = from.solar_system
+			}
+		}
+	}
+
+	immediate = {
+		salvage_ships_from_debris = {
+			CHANCE = value:country_salvage_ships_from_debris_chance
+		}
+	}
+}
+
+#############################
+# SCIENTIST TRAIT ANOMALIES #
+#############################
+
+# Prospector traits
+ship_event = {
+	id = paragon_2.2001
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = leader
+		leader = {
+			has_trait_tier1or2or3or4 = {
+				TRAIT = leader_trait_prospector
+			}
+		}
+		FROM = {
+			NOT = {
+				has_planet_flag = prospected_by@root.owner
+			}
+			OR = {
+				has_deposit_for = shipclass_mining_station
+				has_deposit_for = shipclass_research_station
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				leader = {
+					has_trait = leader_trait_prospector
+				}
+			}
+			scientist_prospector_effect = { CHANCE = 20 }
+		}
+		else_if = {
+			limit = {
+				leader = {
+					has_trait = leader_trait_prospector_2
+				}
+			}
+			scientist_prospector_effect = { CHANCE = 35 }
+		}
+		else_if = {
+			limit = {
+				leader = {
+					has_trait = leader_trait_prospector_3
+				}
+			}
+			scientist_prospector_effect = { CHANCE = 50 }
+		}
+		else = {
+			scientist_prospector_effect = { CHANCE = 65 }
+		}
+	}
+}

@@ -1,0 +1,39 @@
+namespace = toxoids
+
+### Scavengers
+
+# on_debris_scavenged_and_researched: Fired when a science ship succesfully analyzed or scavenged debris
+# this = country
+# from = debris
+# fromfrom = controller of destroyed ship
+country_event = {
+	id = toxoids.700
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		is_scavenger = yes
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				any_owned_leader = {
+					has_trait_tier1or2or3or4 = { TRAIT = leader_trait_salvager }
+					exists = solar_system
+					solar_system = {
+						is_same_value = from.solar_system
+					}
+				}
+			}
+			salvage_ships_from_debris = {
+				CHANCE = value:country_salvage_ships_from_debris_chance|BONUS|5| # Give additional chance from trait, but less than just adding both of them together
+			}
+		}
+		else = {
+			salvage_ships_from_debris = {
+				CHANCE = value:country_salvage_ships_from_debris_chance
+			}
+		}
+	}
+}

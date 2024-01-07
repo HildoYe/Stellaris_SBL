@@ -845,7 +845,7 @@ defined_text = {
 			base = @retirement_reason_civic_weight
 			modifier = {
 				factor = 3
-				has_trait = leader_trait_salvager
+				has_trait_tier1or2or3or4 = { TRAIT = leader_trait_salvager }
 			}
 		}
 		localization_key = death_reason_civic_scavengers_1
@@ -856,7 +856,7 @@ defined_text = {
 			base = @retirement_reason_civic_weight
 			modifier = {
 				factor = 3
-				has_trait = leader_trait_salvager
+				has_trait_tier1or2or3or4 = { TRAIT = leader_trait_salvager }
 			}
 		}
 		localization_key = death_reason_civic_scavengers_2
