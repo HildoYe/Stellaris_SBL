@@ -1,0 +1,314 @@
+paragon_origin_trait_giver_authoritarian = {
+	locked_random_list = {
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_egalitarian = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_commanding_presence } }
+				}
+			}
+			add_trait = leader_trait_legendary_commanding_presence
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_egalitarian = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_high_king } }
+				}
+			}
+			add_trait = leader_trait_legendary_high_king
+		}
+	}
+}
+paragon_origin_trait_giver_xenophile = {
+	locked_random_list = {
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_xenophobe = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_scientific_diplomacy } }
+				}
+			}
+			add_trait = leader_trait_legendary_scientific_diplomacy
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_xenophobe = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_gunboat_diplomacy } }
+				}
+			}
+			add_trait = leader_trait_legendary_gunboat_diplomacy
+		}
+	}
+}
+paragon_origin_trait_giver_xenophobe = {
+	locked_random_list = {
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_xenophile = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_genetic_purist } }
+				}
+			}
+			add_trait = leader_trait_legendary_genetic_purist
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_xenophile = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_evervigilant } }
+				}
+			}
+			add_trait = leader_trait_legendary_evervigilant
+		}
+	}
+}
+paragon_origin_trait_giver_militarist = {
+	locked_random_list = {
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_pacifist = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_military_knowledge } }
+				}
+			}
+			add_trait = leader_trait_legendary_military_knowledge
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_pacifist = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_foe_hammer } }
+				}
+			}
+			add_trait = leader_trait_legendary_foe_hammer
+		}
+	}
+}
+paragon_origin_trait_giver_pacifist = {
+	locked_random_list = {
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_militarist = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_natural_ruler } }
+				}
+			}
+			add_trait = leader_trait_legendary_natural_ruler
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_militarist = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_autarky } }
+				}
+			}
+			add_trait = leader_trait_legendary_autarky
+		}
+	}
+}
+paragon_origin_trait_giver_spiritualist = {
+	locked_random_list = {
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_materialist = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_pious_ascet } }
+				}
+			}
+			add_trait = leader_trait_legendary_pious_ascet
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_materialist = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_great_teacher } }
+				}
+			}
+			add_trait = leader_trait_legendary_great_teacher
+		}
+	}
+}
+paragon_origin_trait_giver_materialist = {
+	locked_random_list = {
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_spiritualist = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_industry_titan } }
+				}
+			}
+			add_trait = leader_trait_legendary_industry_titan
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_spiritualist = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_great_inventor } }
+				}
+			}
+			add_trait = leader_trait_legendary_great_inventor
+		}
+	}
+}
+
+paragon_origin_legendary_leader_trait_giver = {
+	optimize_memory
+	locked_random_list = {
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_egalitarian = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_commanding_presence } }
+				}
+			}
+			add_trait = leader_trait_legendary_commanding_presence
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_xenophile = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_genetic_purist } }
+				}
+			}
+			add_trait = leader_trait_legendary_genetic_purist
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_xenophobe = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_scientific_diplomacy } }
+				}
+			}
+			add_trait = leader_trait_legendary_scientific_diplomacy
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_militarist = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_natural_ruler } }
+				}
+			}
+			add_trait = leader_trait_legendary_natural_ruler
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_pacifist = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_military_knowledge } }
+				}
+			}
+			add_trait = leader_trait_legendary_military_knowledge
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_materialist = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_pious_ascet } }
+				}
+			}
+			add_trait = leader_trait_legendary_pious_ascet
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_spiritualist = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_industry_titan } }
+				}
+			}
+			add_trait = leader_trait_legendary_industry_titan
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_egalitarian = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_high_king } }
+				}
+			}
+			add_trait = leader_trait_legendary_high_king
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_xenophile = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_evervigilant } }
+				}
+			}
+			add_trait = leader_trait_legendary_evervigilant
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_xenophobe = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_gunboat_diplomacy } }
+				}
+			}
+			add_trait = leader_trait_legendary_gunboat_diplomacy
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_militarist = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_autarky } }
+				}
+			}
+			add_trait = leader_trait_legendary_autarky
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_pacifist = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_foe_hammer } }
+				}
+			}
+			add_trait = leader_trait_legendary_foe_hammer
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_materialist = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_great_teacher } }
+				}
+			}
+			add_trait = leader_trait_legendary_great_teacher
+		}
+		0 = {
+			modifier = {
+				add = 1
+				AND = {
+					owner = { is_spiritualist = no }
+					NOT = { has_trait_tier1or2or3or4 = { TRAIT = leader_trait_legendary_great_inventor } }
+				}
+			}
+			add_trait = leader_trait_legendary_great_inventor
+		}
+	}
+}

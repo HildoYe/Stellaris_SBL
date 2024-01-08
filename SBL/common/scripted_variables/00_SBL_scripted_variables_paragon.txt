@@ -37,4 +37,5 @@
 @trait_shipbreaker_4_amt = 12
 @trait_juryrigger_4_amt = 0.35				# Localisation is hardcoded
 @trait_crusader_4_fleet_amt = 15
-@minor_artifacts_expert_amt_4 = 			# Localisation is hardcoded
+@minor_artifacts_expert_amt_4 = 20			# Localisation is hardcoded
+@scientific_diplomacy_4_amt = 30

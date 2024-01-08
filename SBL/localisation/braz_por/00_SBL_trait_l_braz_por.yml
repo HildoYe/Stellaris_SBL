@@ -634,3 +634,51 @@
  
  leader_trait_expertise_archaeostudies_4: "$leader_trait_expertise_archaeostudies$ IV"
  leader_trait_expertise_archaeostudies_4_desc: "$leader_trait_expertise_archaeostudies_desc$"
+
+##################
+# UNDER ONE RULE #
+##################
+
+ leader_trait_legendary_military_knowledge_4: "$leader_trait_legendary_military_knowledge$ IV"
+ leader_trait_legendary_military_knowledge_4_desc: "$leader_trait_legendary_military_knowledge_desc$"
+
+ leader_trait_legendary_foe_hammer_4: "$leader_trait_legendary_foe_hammer$ IV"
+ leader_trait_legendary_foe_hammer_4_desc: "$leader_trait_legendary_foe_hammer_desc$"
+
+ leader_trait_legendary_great_teacher_4: "$leader_trait_legendary_great_teacher$ IV"
+ leader_trait_legendary_great_teacher_4_desc: "$leader_trait_legendary_great_teacher_desc$"
+
+ leader_trait_legendary_pious_ascet_4: "$leader_trait_legendary_pious_ascet$ IV"
+ leader_trait_legendary_pious_ascet_4_desc: "$leader_trait_legendary_pious_ascet_desc$"
+
+ leader_trait_legendary_commanding_presence_4: "$leader_trait_legendary_commanding_presence$ IV"
+ leader_trait_legendary_commanding_presence_4_desc: "$leader_trait_legendary_commanding_presence_desc$"
+
+ leader_trait_legendary_high_king_4: "$leader_trait_legendary_high_king$ IV"
+ leader_trait_legendary_high_king_4_desc: "$leader_trait_legendary_high_king_desc$"
+
+ leader_trait_legendary_gunboat_diplomacy_4: "$leader_trait_legendary_gunboat_diplomacy$ IV"
+ leader_trait_legendary_gunboat_diplomacy_4_desc: "$leader_trait_legendary_gunboat_diplomacy_desc$"
+
+ leader_trait_legendary_scientific_diplomacy_4: "$leader_trait_legendary_scientific_diplomacy$ IV"
+ leader_trait_legendary_scientific_diplomacy_4_desc: "$leader_trait_legendary_scientific_diplomacy_desc$"
+ leader_trait_legendary_scientific_diplomacy_4_tt: "$t$§YTratados de Migração§! produzem §G$@scientific_diplomacy_4_amt$§! §YPontos de Pesquisa§! de £physics£ £society£ £engineering£\n$leader_trait_legendary_origin_desc$"
+
+ leader_trait_legendary_autarky_4: "$leader_trait_legendary_autarky$ IV"
+ leader_trait_legendary_autarky_4_desc: "$leader_trait_legendary_autarky_desc$"
+
+ leader_trait_legendary_natural_ruler_4: "$leader_trait_legendary_natural_ruler$ IV"
+ leader_trait_legendary_natural_ruler_4_desc: "$leader_trait_legendary_natural_ruler_desc$"
+
+ leader_trait_legendary_industry_titan_4: "$leader_trait_legendary_industry_titan$ IV"
+ leader_trait_legendary_industry_titan_4_desc: "$leader_trait_legendary_industry_titan_desc$"
+
+ leader_trait_legendary_great_inventor_4: "$leader_trait_legendary_great_inventor$ IV"
+ leader_trait_legendary_great_inventor_4_desc: "$leader_trait_legendary_great_inventor_desc$"
+ leader_trait_legendary_great_inventor_4_tt: "$t$£amenities£ Confortos de £job_roboticist£ $job_roboticist_plural$: §G+4§!\n$leader_trait_legendary_origin_desc$"
+
+ leader_trait_legendary_genetic_purist_4: "$leader_trait_legendary_genetic_purist$ IV"
+ leader_trait_legendary_genetic_purist_4_desc: "$leader_trait_legendary_genetic_purist_desc$"
+
+ leader_trait_legendary_evervigilant_4: "$leader_trait_legendary_evervigilant$ IV"
+ leader_trait_legendary_evervigilant_4_desc: "$leader_trait_legendary_evervigilant_desc$"
