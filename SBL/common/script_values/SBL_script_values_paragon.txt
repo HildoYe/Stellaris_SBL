@@ -86,3 +86,42 @@ agenda_leadership_conditioning_num_leaders = {
 		mode = add
 	}
 }
+
+tr_statecraft_amongst_peers_non_councilor_num_leader = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = count_owned_leader
+		parameters = {
+			limit = {
+				AND = {
+					has_skill < 15
+					is_councilor = no
+				}				
+			}
+		}
+		mode = add
+	}	
+}
+
+tr_statecraft_amongst_peers_max_councilor_num_leader = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = count_owned_leader
+		parameters = {
+			limit = {
+				AND = {
+					has_skill = 15
+					is_councilor = yes
+				}				
+			}
+		}
+		mode = add
+	}	
+}
+
+tr_statecraft_amongst_peers_reward_extra = {
+	base = @statecraft_amongst_peers_exp_reward
+	mult = owner.value:tr_statecraft_amongst_peers_max_councilor_num_leader
+	divide = owner.value:tr_statecraft_amongst_peers_non_councilor_num_leader
+	mult = trigger:has_skill
+}
