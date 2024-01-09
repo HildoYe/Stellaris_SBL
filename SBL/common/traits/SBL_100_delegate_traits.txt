@@ -1,0 +1,441 @@
+@t4_mult = 0.35
+
+leader_trait_resolution_category_commerce_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_resolution_category_commerce_focus_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_resolution_category_commerce_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	galcom_modifier = {
+		resolution_category_commerce_vote_strength_mult = @t4_mult
+	}
+	custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_4_favor_tt
+	leader_class = { official }
+}
+
+###################
+leader_trait_resolution_category_industry_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_resolution_category_industry_focus_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_resolution_category_industry_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	galcom_modifier = {
+		resolution_category_industry_vote_strength_mult = @t4_mult
+	}
+	custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_4_favor_tt
+	leader_class = { official }
+}
+
+###################
+leader_trait_resolution_category_politics_traditions_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_resolution_category_politics_traditions_focus_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_resolution_category_politics_traditions_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	galcom_modifier = {
+		resolution_category_politics_tradition_1_vote_strength_mult = @t4_mult
+		resolution_category_politics_tradition_2_vote_strength_mult = @t4_mult
+		resolution_category_politics_tradition_3_vote_strength_mult = @t4_mult
+		resolution_category_politics_tradition_4_vote_strength_mult = @t4_mult
+	}
+	custom_tooltip = leader_trait_resolution_category_politics_traditions_focus_4_tt
+	leader_class = { official }
+}
+
+###################
+leader_trait_resolution_category_greatergood_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_resolution_category_greatergood_focus_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_resolution_category_greatergood_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	galcom_modifier = {
+		resolution_category_greatergood_vote_strength_mult = @t4_mult
+	}
+	custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_4_favor_tt
+	leader_class = { official }
+}
+
+###################
+leader_trait_resolution_category_galacticreforms_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_resolution_category_galacticreforms_focus_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_resolution_category_galacticreforms_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	galcom_modifier = {
+		resolution_category_market_vote_strength_mult = @t4_mult
+		resolution_category_galacticreforms_vote_strength_mult = @t4_mult
+		resolution_category_declare_crisis_vote_strength_mult = @t4_mult
+		resolution_category_galactic_focus_vote_strength_mult = @t4_mult
+	}
+	triggered_galcom_modifier = {
+		potential = {
+			has_galactic_custodian = yes
+		}
+		resolution_category_term_limits_vote_strength_mult = @t4_mult
+		resolution_category_custodian_reforms_vote_strength_mult = @t4_mult
+		resolution_category_galactic_institutions_vote_strength_mult = @t4_mult
+	}
+	triggered_galcom_modifier = {
+		potential = {
+			has_galactic_emperor = yes
+		}
+		resolution_category_imperial_council_vote_strength_mult = @t4_mult
+		resolution_category_imperial_reforms_vote_strength_mult = @t4_mult
+		resolution_category_emperor_imperial_institutions_vote_strength_mult = @t4_mult
+		resolution_category_foreign_relations_vote_strength_mult = @t4_mult
+	}
+	custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_4_favor_tt
+	leader_class = { official }
+}
+
+###################
+leader_trait_resolution_category_ecology_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_resolution_category_ecology_focus_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_resolution_category_ecology_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	galcom_modifier = {
+		resolution_category_ecology_vote_strength_mult = @t4_mult
+	}
+	custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_4_favor_tt
+	leader_class = { official }
+}
+
+###################
+leader_trait_resolution_category_galacticstudies_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_resolution_category_galacticstudies_focus_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_resolution_category_galacticstudies_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	galcom_modifier = {
+		resolution_category_galacticstudies_vote_strength_mult = @t4_mult
+	}
+	custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_4_favor_tt
+	leader_class = { official }
+}
+
+###################
+leader_trait_resolution_category_divinity_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_resolution_category_divinity_focus_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_resolution_category_divinity_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	galcom_modifier = {
+		resolution_category_divinity_vote_strength_mult = @t4_mult
+	}
+	custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_4_favor_tt
+	leader_class = { official }
+}
+
+###################
+leader_trait_resolution_category_mutualdefense_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_resolution_category_mutualdefense_focus_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_resolution_category_mutualdefense_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	galcom_modifier = {
+		resolution_category_mutualdefense_vote_strength_mult = @t4_mult
+	}
+	custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_4_favor_tt
+	leader_class = { official }
+}
+
+###################
+leader_trait_resolution_category_rulesofwar_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_resolution_category_rulesofwar_focus_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_resolution_category_rulesofwar_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	galcom_modifier = {
+		resolution_category_rulesofwar_vote_strength_mult = @t4_mult
+	}
+	custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_4_favor_tt
+	leader_class = { official }
+}
+
+###################
+leader_trait_resolution_category_defenseprivatization_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_resolution_category_defenseprivatization_focus_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_resolution_category_defenseprivatization_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	galcom_modifier = {
+		resolution_category_defenseprivatization_vote_strength_mult = @t4_mult
+	}
+	custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_4_favor_tt
+	leader_class = { official }
+}
+
+###################
+leader_trait_resolution_category_intergalacticdirective_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_resolution_category_intergalacticdirective_focus_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_resolution_category_intergalacticdirective_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	galcom_modifier = {
+		resolution_category_intergalacticdirective_vote_strength_mult = @t4_mult
+	}
+	custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_4_favor_tt
+	leader_class = { official }
+}
+
+###################
+leader_trait_resolution_category_bureaucraticsurveillance_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_resolution_category_bureaucraticsurveillance_focus_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_resolution_category_bureaucraticsurveillance_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	galcom_modifier = {
+		resolution_category_bureaucraticsurveillance_vote_strength_mult = @t4_mult
+	}
+	custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_4_favor_tt
+	leader_class = { official }
+}
+
+###################
+leader_trait_resolution_category_pre_ftl_stances_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_resolution_category_pre_ftl_stances_focus_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_resolution_category_pre_ftl_stances_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	galcom_modifier = {
+		resolution_category_pre_ftl_stances_vote_strength_mult = @t4_mult
+	}
+	custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_4_favor_tt
+	leader_class = { official }
+}
+
+###################
+leader_trait_resolution_category_sanctions_focus_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_resolution_category_sanctions_focus_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_resolution_category_sanctions_focus"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	galcom_modifier = {
+		resolution_category_sanctions_commerce_industry_vote_strength_mult = @t4_mult
+		resolution_category_sanctions_politics_culture_vote_strength_mult = @t4_mult
+		resolution_category_sanctions_environment_technology_vote_strength_mult = @t4_mult
+		resolution_category_sanctions_defense_war_vote_strength_mult = @t4_mult
+	}
+	custom_tooltip = leader_trait_resolution_category_sanctions_focus_4_tt
+	leader_class = { official }
+}
+
+###################
+leader_trait_federal_negotiator_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_federal_negotiator_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_federal_negotiator"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	federation_modifier = {
+		federation_experience_add = 2.00
+	}
+	leader_class = { official }
+}
+
+###################
+leader_trait_federal_greeter_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_federal_greeter_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_federal_greeter"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	federation_modifier = {
+		federation_join_malus_mult = -0.20
+	}
+	leader_class = { official }
+}
+
+###################
+leader_trait_federal_sweet_talker_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_federal_sweet_talker_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_federal_sweet_talker"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	federation_modifier = {
+		cohesion_ethics_penalty_mult = -0.20
+	}
+	leader_class = { official }
+}
+
+###################
+leader_trait_federal_joint_navy_4 = {
+	veteran_class_locked_trait = yes
+	replace_traits = { "leader_trait_federal_joint_navy_3" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_federal_joint_navy"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	federation_modifier = {
+		federation_naval_cap_contribution_mult = 0.35
+		federation_fleet_cap_add = 85
+	}
+	leader_class = { official }
+}

@@ -1,0 +1,48 @@
+has_matching_resolution_category_focus_trait_tier1or2or3or4 = {
+	OR = {
+		has_matching_resolution_category_focus_trait_tier_1 = yes
+		has_matching_resolution_category_focus_trait_tier_2 = yes
+		has_matching_resolution_category_focus_trait_tier_3 = yes
+		has_matching_resolution_category_focus_trait_tier_4 = yes
+	}
+}
+
+has_matching_resolution_category_focus_trait_tier_4 = {
+	switch = {
+		trigger = last_resolution_category_changed
+		resolution_category_commerce = { has_trait = leader_trait_resolution_category_commerce_focus_4 }
+		resolution_category_industry = { has_trait = leader_trait_resolution_category_industry_focus_4 }
+		resolution_category_market = { has_trait = leader_trait_resolution_category_galacticreforms_focus_4 }
+		resolution_category_sanctions_commerce_industry = { has_trait = leader_trait_resolution_category_sanctions_focus_4 }
+		resolution_category_politics_tradition_1 = { has_trait = leader_trait_resolution_category_politics_traditions_focus_4 }
+		resolution_category_politics_tradition_2 = { has_trait = leader_trait_resolution_category_politics_traditions_focus_4 }
+		resolution_category_politics_tradition_3 = { has_trait = leader_trait_resolution_category_politics_traditions_focus_4 }
+		resolution_category_politics_tradition_4 = { has_trait = leader_trait_resolution_category_politics_traditions_focus_4 }
+		resolution_category_greatergood = { has_trait = leader_trait_resolution_category_greatergood_focus_4 }
+		resolution_category_galacticreforms = { has_trait = leader_trait_resolution_category_galacticreforms_focus_4 }
+		resolution_category_sanctions_politics_culture = { has_trait = leader_trait_resolution_category_sanctions_focus_4 }
+		resolution_category_ecology = { has_trait = leader_trait_resolution_category_ecology_focus_4 }
+		resolution_category_galacticstudies = { has_trait = leader_trait_resolution_category_galacticstudies_focus_4 }
+		resolution_category_divinity = { has_trait = leader_trait_resolution_category_divinity_focus_4 }
+		resolution_category_sanctions_environment_technology = { has_trait = leader_trait_resolution_category_sanctions_focus_4 }
+		resolution_category_mutualdefense = { has_trait = leader_trait_resolution_category_mutualdefense_focus_4 }
+		resolution_category_rulesofwar = { has_trait = leader_trait_resolution_category_rulesofwar_focus_4 }
+		resolution_category_declare_crisis = { has_trait = leader_trait_resolution_category_galacticreforms_focus_4 }
+		resolution_category_sanctions_defense_war = { has_trait = leader_trait_resolution_category_sanctions_focus_4 }
+		resolution_category_galactic_focus = { has_trait = leader_trait_resolution_category_galacticreforms_focus_4 }
+		# Nemesis
+		resolution_category_imperial_council = { has_trait = leader_trait_resolution_category_galacticreforms_focus_4 }
+		resolution_category_foreign_relations = { has_trait = leader_trait_resolution_category_galacticreforms_focus_4 }
+		resolution_category_imperial_reforms = { has_trait = leader_trait_resolution_category_galacticreforms_focus_4 }
+		resolution_category_emperor_imperial_institutions = { has_trait = leader_trait_resolution_category_galacticreforms_focus_4 }
+		resolution_category_term_limits = { has_trait = leader_trait_resolution_category_galacticreforms_focus_4 }
+		resolution_category_custodian_reforms = { has_trait = leader_trait_resolution_category_galacticreforms_focus_4 }
+		resolution_category_galactic_institutions = { has_trait = leader_trait_resolution_category_galacticreforms_focus_4 }
+		# Overlord
+		resolution_category_defenseprivatization = { has_trait = leader_trait_resolution_category_defenseprivatization_focus_4 }
+		resolution_category_intergalacticdirective = { has_trait = leader_trait_resolution_category_intergalacticdirective_focus_4 }
+		resolution_category_bureaucraticsurveillance = { has_trait = leader_trait_resolution_category_bureaucraticsurveillance_focus_4 }
+		# First Contact
+		resolution_category_pre_ftl_stances = { has_trait = leader_trait_resolution_category_pre_ftl_stances_focus_4 }
+	}
+}

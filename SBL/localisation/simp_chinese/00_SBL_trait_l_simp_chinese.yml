@@ -720,3 +720,66 @@
 
  leader_trait_ambassador_extra_envoys_4: "$leader_trait_ambassador_extra_envoys$ IV"
  leader_trait_ambassador_extra_envoys_4_desc: "$leader_trait_ambassador_extra_envoys_desc$"
+
+############
+# DELEGATE #
+############
+
+ leader_trait_resolution_category_commerce_focus_4: "$leader_trait_resolution_category_commerce_focus$ IV"
+ leader_trait_resolution_category_commerce_focus_4_desc: "$leader_trait_resolution_category_commerce_focus_desc$"
+
+ leader_trait_resolution_category_industry_focus_4: "$leader_trait_resolution_category_industry_focus$ IV"
+ leader_trait_resolution_category_industry_focus_4_desc: "$leader_trait_resolution_category_industry_focus_desc$"
+
+ leader_trait_resolution_category_politics_traditions_focus_4: "$leader_trait_resolution_category_politics_traditions_focus$ IV"
+ leader_trait_resolution_category_politics_traditions_focus_4_desc: "$leader_trait_resolution_category_politics_traditions_focus_desc$"
+ leader_trait_resolution_category_politics_traditions_focus_4_tt: "$leader_trait_resolution_category_politics_traditions_focus_tt$§G+35%§!"
+
+ leader_trait_resolution_category_greatergood_focus_4: "$leader_trait_resolution_category_greatergood_focus$ IV"
+ leader_trait_resolution_category_greatergood_focus_4_desc: "$leader_trait_resolution_category_greatergood_focus_desc$"
+
+ leader_trait_resolution_category_galacticreforms_focus_4: "$leader_trait_resolution_category_galacticreforms_focus$ IV"
+ leader_trait_resolution_category_galacticreforms_focus_4_desc: "$leader_trait_resolution_category_galacticreforms_focus_desc$"
+
+ leader_trait_resolution_category_ecology_focus_4: "$leader_trait_resolution_category_ecology_focus$ IV"
+ leader_trait_resolution_category_ecology_focus_4_desc: "$leader_trait_resolution_category_ecology_focus_desc$"
+
+ leader_trait_resolution_category_galacticstudies_focus_4: "$leader_trait_resolution_category_galacticstudies_focus$ IV"
+ leader_trait_resolution_category_galacticstudies_focus_4_desc: "$leader_trait_resolution_category_galacticstudies_focus_desc$"
+
+ leader_trait_resolution_category_divinity_focus_4: "$leader_trait_resolution_category_divinity_focus$ IV"
+ leader_trait_resolution_category_divinity_focus_4_desc: "$leader_trait_resolution_category_divinity_focus_desc$"
+
+ leader_trait_resolution_category_mutualdefense_focus_4: "$leader_trait_resolution_category_mutualdefense_focus$ IV"
+ leader_trait_resolution_category_mutualdefense_focus_4_desc: "$leader_trait_resolution_category_mutualdefense_focus_desc$"
+
+ leader_trait_resolution_category_rulesofwar_focus_4: "$leader_trait_resolution_category_rulesofwar_focus$ IV"
+ leader_trait_resolution_category_rulesofwar_focus_4_desc: "$leader_trait_resolution_category_rulesofwar_focus_desc$"
+
+ leader_trait_resolution_category_defenseprivatization_focus_4: "$leader_trait_resolution_category_defenseprivatization_focus$ IV"
+ leader_trait_resolution_category_defenseprivatization_focus_4_desc: "$leader_trait_resolution_category_defenseprivatization_focus_desc$"
+
+ leader_trait_resolution_category_intergalacticdirective_focus_4: "$leader_trait_resolution_category_intergalacticdirective_focus$ IV"
+ leader_trait_resolution_category_intergalacticdirective_focus_4_desc: "$leader_trait_resolution_category_intergalacticdirective_focus_desc$"
+
+ leader_trait_resolution_category_bureaucraticsurveillance_focus_4: "$leader_trait_resolution_category_bureaucraticsurveillance_focus$ IV"
+ leader_trait_resolution_category_bureaucraticsurveillance_focus_4_desc: "$leader_trait_resolution_category_bureaucraticsurveillance_focus_desc$"
+
+ leader_trait_resolution_category_pre_ftl_stances_focus_4: "$leader_trait_resolution_category_pre_ftl_stances_focus$ IV"
+ leader_trait_resolution_category_pre_ftl_stances_focus_4_desc: "$leader_trait_resolution_category_pre_ftl_stances_focus_desc$"
+
+ leader_trait_resolution_category_sanctions_focus_4: "$leader_trait_resolution_category_sanctions_focus$ IV"
+ leader_trait_resolution_category_sanctions_focus_4_desc: "$leader_trait_resolution_category_sanctions_focus_desc$"
+ leader_trait_resolution_category_sanctions_focus_4_tt: "$leader_trait_resolution_category_sanctions_focus_tt$§G+35%§!"
+
+ leader_trait_federal_negotiator_4: "$leader_trait_federal_negotiator$ IV"
+ leader_trait_federal_negotiator_4_desc: "$leader_trait_federal_negotiator_desc$"
+
+ leader_trait_federal_greeter_4: "$leader_trait_federal_greeter$ IV"
+ leader_trait_federal_greeter_4_desc: "$leader_trait_federal_greeter_desc$"
+
+ leader_trait_federal_sweet_talker_4: "$leader_trait_federal_sweet_talker$ IV"
+ leader_trait_federal_sweet_talker_4_desc: "$leader_trait_federal_sweet_talker_desc$"
+
+ leader_trait_federal_joint_navy_4: "$leader_trait_federal_joint_navy$ IV"
+ leader_trait_federal_joint_navy_4_desc: "$leader_trait_federal_joint_navy_desc$"
