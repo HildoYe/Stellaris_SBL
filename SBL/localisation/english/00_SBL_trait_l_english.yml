@@ -682,3 +682,41 @@
 
  leader_trait_legendary_evervigilant_4: "$leader_trait_legendary_evervigilant$ IV"
  leader_trait_legendary_evervigilant_4_desc: "$leader_trait_legendary_evervigilant_desc$"
+
+#################
+# ASTRAL PLANES #
+#################
+
+ leader_trait_academic_astral_rift_expert_4: "$leader_trait_academic_astral_rift_expert$ IV"
+ leader_trait_academic_astral_rift_expert_4_desc: "$leader_trait_academic_astral_rift_expert_desc$"
+
+##############
+# AMBASSADOR #
+##############
+
+ leader_trait_ambassador_ear_to_the_ground_4: "$leader_trait_ambassador_ear_to_the_ground$ IV"
+ leader_trait_ambassador_ear_to_the_ground_4_desc: "$leader_trait_ambassador_ear_to_the_ground_desc$"
+ leader_trait_ambassador_ear_to_the_ground_4_machine: "$leader_trait_ambassador_ear_to_the_ground_machine$ IV"
+ leader_trait_ambassador_ear_to_the_ground_4_machine_desc: "$leader_trait_ambassador_ear_to_the_ground_machine_desc$"
+
+ leader_trait_ambassador_whisper_networks_4: "$leader_trait_ambassador_whisper_networks$ IV"
+ leader_trait_ambassador_whisper_networks_4_desc: "$leader_trait_ambassador_whisper_networks_desc$"
+
+ leader_trait_ambassador_bully_4: "$leader_trait_ambassador_bully$ IV"
+ leader_trait_ambassador_bully_4_desc: "$leader_trait_ambassador_bully_desc$"
+
+ leader_trait_ambassador_favor_maker_4: "$leader_trait_ambassador_favor_maker$ IV"
+ leader_trait_ambassador_favor_maker_4_desc: "$leader_trait_ambassador_favor_maker_desc$"
+ leader_trait_ambassador_favor_maker_4_effect: "$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$Envoys §YImproving Relations§! have a §G2%§! chance each month of acquiring a §YFavor§!"
+
+ leader_trait_ambassador_pact_keeper_4: "$leader_trait_ambassador_pact_keeper$ IV"
+ leader_trait_ambassador_pact_keeper_4_desc: "$leader_trait_ambassador_pact_keeper_desc$"
+
+ leader_trait_ambassador_commercial_pact_focus_4: "$leader_trait_ambassador_commercial_pact_focus$ IV"
+ leader_trait_ambassador_commercial_pact_focus_4_desc: "$leader_trait_ambassador_commercial_pact_focus_desc$"
+
+ leader_trait_ambassador_research_pact_focus_4: "$leader_trait_ambassador_research_pact_focus$ IV"
+ leader_trait_ambassador_research_pact_focus_4_desc: "$leader_trait_ambassador_research_pact_focus_desc$"
+
+ leader_trait_ambassador_extra_envoys_4: "$leader_trait_ambassador_extra_envoys$ IV"
+ leader_trait_ambassador_extra_envoys_4_desc: "$leader_trait_ambassador_extra_envoys_desc$"

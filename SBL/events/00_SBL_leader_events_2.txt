@@ -1,0 +1,182 @@
+#Fired by on_monthly_pulse_country
+# Favors from leader_trait_ambassador_favor_maker
+country_event = {
+	id = leader.300
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		has_tier1or2or3or4_in_council = {
+			TRAIT = leader_trait_ambassador_favor_maker
+		}
+	}
+
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				is_councilor = yes
+				has_trait = leader_trait_ambassador_favor_maker
+			}
+			root = {
+				every_envoy = {
+					limit = {
+						has_envoy_task = { task = improve_relations }
+						root = {
+							num_favors = {
+								target = prev.envoy_location_country
+								value < 10
+							}
+						}
+					}
+					random_list = {
+						25 = {
+							root = {
+								add_favors = {
+									target = prev.envoy_location_country
+									value = 1
+								}
+								create_message = {
+									type = MESSAGE_FAVOR_GAINED_TRADITION
+									localization = MESSAGE_FAVOR_GAINED_TRADITION_DESC
+									days = 30
+									target = prev.envoy_location_country.capital_scope
+									variable = {
+										type = name
+										localization = WHO
+										scope = prev.envoy_location_country
+									}
+								}
+							}
+						}
+						9975 = {}
+					}
+				}
+			}
+
+		}
+		every_owned_leader = {
+			limit = {
+				is_councilor = yes
+				has_trait = leader_trait_ambassador_favor_maker_2
+			}
+			root = {
+				every_envoy = {
+					limit = {
+						has_envoy_task = { task = improve_relations }
+						root = {
+							num_favors = {
+								target = prev.envoy_location_country
+								value < 10
+							}
+						}
+					}
+					random_list = {
+						50 = {
+							root = {
+								add_favors = {
+									target = prev.envoy_location_country
+									value = 1
+								}
+								create_message = {
+									type = MESSAGE_FAVOR_GAINED_TRADITION
+									localization = MESSAGE_FAVOR_GAINED_TRADITION_DESC
+									days = 30
+									target = prev.envoy_location_country.capital_scope
+									variable = {
+										type = name
+										localization = WHO
+										scope = prev.envoy_location_country
+									}
+								}
+							}
+						}
+						9950 = {}
+					}
+				}
+			}
+
+		}
+		every_owned_leader = {
+			limit = {
+				is_councilor = yes
+				has_trait = leader_trait_ambassador_favor_maker_3
+			}
+			root = {
+				every_envoy = {
+					limit = {
+						has_envoy_task = { task = improve_relations }
+						root = {
+							num_favors = {
+								target = prev.envoy_location_country
+								value < 10
+							}
+						}
+					}
+					random_list = {
+						100 = {
+							root = {
+								add_favors = {
+									target = prev.envoy_location_country
+									value = 1
+								}
+								create_message = {
+									type = MESSAGE_FAVOR_GAINED_TRADITION
+									localization = MESSAGE_FAVOR_GAINED_TRADITION_DESC
+									days = 30
+									target = prev.envoy_location_country.capital_scope
+									variable = {
+										type = name
+										localization = WHO
+										scope = prev.envoy_location_country
+									}
+								}
+							}
+						}
+						9900 = {}
+					}
+				}
+			}
+		}
+		every_owned_leader = {
+			limit = {
+				is_councilor = yes
+				has_trait = leader_trait_ambassador_favor_maker_4
+			}
+			root = {
+				every_envoy = {
+					limit = {
+						has_envoy_task = { task = improve_relations }
+						root = {
+							num_favors = {
+								target = prev.envoy_location_country
+								value < 10
+							}
+						}
+					}
+					random_list = {
+						200 = {
+							root = {
+								add_favors = {
+									target = prev.envoy_location_country
+									value = 1
+								}
+								create_message = {
+									type = MESSAGE_FAVOR_GAINED_TRADITION
+									localization = MESSAGE_FAVOR_GAINED_TRADITION_DESC
+									days = 30
+									target = prev.envoy_location_country.capital_scope
+									variable = {
+										type = name
+										localization = WHO
+										scope = prev.envoy_location_country
+									}
+								}
+							}
+						}
+						9800 = {}
+					}
+				}
+			}
+		}
+	}
+}
