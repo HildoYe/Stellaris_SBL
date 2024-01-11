@@ -18,7 +18,7 @@ agenda_leadership_conditioning = {
 				limit = {
 					has_skill < 15
 				}
-				add_experience = owner.value:agenda_leadership_conditioning_reward
+				add_experience = value:agenda_leadership_conditioning_leader_reward
 			}
 		}
 		custom_tooltip = council_agenda_agenda_leadership_conditioning_effect
