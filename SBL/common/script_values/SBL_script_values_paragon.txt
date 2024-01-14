@@ -86,3 +86,82 @@ agenda_leadership_conditioning_num_leaders = {
 		mode = add
 	}
 }
+
+agenda_leadership_conditioning_leader_reward = {
+	base = @agenda_leadership_conditioning_exp_reward
+	divide = owner.value:agenda_leadership_conditioning_num_leaders
+	modifier = {
+		owner = {
+			has_origin = origin_progenitor_hive
+		}
+		is_idle = no
+		mult = value:progenitor_hive_leader_exp_bonus_mult
+	}
+	floor = yes
+}
+
+tr_statecraft_amongst_peers_non_councilor_num_leader = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = count_owned_leader
+		parameters = {
+			limit = {
+				AND = {
+					has_skill < 15
+					is_councilor = no
+				}				
+			}
+		}
+		mode = add
+	}	
+}
+
+tr_statecraft_amongst_peers_max_councilor_num_leader = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = count_owned_leader
+		parameters = {
+			limit = {
+				AND = {
+					has_skill = 15
+					is_councilor = yes
+				}				
+			}
+		}
+		mode = add
+	}	
+}
+
+tr_statecraft_amongst_peers_reward_extra = {
+	base = @statecraft_amongst_peers_exp_reward
+	mult = owner.value:tr_statecraft_amongst_peers_max_councilor_num_leader
+	divide = owner.value:tr_statecraft_amongst_peers_non_councilor_num_leader
+	mult = trigger:has_skill
+	modifier = {
+		owner = {
+			has_origin = origin_progenitor_hive
+		}
+		mult = value:progenitor_hive_leader_exp_bonus_mult
+	}
+}
+
+tr_statecraft_amongst_peers_reward = {
+	base = @statecraft_amongst_peers_exp_reward
+	mult = trigger:has_skill
+	modifier = {
+		owner = {
+			has_origin = origin_progenitor_hive
+		}
+		is_idle = no
+		mult = value:progenitor_hive_leader_exp_bonus_mult
+	}
+}
+
+progenitor_hive_leader_exp_bonus_mult = {
+	base = 0
+	add = trigger:has_skill
+	mult = 0.5
+	add = 0.8
+	mult = @progenitor_hive_mult_scale
+	add = 1
+}

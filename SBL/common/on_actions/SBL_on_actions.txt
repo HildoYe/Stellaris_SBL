@@ -37,4 +37,13 @@ on_tech_increased = {
 	events = {
 		sbl.14	# Update tech_node_restore to determine the next tech weight
 	}
+
+}
+
+# Executed when a country activates an agenda
+# THIS = country
+on_agenda_finished = {
+	events = {
+		sbl.402	# Tradition tr_statecraft_amongst_peers XP bonus max level patch.
+	}
 }

@@ -208,3 +208,33 @@ country_event = {
         }        
     }
 }
+
+# on_agenda_finished, when awarding XP to all councilors if country has "tr_statecraft_amongst_peers",
+# the lose due to max level councilors is distributed to non-councilor leaders
+country_event = {
+	id = sbl.402
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+                AND = {
+				    has_tradition = tr_statecraft_amongst_peers
+                    any_owned_leader = {
+                        AND = {
+                            is_councilor = yes
+                            has_skill = 15
+                        }
+                    }
+                }
+			}
+			every_owned_leader = {
+				limit = {
+					is_councilor = no
+				}
+				add_experience = value:tr_statecraft_amongst_peers_reward_extra
+			}
+		}
+	}
+}
