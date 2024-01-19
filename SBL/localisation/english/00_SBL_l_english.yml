@@ -33,4 +33,4 @@
 
  mod_job_soldier_or_warrior_per_pop: "[GetSoldierJobsPerPop]"
 
- ai_leader_exp_bonus: "AI Leader Experience Bonus"
+#  ai_leader_exp_bonus: "AI Leader Experience Bonus"

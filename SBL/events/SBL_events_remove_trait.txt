@@ -3,7 +3,7 @@ namespace = sbl
 # on_leader_level_up
 # Scope = Country, From = Leader
 country_event = {
-	id = sbl.1
+	id = sbl.2
 	hide_window = yes
 	is_triggered_only = yes
 

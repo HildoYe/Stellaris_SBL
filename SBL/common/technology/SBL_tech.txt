@@ -4,7 +4,7 @@ tech_repeatable_node_reformatting = {
 	area = society
 	tier = @repeatableTechTier
 	category = { statecraft }
-	prerequisites = { "tech_node_reformatting_3" "tech_society_4" }
+	prerequisites = { "tech_node_reformatting_3" }
 	weight = @repeatableTechWeight
 	is_rare = yes
 	levels = 3
@@ -18,6 +18,7 @@ tech_repeatable_node_reformatting = {
 	}
 
 	weight_modifier = {
+		factor = @repatableTechFactor
 		modifier = {
 			factor = 0
 			OR = {
@@ -99,7 +100,7 @@ tech_repeatable_node_reformatting = {
 		modifier = {
 			factor = 0.25
 			NOR = {
-				has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+				has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_statecraft }
 				has_trait_in_council = { TRAIT = leader_trait_curator }
 			}
 		}
@@ -124,7 +125,7 @@ tech_repeatable_node_culling = {
 	area = society
 	tier = @repeatableTechTier
 	category = { statecraft }
-	prerequisites = { "tech_node_culling_3" "tech_society_4" }
+	prerequisites = { "tech_node_culling_3" }
 	weight = @repeatableTechWeight
 	is_rare = yes
 	levels = 3
@@ -139,6 +140,7 @@ tech_repeatable_node_culling = {
 
 	weight_modifier = {
 		modifier = {
+			factor = @repatableTechFactor
 			factor = 0
 			OR = {
 				AND = {
@@ -219,7 +221,7 @@ tech_repeatable_node_culling = {
 		modifier = {
 			factor = 0.25
 			NOR = {
-				has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+				has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_statecraft }
 				has_trait_in_council = { TRAIT = leader_trait_curator }
 			}
 		}
