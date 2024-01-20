@@ -90,78 +90,225 @@ agenda_leadership_conditioning_num_leaders = {
 agenda_leadership_conditioning_leader_reward = {
 	base = @agenda_leadership_conditioning_exp_reward
 	divide = owner.value:agenda_leadership_conditioning_num_leaders
+	floor = yes
+}
+
+agenda_leadership_conditioning_leader_reward_progenitor = {
+	base = @agenda_leadership_conditioning_exp_reward
+	divide = owner.value:agenda_leadership_conditioning_num_leaders
 	modifier = {
-		owner = {
-			has_origin = origin_progenitor_hive
-		}
 		is_idle = no
-		mult = value:progenitor_hive_leader_exp_bonus_mult
+		mult = value:progenitor_hive_leader_exp_mult
 	}
 	floor = yes
 }
 
-tr_statecraft_amongst_peers_non_councilor_num_leader = {
-	base = 0
-	complex_trigger_modifier = {
-		trigger = count_owned_leader
-		parameters = {
-			limit = {
-				AND = {
-					has_skill < 15
-					is_councilor = no
-				}				
-			}
-		}
-		mode = add
-	}	
-}
+# Overwrite the reward calculated in the vanilla games. (150 per level)
+# (In the following formular, the base exp will be 150 instead of a vairiable)
+# The new formular is same for regular empires, with an addition for 
+# non-councilor leaders.
+#	150 * maxed_councilor_count		for regular leader per level before split
+#
+# For Gestalt empires, the base 150 per level for councilors is splited:
+#	150 * (1 - gestalt_split_ratio) as base for gestalt councilors per level
+#	150 * maxed_councilor_count +
+#		150 * unmaxed_councilor_count * gestalt_split_ratio
+#		  for gestalt leader per level before split
+#
+# The progenitor hive will receive extra bonus:
+#	150 * (1 - gestalt_split_ratio + (progenitor_base_mult - 0.4) * progenitor_scale)
+#		as base for progenitor councilors per level
+#	150 * maxed_councilor_count * (1 + progenitor_base_mult * progenitor_scale) +
+#		150 * unmaxed_councilor_count * (gestalt_split_ratio + 0.4 * progenitor_scale)
+#		as base for progenitor non-councilors leader per level before split
+#
+#	Intention behind the regular empire addition:
+#		Regular empires utilize the exp reward efficiently in vanilla game. They can
+#		switch councilors to avoid the overflow, escpecially the democratic countries
+#		don't even worry about the wasted exp on their rulers.
+#		The addition formular wil have no effects if players enjoy spending extra efforts
+#		each time when an agenda is available. This addition aims to reduce the willings
+#		to do the boring procedure without much sacrifice.
+#		However, in most time it won't has the same total exp bonus as expected result
+#		due to the difference in leader level.
+#
+#	Intention behind the gestalt adjustion:
+#		Regulars may switch councilor to low level leader to split the experience
+#		more effeciently. The gestalt empires cannot reassign any leaders as nodes or
+#		ruler. This modification aims to reduce the difference between bonus as gestalt
+#		empires and regular empires.
+#		The max_level reward is to make the tradition still viable after councilors reach
+#		max level by spliting the overflow exp reward.
+#		The gestalt_split_ratio is to simulate the effect of assigning non-councilor 
+#		leaders.
+#		The total exp reward will be less than expected bonus since in most time leaders
+#		will have lower level than councilors.
+#
+#	Intention behind the progenitor hive adjustion:
+#		The original progenitor passive bonus has the formular:
+#			5 (base exp) * (1 + (0.8 + 0.5 * level)) per month for non idle leaders.
+#			(0.8 + 0.5 * level) is the progenitor mult.
+#		The bonus become useless due to the marginal effect resulted by the tradition.
+#		In this mod, the bonus is considered thoroghly. Also the split of non-maxed 
+#		councilors will take a larger part than other gestalt effect to make progenitor
+#		hives keep their advantage in leaders.
+#
 
-tr_statecraft_amongst_peers_max_councilor_num_leader = {
-	base = 0
-	complex_trigger_modifier = {
-		trigger = count_owned_leader
-		parameters = {
-			limit = {
-				AND = {
-					has_skill = 15
-					is_councilor = yes
-				}				
-			}
-		}
-		mode = add
-	}	
-}
+# It turns out the script_values file is coded in an inefficient way.
+# All values will be calculated no matter the results of modifier conditions.
+# The game will be more efficient if we leave most condition clause outside
 
-tr_statecraft_amongst_peers_reward_extra = {
-	base = @statecraft_amongst_peers_exp_reward
-	mult = owner.value:tr_statecraft_amongst_peers_max_councilor_num_leader
-	divide = owner.value:tr_statecraft_amongst_peers_non_councilor_num_leader
+# This is the reward for councilors.
+# The vanillar reward is Base * level.
+# Gestalt = Base * Level [* gestalt_mult]
+# Scope: Leader
+
+tr_statecraft_amongst_peers_reward_gestalt = {
+	base = 1
+	subtract = @gestalt_split_ratio
+	mult = @statecraft_amongst_peers_exp_reward
 	mult = trigger:has_skill
-	modifier = {
-		owner = {
-			has_origin = origin_progenitor_hive
-		}
-		mult = value:progenitor_hive_leader_exp_bonus_mult
-	}
 }
 
-tr_statecraft_amongst_peers_reward = {
+tr_statecraft_amongst_peers_reward_progenitor = {
 	base = @statecraft_amongst_peers_exp_reward
 	mult = trigger:has_skill
-	modifier = {
-		owner = {
-			has_origin = origin_progenitor_hive
-		}
-		is_idle = no
-		mult = value:progenitor_hive_leader_exp_bonus_mult
-	}
+	mult = value:progenitor_hive_leader_exp_mult
 }
 
-progenitor_hive_leader_exp_bonus_mult = {
+tr_statecraft_amongst_peers_reward_progenitor_splitted = {
 	base = 0
-	add = trigger:has_skill
-	mult = 0.5
-	add = 0.8
-	mult = @progenitor_hive_mult_scale
+	add = value:progenitor_hive_leader_exp_mult_4
+	subtract = @gestalt_split_ratio
+	mult = @statecraft_amongst_peers_exp_reward
+	mult = trigger:has_skill
+}
+
+# progenitor_mult_4
+# = (progenitor_mult - 0.4) * progenitor_scale
+# Scope: Leader
+progenitor_hive_leader_exp_mult_4 = {
+	base = 0.5
+	mult = trigger:has_skill
+	add = 0.4
+	mult = @progenitor_exp_bonus_scale
 	add = 1
+}
+
+
+# This is the reward for non-councilors.
+# = Total_shared_exp / non_councilor_count * level
+# Regular: Base * maxed_councilor_count / non_councilor_count * level
+# Gestalt Total_shared_exp: 
+#	Base * (maxed_councilor_count + unmaxed_councilor_count * gestalt_split_ratio)
+# Progenitor Hive Total_shared_exp:
+#	Base * (maxed_councilor_count * (1 + progenitor_mult * progenitor_scale)
+#	 + unmaxed_councilor_count * (gestalt_split_ratio + 0.4 * progenitor_scale]))
+#
+# maxed_councilor_count [* progenitor_mult] [+ gestalt_bonus]
+#	 * base / non_councilor_count * level
+# Scope: Leader
+tr_statecraft_amongst_peers_extra_progenitor = {
+	base = 0
+	add = owner.maxed_councilor_count
+	modifier = {
+		is_idle = no
+		mult = value:progenitor_hive_leader_exp_mult
+	}
+	add = value:tr_statecraft_amongst_peers_progenitor_bonus
+	mult = @statecraft_amongst_peers_exp_reward
+	divide = owner.unmaxed_non_councilor_count
+	round = yes
+	mult = trigger:has_skill
+}
+
+tr_statecraft_amongst_peers_extra_gestalt = {
+	base = @gestalt_split_ratio
+	mult = owner.unmaxed_councilor_count
+	add = owner.maxed_councilor_count
+	mult = @statecraft_amongst_peers_exp_reward
+	divide = owner.unmaxed_non_councilor_count
+	round = yes
+	mult = trigger:has_skill
+}
+
+tr_statecraft_amongst_peers_extra_regular = {
+	base = @statecraft_amongst_peers_exp_reward
+	mult = owner.maxed_councilor_count
+	divide = owner.unmaxed_non_councilor_count
+	round = yes
+	mult = trigger:has_skill
+}
+
+# progenitor_mult
+# = 1 + (0.8 + 0.5 * leader_level) * progenitor_scale
+# 0.5 * leader_level + 0.8 * progenitor_scale
+# Scope: Leader
+progenitor_hive_leader_exp_mult = {
+	base = 0.5
+	mult = trigger:has_skill
+	add = 0.8
+	mult = @progenitor_exp_bonus_scale
+	add = 1
+}
+
+
+# progenitor_bonus
+# = unmaxed_councilor_count * (gestalt_split_ratio + 0.4 * progenitor_scale)
+# 0.4 * progenitor_scale + gestalt_split_ratio * unmaxed_councilor_count
+# Scope: Leader
+tr_statecraft_amongst_peers_progenitor_bonus = {
+	base = 0.4
+	mult = @progenitor_exp_bonus_scale
+	add = @gestalt_split_ratio
+	mult = owner.unmaxed_councilor_count
+}
+
+# Number of councilors with level = 15
+# Scope: Country
+tr_statecraft_amongst_peers_maxed_councilor_count = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = count_owned_leader
+		parameters = {
+			limit = {
+				has_skill = 15
+				is_councilor = yes	
+			}
+		}
+		mode = add
+	}	
+}
+
+# unmaxed_councilor_count
+# Number of councilor leaders with level < 15
+# Scope: Country
+tr_statecraft_amongst_peers_unmaxed_councilor_count = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = count_owned_leader
+		parameters = {
+			limit = {
+				has_skill < 15
+				is_councilor = yes
+			}
+		}
+		mode = add
+	}
+}
+
+# Number of non-councilor leaders with level < 15
+# Scope: Country
+tr_statecraft_amongst_peers_unmaxed_non_councilor_count = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = count_owned_leader
+		parameters = {
+			limit = {
+				has_skill < 15
+				is_councilor = no
+			}
+		}
+		mode = add
+	}	
 }

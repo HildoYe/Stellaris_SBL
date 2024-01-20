@@ -39,11 +39,3 @@ on_tech_increased = {
 	}
 
 }
-
-# Executed when a country activates an agenda
-# THIS = country
-on_agenda_finished = {
-	events = {
-		sbl.402	# Tradition tr_statecraft_amongst_peers XP bonus max level patch.
-	}
-}
