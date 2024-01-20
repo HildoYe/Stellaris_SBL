@@ -1,8 +1,19 @@
 namespace = sbl
 
+# Added a flag for modding use
+event = {
+    id = sbl.1
+	hide_window = yes
+	is_triggered_only = yes
+
+    immediate = {
+        set_global_flag = slightly_buffed_leaders
+    }
+}
+
 # update levels of fallen empire ruler from 10 -> 15
 country_event = {
-	id = sbl.2
+	id = sbl.3
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -17,7 +28,7 @@ country_event = {
 
         # wait one day to set up gestalt nodes to avoid event order issues
         country_event = {
-			id = sbl.3
+			id = sbl.4
 			days = 1
 		}
     }
@@ -25,7 +36,7 @@ country_event = {
 
 # update levels of fallen machine empire nodes from 10 -> 15
 country_event = {
-	id = sbl.3
+	id = sbl.4
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -46,7 +57,7 @@ country_event = {
 
 # update levels of fallen empire commander from 10 -> 15
 country_event = {
-	id = sbl.4
+	id = sbl.5
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -65,7 +76,7 @@ country_event = {
 	immediate = {
         from = {
             leader_event = {
-                id = sbl.5
+                id = sbl.6
                 days = 1
                 scopes = {
                     from = root
@@ -76,7 +87,7 @@ country_event = {
 }
 
 leader_event = {
-	id = sbl.5
+	id = sbl.6
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -92,7 +103,7 @@ leader_event = {
 
 # update levels of Great Khan from 10 -> 15
 country_event = {
-	id = sbl.6
+	id = sbl.7
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -103,7 +114,7 @@ country_event = {
 	immediate = {
         from = {
             leader_event = {
-                id = sbl.7
+                id = sbl.8
                 days = 1
                 scopes = {
                     from = root
@@ -114,7 +125,7 @@ country_event = {
 }
 
 leader_event = {
-	id = sbl.7
+	id = sbl.8
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -129,7 +140,7 @@ leader_event = {
 
 # update levels of awakened fallen empire scientist from 10 -> 15
 country_event = {
-	id = sbl.8
+	id = sbl.9
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -151,7 +162,7 @@ country_event = {
 
 # update levels of event leaders from 10 -> 15
 country_event = {
-	id = sbl.9
+	id = sbl.10
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -171,7 +182,7 @@ country_event = {
 
 # initialize tech_node_restore variable during country creation
 country_event = {
-	id = sbl.13
+	id = sbl.101
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -189,7 +200,7 @@ country_event = {
 
 # increament tech_node_restore each time when researched
 country_event = {
-    id = sbl.14
+    id = sbl.102
     hide_window = yes
     is_triggered_only = yes
 
