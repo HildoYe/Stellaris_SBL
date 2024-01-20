@@ -63,11 +63,3 @@ on_decade_pulse = {
 		# sbl.203	# recalculate ai_leader_exp_bonus in case mechanic bypasses
 	}
 }
-
-# Executed when a country activates an agenda
-# THIS = country
-on_agenda_finished = {
-	events = {
-		sbl.402	# Tradition tr_statecraft_amongst_peers XP bonus max level patch.
-	}
-}

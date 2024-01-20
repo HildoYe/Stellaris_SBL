@@ -2,3 +2,6 @@
 @subclass_weight_opp_mult = 0.5
 @job_weight_mult = 2.5
 @job_weight_opp_mult = 0.5
+
+@progenitor_exp_bonus_scale = 0.5
+@gestalt_split_ratio = 0.1
