@@ -8,6 +8,16 @@ event = {
 
     immediate = {
         set_global_flag = slightly_buffed_leaders
+        
+        every_country = {
+            if = {
+                limit = { is_sovereign_guardianship_empire = yes }
+                country_event = {
+                    id = sbl.201
+                    days = 1
+                }
+            }
+        }
     }
 }
 
@@ -217,5 +227,111 @@ country_event = {
             which = tech_node_restore
             value = 1
         }        
+    }
+}
+
+country_event = {
+    id = sbl.200
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = { has_modifier = ruler_system_size_reduction }
+            remove_modifier = ruler_system_size_reduction
+        }   
+        else_if = {
+            limit = { has_modifier = ruler_system_size_reduction_hive }
+            remove_modifier = ruler_system_size_reduction_hive
+        }   
+        else_if = {
+            limit = { has_modifier = ruler_system_size_reduction_machine }
+            remove_modifier = ruler_system_size_reduction_machine
+        }
+        else_if = {
+            limit = { has_modifier = ruler_system_size_reduction_corporate }
+            remove_modifier = ruler_system_size_reduction_corporate
+        }
+    }
+}
+
+country_event = {
+    id = sbl.201
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_sovereign_guardianship_empire = yes
+    }
+
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    is_hive_empire = yes
+                }
+                if = {
+                    limit = { has_modifier = ruler_system_size_reduction_hive }
+                    remove_modifier = ruler_system_size_reduction_hive
+                }
+                add_modifier = {
+                    modifier = ruler_system_size_reduction_hive
+                    mult = value:effective_ruler_skill
+                }
+            }
+            else_if = {
+                limit = { 
+                    is_machine_empire = yes
+                }
+                if = {
+                    limit = { has_modifier = ruler_system_size_reduction_machine }
+                    remove_modifier = ruler_system_size_reduction_machine
+                }
+                add_modifier = {
+                    modifier = ruler_system_size_reduction_machine
+                    mult = value:effective_ruler_skill
+                }
+            }
+            else_if = {
+                limit = { 
+                    has_valid_civic = civic_corporate_sovereign_guardianship
+                }
+                if = {
+                    limit = { has_modifier = ruler_system_size_reduction_corporate }
+                    remove_modifier = ruler_system_size_reduction_corporate
+                }
+                add_modifier = {
+                    modifier = ruler_system_size_reduction_corporate
+                    mult = value:effective_ruler_skill
+                }
+            }
+            else = {
+                if = {
+                    limit = { has_modifier = ruler_system_size_reduction }
+                    remove_modifier = ruler_system_size_reduction
+                }
+                add_modifier = {
+                    modifier = ruler_system_size_reduction
+                    mult = value:effective_ruler_skill                    
+                }
+            }
+        }        
+    }
+}
+
+country_event = {
+    id = sbl.202
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_sovereign_guardianship_empire = yes
+        from = { is_ruler = yes }
+    }
+
+    immediate = {
+        country_event = {
+            id = sbl.201
+        }
     }
 }

@@ -312,3 +312,10 @@ tr_statecraft_amongst_peers_unmaxed_non_councilor_count = {
 		mode = add
 	}	
 }
+
+effective_ruler_skill = {
+	base = 0
+	add = ruler.trigger:has_skill
+	add = modifier:ruler_skill_add
+	add = modifier:councilor_skill_add
+}

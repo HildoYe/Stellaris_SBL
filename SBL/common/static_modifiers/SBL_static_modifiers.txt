@@ -1,0 +1,15 @@
+ruler_system_size_reduction = {
+	empire_size_systems_mult = -0.03
+}
+
+ruler_system_size_reduction_hive = {
+	empire_size_systems_mult = -0.045
+}
+
+ruler_system_size_reduction_machine = {
+	empire_size_systems_mult = -0.06
+}
+
+ruler_system_size_reduction_corporate = {
+	empire_size_systems_mult = -0.03
+}

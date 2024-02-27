@@ -32,3 +32,9 @@
  MESSAGE_LOSED_NEGATIVE_TRAIT_2_DESC: "Through hard work and experience, §H[From.From.GetTitle] [From.From.GetName]§! has gotten rid of §R$LEADER_TRAIT$ II§!."
 
  mod_job_soldier_or_warrior_per_pop: "[GetSoldierJobsPerPop]"
+
+ ruler_system_size_reduction: "$civic_sovereign_guardianship$ Ruler"
+ ruler_system_size_reduction_hive: "$civic_hive_sovereign_guardianship$ Ruler"
+ ruler_system_size_reduction_machine: "$civic_machine_sovereign_guardianship$ Ruler"
+ ruler_system_size_reduction_corporate: $"civic_corporate_sovereign_guardianship" Ruler"
+ 
