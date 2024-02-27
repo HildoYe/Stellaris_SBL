@@ -33,4 +33,8 @@
 
  mod_job_soldier_or_warrior_per_pop: "[GetSoldierJobsPerPop]"
 
-#  ai_leader_exp_bonus: "AI Leader Experience Bonus"
+ ruler_system_size_reduction: "$civic_sovereign_guardianship$ Ruler"
+ ruler_system_size_reduction_hive: "$civic_hive_sovereign_guardianship$ Ruler"
+ ruler_system_size_reduction_machine: "$civic_machine_sovereign_guardianship$ Ruler"
+ ruler_system_size_reduction_corporate: $"civic_corporate_sovereign_guardianship" Ruler"
+ 
