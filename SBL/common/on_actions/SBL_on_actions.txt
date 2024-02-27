@@ -1,6 +1,22 @@
+# Triggers when the game starts
+on_game_start = {
+	events = {
+		sbl.1	# set flag: "slightly_buffed_leaders"
+	}
+}
+
+# No scope, like on_game_start
+# Does not run when loading MP saves due to OOS concerns
+on_single_player_save_game_load = {
+	events = {
+		sbl.1	# set flag: "slightly_buffed_leaders"
+	}
+}
+
 on_leader_level_up = {
 	events = {
-		sbl.1	# remove one random negative trait
+		sbl.2	# remove one random negative trait
+		sbl.202
 	}
 }
 
@@ -9,14 +25,14 @@ on_leader_level_up = {
 # From = root of context where create_country/create_rebels happens
 on_country_created = {
 	events = {
-		sbl.2	# fallen empires ruler and nodes level 10 -> 15
-		sbl.13	# initialize gestalt tech_node_restore
+		sbl.3	# fallen empires ruler and nodes level 10 -> 15
+		sbl.101	# initialize gestalt tech_node_restore
 	}
 }
 
 on_game_start_country = {
 	events = {
-		sbl.13	# initialize gestalt tech_node_restore
+		sbl.101	# initialize gestalt tech_node_restore
 	}
 }
 
@@ -24,10 +40,10 @@ on_game_start_country = {
 # scope: country, from: leader
 on_leader_spawned = {
 	events = {
-		sbl.4	# fallen empires commander level 10 -> 15
-		sbl.6	# Great Khan level 10 -> 15
-		sbl.8	# awakened fallen empires scientist level 10 -> 15
-		sbl.9	# event leader level 10 -> 15
+		sbl.5	# fallen empires commander level 10 -> 15
+		sbl.7	# Great Khan level 10 -> 15
+		sbl.9	# awakened fallen empires scientist level 10 -> 15
+		sbl.10	# event leader level 10 -> 15
 	}
 }
 
@@ -35,6 +51,55 @@ on_leader_spawned = {
 # This = Country
 on_tech_increased = {
 	events = {
-		sbl.14	# Update tech_node_restore to determine the next tech weight
+		sbl.102	# Update tech_node_restore to determine the next tech weight
+	}
+}
+
+# Executed as new ruler has been set
+# This = Country
+on_ruler_set = {
+	events = {
+		sbl.201
+	}
+}
+
+# Executed when a ruler has been removed
+# From = Previous Ruler
+# This = Country
+on_ruler_removed = {
+	events = {
+		sbl.200
+	}
+}
+
+# Executed when a country activates an agenda
+# THIS = country
+on_agenda_finished = {
+	events = {
+		sbl.201
+	}
+}
+
+# Executed when a country picks any tradition (including starters and finishers)
+# THIS = country
+on_tradition_picked = {
+	events = {
+		sbl.201
+	}
+}
+
+# Executed just as country is changing its government, before the new one is applied
+# THIS = country
+on_pre_government_changed = {
+	events = {
+		sbl.200
+	}
+}
+
+# Executed just as country is changing its government, after the new one is applied
+# THIS = country
+on_post_government_changed = {
+	events = {
+		sbl.201
 	}
 }

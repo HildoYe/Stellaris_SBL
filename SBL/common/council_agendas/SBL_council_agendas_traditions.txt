@@ -13,12 +13,27 @@ agenda_leadership_conditioning = {
 	}
 	finish_modifier = agenda_leadership_conditioning_finish
 	effect = {
-		hidden_effect = {
-			every_owned_leader = {
-				limit = {
-					has_skill < 15
+		if = {
+			limit = {
+				has_origin = origin_progenitor_hive
+			}
+			hidden_effect = {
+				every_owned_leader = {
+					limit = {
+						has_skill < 15
+					}
+					add_experience = value:agenda_leadership_conditioning_leader_reward_progenitor
 				}
-				add_experience = owner.value:agenda_leadership_conditioning_reward
+			}
+		}
+		else = {
+			hidden_effect = {
+				every_owned_leader = {
+					limit = {
+						has_skill < 15
+					}
+					add_experience = value:agenda_leadership_conditioning_leader_reward
+				}
 			}
 		}
 		custom_tooltip = council_agenda_agenda_leadership_conditioning_effect

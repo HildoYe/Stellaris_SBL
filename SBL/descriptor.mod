@@ -1,4 +1,4 @@
-version="1.1.8"
+version="1.1.9"
 tags={
 	"Balance"
 	"Leaders"
@@ -6,5 +6,5 @@ tags={
 	"Gameplay"
 }
 name="Slightly Buffed Leaders"
-supported_version="3.10.*"
+supported_version="3.11.*"
 remote_file_id="2953802574"
